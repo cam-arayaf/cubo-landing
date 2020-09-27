@@ -1,0 +1,1500 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/material-icons/normal.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../assets/fonts/sf-pro-display/black.ttf');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('../assets/fonts/sf-pro-display/regular.ttf');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Semi-Bold';
+    src: url('../assets/fonts/sf-pro-display/semi-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../assets/fonts/spartan/black.ttf');
+}
+
+@font-face {
+    font-family: 'Spartan Regular';
+    src: url('../assets/fonts/spartan/regular.ttf');
+}
+
+@font-face {
+    font-family: 'Spartan Semi-Bold';
+    src: url('../assets/fonts/spartan/semi-bold.ttf');
+}
+
+@media (min-width: 993px) {
+    .nav-wraper {
+        display: flex;
+        place-content: space-evenly;
+        place-items: center;
+    }
+
+    .nav-wraper .brand-logo {
+        position: initial;
+    }
+}
+
+@media (min-width: 483px) and (max-width: 616px) {
+    .radio-container {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 335px) {
+    .collapsible-container .collapsible-header > p {
+        margin-left: 4px;
+        text-align: inherit;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logo-absolute-izquierda, .logo-absolute-derecha {
+    top: 2em;
+}
+
+.logo-absolute-derecha2, .logo-absolute-izquierda2 {
+    bottom: 2em;
+}
+
+.logo-absolute-derecha, .logo-absolute-derecha2 {
+    right: 23%;
+}
+
+.logo-absolute-izquierda2, .logo-absolute-izquierda{
+    left: 23%;
+}
+
+.logo-absolute-derecha2, .logo-absolute-izquierda2, .logo-absolute-derecha, .logo-absolute-izquierda {
+    position: absolute !important;
+    width: 1.6em;
+    margin: 0px !important;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+}
+
+.sidenav {
+    padding-bottom: initial;
+    height: initial;
+}
+
+.modal .modal-content {
+    padding: 30px;
+}
+
+.radio-label, #bottom-page, .seemore-btn, .im-eluney, .discover-button {
+    font-family: 'Spartan Semi-Bold' !important;
+}
+
+.modal-info p {
+    text-align: justify;
+}
+
+    /* Images */
+    .nave-form {
+        left: 10%;
+        width: 10%;
+        bottom: 0;
+    }
+
+    .nave-slider {
+        left: 3%;
+        bottom: -8%;
+        width: 8%;
+    }
+
+    .planeta-cubo {
+        top: -16%;
+        right: 0.1%;
+        bottom: 0;
+    }
+
+    .nave-uno-cubo {
+        left: 3%;
+        width: 5%;
+        bottom: 0;
+    }
+
+    .nave-header {
+        right: 0;
+    }
+
+    .nave-header-izquierda {
+        left: 0;
+        width: 4%;
+        margin-left: 10%;
+    }
+
+    .nave-uno-cubo, .planeta-cubo, .nave-slider, .nave-form, .nave-header, .nave-header-izquierda {
+        position: absolute !important;
+    }
+
+.carousel {
+    height: 559px;
+}
+
+.container-cards .card.horizontal.hvr-wobble-vertical .card-image img {
+    width: 45px;
+}
+
+.carousel .indicators {
+    position: absolute !important;
+}
+
+.carousel.carousel-slider .carousel-item {
+    min-height: 559px;
+}
+
+*:not(.modal):not(.modal-overlay):not(.stars):not(.list-links):not(header):not(.sidenav):not(.sidenav-overlay):not(.brand-logo):not(.apply-demo):not(.carousel-item) {
+    position: relative;
+    z-index: 1;
+}
+
+h1, button {
+    font-family: 'Spartan Semi-Bold';
+}
+
+p, span, small {
+    font-family: 'SF Pro Display Regular';
+}
+
+a, label, strong {
+    font-family: 'SF Pro Display Semi-Bold';
+}
+
+body {
+    background: radial-gradient(ellipse at top, #24303d 0%, #090a0f 100%);
+    text-align: center;
+}
+
+textarea {
+    outline: none;
+}
+
+textarea:not(.browser-default):focus:not([readonly]) {
+    border: 1px solid #26a69a;
+    -webkit-box-shadow: 0 1px 0 0 #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+
+.wrong-input {
+    border-bottom: 1px solid #d52157 !important;
+    -webkit-box-shadow: 0 1px 0 0 #d52157 !important;
+    box-shadow: 0 1px 0 0 #d52157 !important;
+}
+
+.wrong-textarea {
+    border: 1px solid #d52157 !important;
+    -webkit-box-shadow: 0 1px 0 0 #d52157 !important;
+    box-shadow: 0 1px 0 0 #d52157 !important;
+}
+
+.disabled-button {
+    cursor: not-allowed !important;
+    opacity: 0.5;
+}
+
+.icon-svg-container img {
+    width: 100px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.modal {
+    color: rgb(12, 46, 80);
+}
+
+.modal-loading {
+    animation: spin infinite 2s linear;
+}
+
+.modal-logo {
+    margin-bottom: 5px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    text-align: right;
+    margin: 0;
+}
+
+footer {
+    color: #fff;
+    font-family: 'SF Pro Display Semi-Bold';
+    margin-top: 80px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/* GLOBAL STYLES */
+.card {
+    border: 1px solid transparent;
+}
+
+.radio-buttons > .radio-label:hover {
+    cursor: pointer;
+}
+
+.nav-wraper > .list-inline > .lt000 > .a-lt000{
+    padding: 3px;
+    margin-left: 40px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 14px;
+    color: rgb(12, 46, 80);
+    font-family: 'SF Pro Display Regular';
+    font-weight: 600;
+}
+
+.small-text {
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: rgba(30, 143, 255, 0.74);
+    font-size: 13px;
+    font-family: 'SF Pro Display';
+}
+
+.learn-title {
+    color: #fff;
+    font-size: 55px;
+    margin-top: 0px;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-section {
+    margin-top: 50px;
+}
+
+.section-title {
+    margin: auto;
+    font-size: 50px;
+    margin-top: 30px;
+    color: #fff;
+    width: 57%;
+    margin-bottom: 50px;
+}
+
+.container-sessions {
+    display: inline-flex;
+    margin-top: 50px;
+    margin-bottom:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.footer-content > p  {
+    font-family: 'SF Pro Display Semi-Bold';
+    font-size: 13px;
+}
+
+.info-card-end {
+    width: 25%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    color: #fff;
+    margin: auto;
+}
+
+.info-card {
+    display: block;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    color: #fff;
+    margin: 10%;
+    height: auto;
+}
+
+.text-info-card {
+    margin: 6%;
+    font-size: 12.2px;
+    color: #f2f2f2;
+}
+
+.seemore-btn {
+    font-family: 'SF Pro Display Semi-Bold';
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 0.8;
+    cursor: pointer;
+}
+
+.card-content > p {
+    text-align: left;
+    color: #f2f2f2;
+}
+
+.card:hover {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 2;
+    transition: 10s;
+}
+
+.collapsible-header:focus {
+    background-color: transparent !important;
+}
+
+.apply-demo {
+    letter-spacing: 1px;
+    font-family: 'SF Pro Display Semi-Bold';
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    color: #fff;
+    font-size: 12px;
+    line-height: 0.8;
+    cursor: pointer;
+    transition: linear 0.2s;
+    display: inline-block;
+}
+
+.list-links {
+    background-color:#fff;
+    z-index: 2;
+}
+
+.discover {
+    font-family: 'SF Pro Display Semi-Bold';
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 0.8;
+    color: #fff;
+    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+}
+
+.sess-type {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0px;
+    font-family: 'SF Pro Display';
+}
+
+.sess-text-card {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #f2f2f2;
+    margin: auto;
+    width: 85%;
+}
+
+.im-eluney {
+    display: inline-block;
+    font-family: 'SF Pro Display Semi-Bold';
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+}
+
+.im-eluney:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: #16b6ff;
+    border-bottom: 0;
+    margin-left: -11px;
+    margin-bottom: -11px;
+}
+
+.collapsible-header {
+    display: flex;
+    place-items: center;
+    background: transparent;
+    height: 80px;
+    border: 1px solid #ddd;
+    color: #fff;
+    background: transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+} 
+
+.collapsible-body {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.collapsible-header > .small {
+    font-family: 'SF Pro Display Regular';
+    font-weight: 100;
+    font-size: 9px;
+    color: #78bbe6;
+}
+
+.collapsible-header > .title {
+    font-family: 'SF Pro Display';
+}
+
+.subjects-btn {
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: transparent !important;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    width: 80%;
+    color: #fff;
+}
+
+.subjects-btn img {
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+.subjects-btn > small {
+    color: #cccc;
+}
+
+.subjects-btn:disabled {
+    border: none;
+    background-color: transparent !important;
+}
+
+.subjects-btn:hover {
+    background-color: transparent !important;
+}
+
+.subjects-btn small {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.subjects-section {
+    margin-top: 80px;
+    color: #fff;
+}
+
+.about-text {
+    color: #24303d;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+form > .col > .form-control {
+    font-family: 'SF Pro Display Regular';
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 65%;
+}
+
+.container-inputs input.form-control {
+    color: #fff;
+}
+
+.container-radio-buttons .radio-buttons, .list-inline .lt000 {
+    list-style-type: none !important;
+}
+
+.radio-container > .radio-buttons > .radio-label {
+    font-family: 'SF Pro Display Semi-Bold';
+    background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.radio-container > li {
+    padding: 0px;
+}
+
+.radio-container > .radio-buttons > .radio-label:hover {
+    box-shadow: 2px 1px  1px rgb(0, 174, 255);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.radio-container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.container-submit {
+    text-align: left;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    height: 5rem !important;
+}
+
+textarea.materialize-textarea{
+    color: #fff;
+}
+
+.btn-send-email {
+    font-family: 'SF Pro Display Semi-Bold';
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0.8;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .radio-label{
+    color: steelblue;
+}
+
+/* ------------------- Smartphones ------------------- */
+@media (max-width: 480px){
+    body {
+        padding-top: 70px;
+    }
+
+    nav .brand-logo {
+        position: fixed;
+        width: 30%;
+    }
+
+    .logo-absolute-derecha2, .logo-absolute-izquierda2, .logo-absolute-derecha, .logo-absolute-izquierda {
+        display: none;
+    }
+
+    .nav-wraper > .list-inline > .lt000 > .a-lt000 {
+        margin-left: 0px;
+    }
+
+    .radio-container > .radio-buttons > .radio-label {
+        margin: 0px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #fff;
+    }
+
+    .nave-uno-cubo, .planeta-cubo, .nave-slider, .nave-form, .nave-header, .nave-header-izquierda {
+        display: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .carousel.carousel-slider .carousel-item {
+        margin-top: 11px;
+    }
+
+    .radio-container > .radio-buttons {
+        margin: 5px;
+        width: 40%;
+    }
+
+    .apply-demo2 {
+        font-family: 'Spartan Semi-Bold' !important;
+        box-shadow: 2px 2px 4px 1px #0c0f14;
+        color: white !important;
+    }
+
+    #mobile-demo {
+        padding: 20px;
+        border-radius: 0 0 10px 0;
+    }
+
+    .info-card-end {
+        width: 80%;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        color: #fff;
+        margin: auto;
+    }
+
+    .carousel {
+        height: 200px;
+        margin-bottom: 60px;
+    }
+
+    .small-text {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .apply-demo {
+        display: none;
+    }
+
+    .apply-demo2 {
+        font-family: 'SF Pro Display Semi-Bold';
+        display: inline-block;
+        border-radius: 50px;
+        border: none;
+        margin-top: 7px;
+        margin-bottom: 5px;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+        color: #fff;
+        font-size: 12px;
+        line-height: 0.8;
+    }
+
+    .nav-wraper > .list-inline > .lt000 > .a-lt000{
+        padding: 3px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-size: 12.5px;
+        color: rgb(0, 67, 134);
+    }
+
+    .nav-wraper > .list-inline > .lt000 {
+        margin-left: 8px;
+    }
+
+    .list-links {
+        background-color:#fff;
+        z-index: 2;
+        top: 0px;
+        position: fixed;
+    }
+
+    .first-title {
+        margin-top: 20px;
+    }
+
+    .container-sessions {
+        margin-bottom: 50px;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .session-card {
+        display: inline-block;
+        margin-top: 20px;
+        height: auto;
+        color: #fff;
+    }
+
+    .container-cards {
+        margin-bottom: 0px;
+    }
+
+    .section-title {
+        width: 90%;
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .text-info-card {
+        margin-top: 20px;
+        margin: 20px;
+        font-size: 12.2px;
+        color: #f2f2f2;
+    }
+
+    .section-learn {
+        margin-top: 0px;
+        margin-bottom: 70px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .learn-title {
+        color: #fff;
+        font-size: 37px;
+        text-align: center;
+        width: auto;
+    }
+
+    .first-title > .text-learning {
+        font-size: 40px;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .radio-container {
+        display: flex;
+        place-content: center;
+        flex-wrap: wrap;
+    }
+
+    .radio-buttons {
+        padding: 1em;
+        margin: 0px auto;
+    }
+
+    .container-inputs > div, .container-submit > button {
+        margin-left: 20px;
+    }
+
+    .card {
+        box-shadow: none;
+        margin-top: 25px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .card-container {
+        display: block;
+    }
+
+    .card-stacked > p {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-right: 50px;
+        font-family: 'SF Pro Display';
+    }
+
+    .card-stacked > .card-content {
+        font-size: 13px;
+    }
+
+    .card-image {
+        margin-top: 65px;
+        margin-left: 15px;
+    }
+
+    .about {
+        background-color: #fff;
+        margin-top: 25px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
+    .title-about {
+        margin: 0px;
+        color: #24303d;
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    .about-text {
+        width: 90%;
+        color: #24303d;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-title {
+        color: #fff;
+        margin: 6px;
+        font-size: 38px;
+        padding: 0px;
+    }
+
+    .radio-container {
+        margin-top: 30px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .collapsible {
+        margin-top: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border: none;
+    }
+
+    .benefits-ulist > li{
+        font-size: 13px;
+        margin-top: auto;
+        color: #fff;
+        width: 100%;
+    }
+
+    .collapsible-header > img {
+        width: 40px;
+        height: 42px;
+    }
+
+    .collapsible-header > p {
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    .benefits-text-small {
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 11px;
+        font-family: 'SF Pro Display';
+        margin-top: 40px;
+    }
+
+    .collapsible-header > .grade {
+        font-family: 'SF Pro Display Semi-Bold';
+        font-size: 12px;
+    }
+
+    .nav-wraper > .list-inline > .lt000 {
+        padding: 0px;
+    }
+
+    .disabled-btn {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    .text-carousel {
+        display: none;
+    }
+
+    .eluney-img {
+        width: 120px;
+        margin-top: 5px;
+    }
+
+    .container-img > img {
+        display: none;
+    }
+
+    .im-eluney {
+        display: none;
+    }
+
+    .container-inputs {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    .container-submit {
+        width: 80%;
+    }
+
+    footer {
+        display:inline-block;
+        border-top: 1px rgba(255, 255, 255, 0.13) solid;
+    }
+
+    .footer-content {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+}
+
+/* ------------------- Desktop ------------------- */
+@media (min-width: 1024px) {
+    .discover-button {
+        height: 35px;
+        width: 110px;
+    }
+
+    #bottom-page {
+        height: 35px;
+        width: 110px;
+        font-size: 15px;
+    }
+
+    .subjects-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.a-lt000.hvr-float.hvr-underline-from-center:hover {
+        background: transparent;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .collapsible-header {
+        color: #fff;
+        background: transparent;
+    }
+
+    ul:not(.browser-default)>li {
+        list-style-type: disc !important;
+    }
+
+    .benefits-ulist {
+        color: #fff;
+    }
+
+    textarea {
+        height: 5rem !important;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    .list-links {
+        position: fixed;
+        top: 0;
+    }
+
+    .nav-wraper > .brand-logo > img {
+        width: 128px;
+        height: 64px;
+    }
+
+    .apply-demo:hover {
+        transform: scale(1.2);
+    }
+    
+    .apply-demo2 {
+        display: none;
+        
+    }
+    
+    .first-title {
+        margin-top: 40px;
+    }
+    
+    .session-card {
+        margin-top: 20px;
+        height: auto;
+        color: #fff;
+        width: 20%;
+        margin-left: 50px;
+    }
+    
+    .info-title {
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    
+    .subjects-btn {
+        width: 20%;
+        margin-top: 60px;
+        cursor: pointer;
+    }
+
+    .subjects-btn:first-child {
+        margin-top: 83px;
+    }
+
+    .subjects-btn img {
+        width: 25px;
+        margin-bottom: 10px;
+    }
+
+    .subjects-btn:focus {
+        background-color: rgba(218, 218, 218, 0.027);
+    }
+    
+    .section-learn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .eluney-img {
+        float: right;
+        margin-right: 160px;
+        width: 180px;
+        height: 100%;
+        margin-top: 130px;
+    }
+
+    .radio-container {
+        display: inline-flex;
+    }
+    
+    .radio-buttons {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px auto;
+    }
+    
+    .card {
+        box-shadow: none;
+        background-color: transparent;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+
+    .card-image {
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 65%;
+        margin-left: 80px;
+        margin-top: 110px;
+    }
+    
+    .card-stacked > p {
+        font-size: 15px;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 0px;
+        margin-left: 24px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .card-stacked > .card-content {
+        padding-top: 0px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .container-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 10px;
+    }
+    
+    .about {
+        background-color: #fff;
+        margin-top: 70px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 100%;
+    }
+    
+    .title-about {
+        margin: 0px;
+        color: #24303d;
+        font-size: 55px;
+        padding: 0px;
+    }
+
+    .about > img {
+        display: block;
+        margin-left: 90px;
+    }
+    
+    .about-text {
+        color: #24303d;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px;
+    }
+
+    .benefits-text-small {
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 11px;
+        font-family: 'SF Pro Display';
+        margin-top: 70px;
+    }
+    
+    .contact-title {
+        color: #fff;
+        margin: 0px;
+        font-size: 55px;
+        padding: 0px;
+    }
+    
+    form > .col > .form-control {
+        font-family: 'SF Pro Display Regular';
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        width: 65%;
+    }
+
+    .collapsible-header {
+        background: transparent;
+        height: 70px;
+        border: 1px solid #ddd;
+        color: #fff;
+        background: transparent;
+        border-radius: 10px;
+        margin-top: 20px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .collapsible {
+        color: transparent;
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border: none;
+        border-color: transparent;
+    }
+
+    .benefits-ulist > li{
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .collapsible-header > img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    .collapsible-header > p {
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    .collapsible-header > .small {
+        font-family: 'SF Pro Display Regular';
+        font-weight: 100;
+        font-size: 9px;
+        color: #78bbe6;
+    }
+
+    .collapsible-header > .title {
+        font-family: 'SF Pro Display';
+    }
+
+    .collapsible-header > .grade {
+        font-family: 'SF Pro Display Semi-Bold';
+    }
+
+    .container-img {
+        float: center;
+    }
+
+    .carousel {
+        margin-top: 50px;
+    }
+
+    .carousel > .carousel-item > img {
+        width: 945px;
+        height: 559px;
+    }
+
+    .text-carousel {
+        font-family: 'SF Pro Display Semi-Bold';
+        text-align: left;
+        font-size: 16px;
+        float: right;
+        margin-right: 200px;
+        margin-top: 125px;
+        width: 60%;
+        height: 100%;
+    }
+
+    .container-inputs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    .container-inputs > div, .container-submit > button {
+        margin-left: 50px;
+    }
+
+    .container-inputs input.form-control {
+        color: #fff;
+    }
+
+    textarea.materialize-textarea{
+        color: #fff;
+    }
+
+    .container-icons-rrss {
+        margin-top: 10px;
+    }
+
+    .container-icons-rrss > a {
+        margin-left: 20px;
+    }
+
+    .btn-send-email {
+        margin-right: 34em;
+    }
+
+    .col > textarea {
+        width: 100%;
+    }
+
+}
+
+
+/* ------------------- Tablets ------------------- */
+@media (min-width : 481px) and (max-width : 1024px) {
+    
+    .apply-demo2 {
+        display: none;
+    }
+
+    .section-title {
+        width: 70%;
+    }
+
+    .nav-wraper > .brand-logo > img {
+        width: 128px;
+        height: 64px;
+    }
+
+    .container-sessions {
+        width: 95%;
+        margin-bottom: 60px;
+        margin-top: 50px;
+        color: #fff;
+    }
+
+    .icon-svg-container > img {
+        width: 50%;
+    }
+
+    .session-card {
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .container-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 10px;
+    }
+
+    .info-card {
+        display: block;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        color: #fff;
+        margin: 10%;
+        height: auto;
+    }
+
+    .text-info-card {
+        font-size: 11px;
+    }
+
+    .info-card-end {
+        width: 25%;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        color: #fff;
+        margin: auto;
+    }
+
+    .collapsible {
+        color: #fff;
+        width: 95%;
+        border: none;
+        border-color: transparent;
+        margin: auto;
+        text-align: left;
+    }
+
+    .collapsible-header > img {
+        width: 50px;
+    }
+
+    .collapsible-header > p {
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    .subjects-btn {
+        width: 20%;
+        margin-bottom: 50px;
+    }
+
+    .subjects-section {
+        margin-top: 80px;
+    }
+
+    .card {
+        box-shadow: none;
+        margin-top: 60px;
+        width: 90%;
+        background-color: transparent;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    .card-stacked > p {
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-left: 23px;
+        text-align: left;
+        font-family: 'SF Pro Display';
+    }
+
+    .card-stacked > .card-content {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .card-image {
+        margin-top: 21px;
+        margin-right: 20px;
+    }
+
+    .section-learn > .eluney-img {
+        width: 20%;
+        margin-bottom: 25px;
+    }
+
+    .title-about {
+        margin: 0px;
+        color: #24303d;
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    .about {
+        background-color: #fff;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+    
+    .contact-title {
+        color: #fff;
+        margin: 6px;
+        font-size: 38px;
+        padding: 0px;
+    }
+
+    .about > img {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .radio-container > .radio-buttons {
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+    .radio-container {
+        margin-top: 0px;
+    }
+
+    .container-inputs > div, .container-submit > button {
+        margin-left: 20px;
+    }
+
+    .logo-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 1em;
+    }
+}

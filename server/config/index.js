@@ -1,0 +1,9 @@
+process.env.PORT = process.env.PORT || '8080';
+process.env.MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/cubo-db';
+process.env.SUBJECT_EMAIL = process.env.SUBJECT_EMAIL || 'Solicitud Demo Cubo';
+process.env.NAME_TRANSPORTER = process.env.NAME_TRANSPORTER || 'Equipo de Solicitudes Demo Cubo';
+process.env.HOST_TRANSPORTER = process.env.HOST_TRANSPORTER || '';
+process.env.PORT_TRANSPORTER = process.env.PORT_TRANSPORTER || '';
+process.env.SECURE_TRANSPORTER = process.env.SECURE_TRANSPORTER || '';
+process.env.USER_TRANSPORTER = process.env.USER_TRANSPORTER || '';
+process.env.PASS_TRANSPORTER = process.env.PASS_TRANSPORTER || '';
