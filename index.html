@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Form</title>
+</head>
+<body>
+    <form>
+        <div class="row">
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="Directivo" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Directivo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="Estudiante">
+                <label class="form-check-label" for="exampleRadios2">
+                  Estudiante
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" name="exampleRadios" type="radio" id="radio3" value="Profesor">
+                <label class="form-check-label" for="exampleRadios3">
+                  Profesor
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" name="exampleRadios" type="radio" id="radio4" value="Apoderado">
+                <label class="form-check-label" for="exampleRadios3">
+                  Apoderado
+                </label>
+              </div>
+
+          <div class="col">
+            <input type="text" id="name" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col">
+            <input type="text" id="establishment" class="form-control" placeholder="Establecimiento">
+          </div>
+          <div class="col">
+            <input type="email" id="email" class="form-control" placeholder="email">
+          </div>
+          <div class="col">
+            <input type="text" id="phone" class="form-control" placeholder="Telefono">
+          </div>
+          <div class="col">
+            <input type="text" id="comment" class="form-control" placeholder="Comentario">
+          </div>
+        </div>
+      </form>
+      <button onclick="eaea();">Enviar</button>
+    <script>
+        const eaea = () => {
+
+        const url = 'https://cubo-api-ciaf.herokuapp.com/send-email';
+
+        let role = '';
+
+        if(document.querySelector('#radio1').checked){
+            role = 'Directivo';
+        } else if(document.querySelector('#radio2').checked){
+            role = 'Estudiante';
+        } else if(document.querySelector('#radio3').checked){
+            role = 'Profesor'
+        } else {
+            role = 'Apoderado'
+        }
+
+        const name = document.querySelector('#name').value;
+        const phone = document.querySelector('#phone').value;
+        const comment = document.querySelector('#comment').value;
+        const establishment = document.querySelector('#establishment').value;
+        const email = document.querySelector('#email').value;
+
+        const data = {
+                role,
+                name,
+                establishment,
+                email,
+                phone,
+                comment
+            }
+
+        const myInit = { 
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
+            fetch(url, myInit)
+            .then(response => response.json())
+            .then(data => console.log(data));
+        }
+    </script>
+</body>
+</html>
