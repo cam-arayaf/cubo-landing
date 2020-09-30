@@ -1,0 +1,88 @@
+body {
+    padding-top: 70px;
+}
+
+.list-links {
+    position: fixed;
+    top: 0;
+}
+
+.list-links > .list-inline {
+    margin-left: 30em;
+}
+
+.apply-demo {
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    line-height: 0.7;
+    
+} 
+
+@media (max-width: 480px){
+    /* For smartphones: */
+    body {
+        text-align: center;
+    }
+
+    .nav-wraper > .brand-logo{
+        display: none;
+    }
+
+    .apply-demo {
+        display: inline-block;
+        border-radius: 50px;
+        border: none;
+        padding:10px;
+        background-color: rgba(30, 143, 255, 0.74);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 0.8;
+    }
+
+    .nav-wraper > .list-inline > .lt000 > .a-lt000{
+        margin: 0px;
+        font-size: 12.5px;
+        color: rgb(0, 67, 134);
+    }
+
+    .list-links {
+        background-color:#fff;
+    }
+
+    .list-links > .list-inline {
+        margin: 0px;
+    }
+
+    .first-title > .text-learning{
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+    .first-title {
+        margin-top: 20px;
+    }
+
+    .first-title > .btn-discover {
+        border-radius: 50px;
+        border: none;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: #fff;
+        padding: 10px;
+        background-color: rgba(30, 143, 255, 0.74);
+    }
+
+    .nav-wrapper > .list-inline {
+        background-color: red;
+        text-align: center;
+    }
+
+    .session-card {
+        border: 1px #000 solid;
+        display: inline-block;
+    }
+}
