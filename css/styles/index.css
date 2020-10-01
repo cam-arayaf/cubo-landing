@@ -24,6 +24,7 @@ body {
     /* For smartphones: */
     body {
         text-align: center;
+        
     }
 
     .nav-wraper > .brand-logo{
@@ -52,10 +53,6 @@ body {
         background-color:#fff;
     }
 
-    .list-links > .list-inline {
-        margin: 0px;
-    }
-
     .first-title > .text-learning{
         font-size: 35px;
         margin-top: 0px;
@@ -82,7 +79,59 @@ body {
     }
 
     .session-card {
-        border: 1px #000 solid;
         display: inline-block;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .sess-spam {
+        font-size: 11px;
+        margin: 0px;
+    }
+
+    .sess-type {
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    .sess-text-card {
+        margin-top: 20px;
+        margin: 10px;
+    }
+
+    .section-welcome_cubo > .section-title {
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+    .text-discover {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        margin-top: 50px;
+    }
+
+    .info-card {
+        padding: 0px;
+        border: 1px #000 solid;
+        border-radius: 20px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .info-title {
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .text-info-card {
+        margin-top: 20px;
+        margin: 10px;
     }
 }
