@@ -17,11 +17,11 @@ h1 {
     font-family: 'SF Pro Display';
 }
 
-p, span {
+p, span, small {
     font-family: 'SF Pro Display Regular';
 }
 
-a, label {
+a, label, strong {
     font-family: 'SF Pro Display Semibold';
 }
 
@@ -32,10 +32,6 @@ body {
 .list-links {
     position: fixed;
     top: 0;
-}
-
-.list-links > .list-inline {
-    margin-left: 30em;
 }
 
 .apply-demo {
@@ -54,8 +50,10 @@ body {
         font-size: 12px;
     }
 
-    .nav-wraper > .brand-logo{
-        display: none;
+    .nav-wraper > .brand-logo > img{
+        width: 23px;
+        height: 23px;
+        margin-top: 13px;
     }
 
     .apply-demo {
@@ -71,10 +69,20 @@ body {
     }
 
     .nav-wraper > .list-inline > .lt000 > .a-lt000{
-        margin: 0px;
+        padding: 3px;
+        padding-bottom: 0px;
+        padding-top: 0px;
         font-size: 12.5px;
         color: rgb(0, 67, 134);
-        font-family: 'SF Pro Display Semibold';
+    }
+
+    .nav-wraper > .list-inline > .lt000 {
+        margin-left: 13px;
+        padding: 0px;
+    }
+
+    .list-inline {
+        margin-left: 25px;
     }
 
     .list-links {
@@ -94,7 +102,7 @@ body {
     .discover {
         border-radius: 50px;
         border: none;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         font-size: 12px;
         font-weight: 500;
         line-height: 0.8;
@@ -109,8 +117,9 @@ body {
         height: auto;
     }
 
-    .sess-spam {
-        font-size: 11px;
+    .sess-span {
+        font-family: 'SF Pro Display Semibold';
+        font-size: 10px;
         margin: 0px;
     }
 
@@ -118,11 +127,13 @@ body {
         font-weight: 700;
         font-size: 15px;
         margin: 0px;
+        font-family: 'SF Pro Display';
     }
 
     .sess-text-card {
         margin-top: 20px;
         margin: 10px;
+        font-size: 13px;
     }
 
     .section-welcome_cubo > .section-title {
@@ -131,11 +142,12 @@ body {
     }
 
     .text-discover {
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 500;
         line-height: 0.8;
         color: rgba(30, 143, 255, 0.74);
         margin-top: 50px;
+        font-family: 'SF Pro Display';
     }
 
     .info-card {
@@ -158,6 +170,7 @@ body {
     .text-info-card {
         margin-top: 20px;
         margin: 10px;
+        font-size: 12.2px;
     }
 
     .btn-flat {
@@ -205,7 +218,11 @@ body {
     }
 
     .section-learn > .small-text {
-        color: midnightblue;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 11px;
+        font-family: 'SF Pro Display';
     }
 
     .learn-title {
@@ -231,5 +248,38 @@ body {
     input[type="radio"]:checked + label {
         background-color:#bfb;
         border-color: #4c4;
+    }
+
+    .card {
+        box-shadow: none;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card:hover {
+        border: 2px #000 solid;
+        border-radius: 8px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-stacked > p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-right: 50px;
+        font-family: 'SF Pro Display';
+    }
+
+    .card-stacked .card-content {
+        padding: 0px;
+        margin: 17px;
+        text-align: left;
+    }
+
+    .card-image {
+        margin-top: 95px;
+        margin-left: 15px;
     }
 }
