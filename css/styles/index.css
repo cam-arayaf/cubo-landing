@@ -24,7 +24,6 @@ body {
     /* For smartphones: */
     body {
         text-align: center;
-        
     }
 
     .nav-wraper > .brand-logo{
@@ -51,6 +50,7 @@ body {
 
     .list-links {
         background-color:#fff;
+        z-index: 2;
     }
 
     .first-title > .text-learning{
@@ -71,11 +71,6 @@ body {
         color: #fff;
         padding: 10px;
         background-color: rgba(30, 143, 255, 0.74);
-    }
-
-    .nav-wrapper > .list-inline {
-        background-color: red;
-        text-align: center;
     }
 
     .session-card {
@@ -140,7 +135,7 @@ body {
     }
 
     .subjects-section {
-        padding-top: 25px;
+        margin-top: 30px;
     }
 
     .subjects-btn {
@@ -149,6 +144,7 @@ body {
         padding: 8px;
         background-color: transparent !important;
         border: 2px rgb(0, 67, 134) solid;
+        width: 80%;
     }
 
     .subjects-btn:disabled {
@@ -158,6 +154,28 @@ body {
 
     .subjects-btn:hover {
         background-color: transparent !important;
+    }
+
+    .carousel .carousel-item {
+        visibility: visible;
+    }
+
+    .carousel {
+        margin-top: 20px;
+    }
+
+    .subjects-btn small {
+        font-size: 9px;
+        font-weight: 700;
+    }
+
+    .section-learn {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .small-text {
+        color: midnightblue;
     }
 
 }
