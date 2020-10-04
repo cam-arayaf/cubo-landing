@@ -3,8 +3,26 @@
     src: url('../../assets/fonts/SFProDisplay-Black.ttf');
 }
 
-* {
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('../../assets/fonts/SFProDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Semibold';
+    src: url('../../assets/fonts/SFProDisplay-Semibold.ttf');
+}
+
+h1 {
     font-family: 'SF Pro Display';
+}
+
+p, span {
+    font-family: 'SF Pro Display Regular';
+}
+
+a, label {
+    font-family: 'SF Pro Display Semibold';
 }
 
 body {
