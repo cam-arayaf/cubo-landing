@@ -62,7 +62,7 @@ body {
         margin-top: 20px;
     }
 
-    .first-title > .btn-discover {
+    .discover {
         border-radius: 50px;
         border: none;
         font-size: 12px;
@@ -134,4 +134,30 @@ body {
         margin-top: 20px;
         margin: 10px;
     }
+
+    .btn-flat {
+        text-transform: capitalize;
+    }
+
+    .subjects-section {
+        padding-top: 25px;
+    }
+
+    .subjects-btn {
+        font-weight: 700;
+        border-radius: 20px;
+        padding: 8px;
+        background-color: transparent !important;
+        border: 2px rgb(0, 67, 134) solid;
+    }
+
+    .subjects-btn:disabled {
+        border: none;
+        background-color: transparent !important;
+    }
+
+    .subjects-btn:hover {
+        background-color: transparent !important;
+    }
+
 }
