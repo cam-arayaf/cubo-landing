@@ -51,6 +51,7 @@ body {
 @media (max-width: 480px){
     body {
         text-align: center;
+        font-size: 12px;
     }
 
     .nav-wraper > .brand-logo{
@@ -73,6 +74,7 @@ body {
         margin: 0px;
         font-size: 12.5px;
         color: rgb(0, 67, 134);
+        font-family: 'SF Pro Display Semibold';
     }
 
     .list-links {
@@ -81,7 +83,7 @@ body {
     }
 
     .first-title > .text-learning{
-        font-size: 35px;
+        font-size: 45px;
         margin-top: 0px;
     }
 
@@ -92,6 +94,7 @@ body {
     .discover {
         border-radius: 50px;
         border: none;
+        margin-bottom: 0px;
         font-size: 12px;
         font-weight: 500;
         line-height: 0.8;
@@ -197,13 +200,19 @@ body {
     }
 
     .section-learn {
-        margin: 0px;
+        margin-top: 30px;
         padding: 0px;
     }
 
-    .small-text {
+    .section-learn > .small-text {
         color: midnightblue;
     }
+
+    .learn-title {
+        font-size: 37px;
+        margin-top: 0px;
+    }
+
     .radio-container {
         display: flex;
     }
