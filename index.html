@@ -151,31 +151,26 @@
         </div>
 
     <form>
-        <div class="row">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="Directivo" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Directivo
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="Estudiante">
-                <label class="form-check-label" for="exampleRadios2">
-                  Estudiante
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" name="exampleRadios" type="radio" id="radio3" value="Profesor">
-                <label class="form-check-label" for="exampleRadios3">
-                  Profesor
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" name="exampleRadios" type="radio" id="radio4" value="Apoderado">
-                <label class="form-check-label" for="exampleRadios3">
-                  Apoderado
-                </label>
-              </div>
+      <div>
+        <ul class="radio-container">
+          <li class="radio-buttons">
+              <input class="hidden-radio" name="sessions" type="radio" id="radio1" value="Directivo" checked />
+              <label for="radio1">Directivo</span>
+          </li>
+          <li class="radio-buttons">
+              <input class="hidden-radio" name="sessions" type="radio" id="radio2" value="Estudiante"/>
+              <label for="radio2">Estudiante</span>
+          </li>
+          <li class="radio-buttons">
+              <input class="hidden-radio" name="sessions" type="radio" id="radio3" value="Profesor"/>
+              <label for="radio3">Profesor</span>
+          </li>
+          <li class="radio-buttons">
+              <input class="hidden-radio" name="sessions" type="radio" id="radio4" value="Apoderado"/>
+              <label for="radio4">Apoderado</span>
+          </li>
+        </ul>
+      </div>
           <div class="col">
             <input type="text" id="name" class="form-control" placeholder="Nombre">
           </div>
