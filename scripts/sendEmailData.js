@@ -24,9 +24,12 @@ const sendEmail = () => {
     const myInit = { 
         method: 'POST',
         body: JSON.stringify(data),
+        headers:{
+            'Content-Type': 'application/json'
+        }
     }
 
     fetch(url, myInit)
-        .then(response => response.json())
-        .then(data => console.log(data));
+    .then(response => console.log(response.json()))
+    .then(data => console.log(data));
 }

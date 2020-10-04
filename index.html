@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/styles/materialize.min.css">
     <link rel="stylesheet" href="css/styles/index.css">
-    <title>Fetch Form</title>
+    <title>Cubo</title>
 </head>
 <body>
     <header class="header-module">
@@ -31,22 +30,28 @@
       </nav>
       <button class="apply-demo">SOLICITAR DEMO</button>
     </header>
-
     <div class="first-title">
-      <a href="#">Aqui va un Logo</a>
+      <div class="logo-container">
+        <img src="./assets/Images/svg/cubo-logo-azul.svg">
+      </div>
       <h1 class="text-learning">La forma entretenida de aprender</h1>
       <button class="btn-discover">DESCUBRE CUBO</button>
     </div>
-
       <div class="session-card">
+        <div class="icon-svg-container">
+          <img src="./assets/Images/svg/iconos/icono-estudiantes.svg">
+        </div>
         <spam class="sess-spam">SESIÓN</spam>
-        <p class="sess-type">Estudiante</p>
+        <p class="sess-type">Estudiantes</p>
         <p class="sess-text-card">
           El proceso de enseñanza y aprendizaje es personalizado y supervisado en tiempo real
         </p>
       </div>
       
       <div class="session-card">
+        <div class="icon-svg-container">
+          <img src="./assets/Images/svg/iconos/icono-docentes.svg">
+        </div>
         <spam class="sess-spam">SESIÓN</spam>
         <p class="sess-type">Docentes</p>
         <p class="sess-text-card">
@@ -55,6 +60,9 @@
       </div>
 
       <div class="session-card">
+        <div class="icon-svg-container">
+          <img src="./assets/Images/svg/iconos/icono-apoderados.svg">
+        </div>
         <spam class="sess-spam">SESIÓN</spam>
         <p class="sess-type">Apoderados</p>
         <p class="sess-text-card">
@@ -63,17 +71,18 @@
       </div>
 
       <div class="session-card">
+        <div class="icon-svg-container">
+          <img src="./assets/Images/svg/iconos/icono-directivos.svg">
+        </div>
         <spam class="sess-spam">SESIÓN</spam>
         <p class="sess-type">Directivos</p>
         <p class="sess-text-card">
           Obtén acceso directo a información de usuarios. Administra y supervisa de manera simple e instantánea la labor educativa
         </p>
       </div>
-
       <div class="section-welcome_cubo">
         <p class="text-discover">DESCUBRE CUBO</p>
         <h1 class="section-title">Hola, bienvenidos a Cubo</h1>
-
         <div class="info-card">
           <p class="info-title">¿Qué es Cubo?</p>
           <p class="text-info-card">Es una plataforma elearning, pero trabajamos diariamente por ir más allá, 
@@ -81,7 +90,6 @@
             docentes, apoderados y directivos.
           </p>
         </div>
-
         <div class="info-card">
           <p class="info-title">Asignaturas</p>
           <p class="text-info-card">
@@ -90,7 +98,6 @@
             dispondremos de los siguientes cursos: <strong>Lenguaje y Comunicación, Inglés y Ciencias.</strong>
           </p>
         </div>
-
         <div class="info-card">
           <p class="info-title">Aprende jugando</p>
           <p class="text-info-card">
@@ -98,7 +105,6 @@
             en un viaje por la galaxia, aprender matemáticas nunca fue tan fácil y entretenido.
           </p>
         </div>
-
         <div class="info-card">
           <p class="info-title">Gana puntos</p>
           <p class="text-info-card">
@@ -106,7 +112,6 @@
             tu nivel académico e interactua en el foro de ayuda.
           </p>
         </div>
-
         <div class="info-card">
           <p class="info-title">LMS 24/7</p>
           <p class="text-info-card">
@@ -114,9 +119,6 @@
             monitoreamos la estructura y data diariamente para entregar óptimo servicio y experiencia a nivel educativo.
           </p>
         </div>
-
-
-        
     <form>
         <div class="row">
             <div class="form-check">
@@ -161,5 +163,6 @@
         </div>
       </form>
       <button onclick="sendEmail();">Enviar</button>
+      <script src="./scripts/sendEmailData.js"></script>
 </body>
 </html>
