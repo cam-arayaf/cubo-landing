@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
     <link rel="stylesheet" href="css/styles/materialize.min.css">
     <link rel="stylesheet" href="css/styles/index.css">
     <title>Cubo</title>
@@ -150,6 +154,7 @@
           <p class="small-text">CARACTERÍSTICAS</p>
           <h1 class="learn-title">Todo lo que necesitas para Aprender, Enseñar y Administrar</h1>
           <img src="./assets/Images/png/eluney-2.png" width="30%" height="20%">
+
             <div class="card horizontal">
               <div class="card-image">
                 <img src="./assets/Images/svg/iconos/icono-calendario.svg">
@@ -216,8 +221,23 @@
                 </div>
               </div>
             </div>
-            
         </div>
+        <!-- SECCION BENEFICIOS DE CUBO-->
+        </script>
+        <ul class="collapsible collapsible-accordion">
+          <li class="active">
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
     <!-- FORM CON RADIO BUTTONS -->
     <form>
         <div>
@@ -260,4 +280,6 @@
       <button onclick="sendEmail();">Enviar</button>
       <script src="./scripts/sendEmailData.js"></script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </html>
