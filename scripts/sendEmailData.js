@@ -1,7 +1,13 @@
 
 const sendEmail = () => {
+    console.log('Remember to refactorize this');
+    // @TODO, Refactorize this section
+    /*
+    
     const url = 'https://cubo-api-ciaf.herokuapp.com/send-email';
     let role = '';
+
+    const radios = ['#radio1', '#radio2', '#radio3', '#radio4'];
 
     if(document.querySelector('#radio1').checked){
         role = 'Directivo';
@@ -32,4 +38,5 @@ const sendEmail = () => {
     fetch(url, myInit)
     .then(response => console.log(response.json()))
     .then(data => console.log(data));
+    */
 }

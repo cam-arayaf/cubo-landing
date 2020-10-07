@@ -32,6 +32,10 @@ body {
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         padding-top: 70px;
         text-align: center;
@@ -400,6 +404,14 @@ body {
         margin-bottom: 25px;
     }
 
+    .collapsible-header {
+        background: transparent;
+    }
+
+    .benefits-ulist, .collapsible-header {
+        color: #fff;
+    }
+
     .btn-send-email {
         font-family: 'SF Pro Display Semibold';
         margin-top: 10px;
@@ -419,7 +431,24 @@ body {
 }
 
 /* ------------------- Desktop ------------------- */
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .collapsible-header {
+        color: #fff;
+        background: transparent;
+    }
+
+    ul:not(.browser-default)>li {
+        list-style-type: disc !important;
+    }
+
+    .benefits-ulist {
+        color: #fff;
+    }
+
     textarea {
         height: 5rem !important;
     }
@@ -665,6 +694,10 @@ body {
     .radio-buttons {
         padding: 1em;
         margin: 0px auto;
+    }
+
+    .container-radio-buttons .radio-buttons, .list-inline .lt000 {
+        list-style-type: none !important;
     }
     
     input[type="radio"] {
