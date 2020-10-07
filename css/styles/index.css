@@ -30,7 +30,7 @@ body {
     text-align: center;
 }
 
-/* ------------------- For smartphones ------------------- */
+/* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
     body {
         padding-top: 70px;
@@ -372,8 +372,9 @@ body {
 
     .radio-container > .radio-buttons:hover {
         box-shadow: 2px 1px  1px rgb(0, 174, 255);
-        transition: 0.3s;
+        transition: 0.2s;
         transform: scale(0.9);
+        cursor: pointer;
     }
 
     .radio-container {
@@ -417,7 +418,12 @@ body {
     }
 }
 
+/* ------------------- Desktop ------------------- */
 @media (min-width: 1024px) { 
+    textarea {
+        height: 5rem !important;
+    }
+
     body {
         padding-top: 70px;
     }
@@ -776,8 +782,13 @@ body {
     
     .radio-container > .radio-buttons:hover {
         box-shadow: 2px 1px  1px rgb(0, 174, 255);
-        transition: 0.3s;
+        transition: 0.2s;
         transform: scale(0.9);
+        cursor: pointer;
+    }
+
+    .radio-buttons > .radio-label:hover {
+        cursor: pointer;
     }
     
     .radio-container {

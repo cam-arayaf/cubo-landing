@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <div id='stars'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
-    <link rel="stylesheet" href="css/styles/materialize.min.css">
-    <link rel="stylesheet" href="css/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="css/styles/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles/index.css">
     <title>Cubo</title>
 </head>
 <body>
@@ -226,15 +221,15 @@
         <!-- SECCION BENEFICIOS DE CUBO-->
         <ul class="collapsible">
           <li>
-            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-header">First</div>
             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
           </li>
           <li>
-            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-header">Second</div>
             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
           </li>
           <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-header">Third</div>
             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
           </li>
         </ul>
@@ -258,19 +253,19 @@
           <ul class="radio-container">
             <li class="radio-buttons">
                 <input class="hidden-radio" name="sessions" type="radio" id="radio1" value="Directivo" checked />
-                <label for="radio1">Directivo</span>
+                <label class="radio-label" for="radio1">Directivo</span>
             </li>
             <li class="radio-buttons">
                 <input class="hidden-radio" name="sessions" type="radio" id="radio2" value="Estudiante"/>
-                <label for="radio2">Estudiante</span>
+                <label class="radio-label" for="radio2">Estudiante</span>
             </li>
             <li class="radio-buttons">
                 <input class="hidden-radio" name="sessions" type="radio" id="radio3" value="Profesor"/>
-                <label for="radio3">Profesor</span>
+                <label class="radio-label" for="radio3">Profesor</span>
             </li>
             <li class="radio-buttons">
                 <input class="hidden-radio" name="sessions" type="radio" id="radio4" value="Apoderado"/>
-                <label for="radio4">Apoderado</span>
+                <label class="radio-label" for="radio4">Apoderado</span>
             </li>
           </ul>
         </div>
@@ -287,12 +282,14 @@
             <input type="text" id="phone" class="form-control" placeholder="Teléfono">
           </div>
           <div class="col">
-            <input type="text" id="comment" class="form-control" placeholder="Dejanos tu comentario">
+            <textarea rows="10" cols="20" id="comment" class="form-control" placeholder="Dejanos tu comentario" minlength="6" maxlength="250">some text here</textarea>
           </div>
         </div>
       </form>
       <button class="btn-send-email" onclick="sendEmail();">Enviar</button>
     </div>
-      <script src="./scripts/sendEmailData.js"></script>
+    <script src="./scripts/sendEmailData.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./collapsible.js"></script>
 </body>
 </html>
