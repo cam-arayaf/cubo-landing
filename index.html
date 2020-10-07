@@ -223,9 +223,8 @@
             </div>
         </div>
         <!-- SECCION BENEFICIOS DE CUBO-->
-        </script>
-        <ul class="collapsible collapsible-accordion">
-          <li class="active">
+        <ul class="collapsible">
+          <li>
             <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
           </li>
@@ -238,9 +237,23 @@
             <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
           </li>
         </ul>
+        <!-- SECCION TEAM CUBO-->
+        <div class="about">
+          <img src="./assets/Images/svg/cubo-logo-azul.svg" alt="logo">
+          <p class="small-text">NOSOTROS</p>
+          <p class="title-about">Team Cubo</p>
+          <p class="about-text">
+            Somos un sistema de gestión de aprendizaje vía servicio web, nuestro objetivo principal es hacer 
+            mas sencillo la gestión de las actividades o contenidos educativos
+          </p>
+          <button class="seemore-btn">Ver más</button>
+        </div>
     <!-- FORM CON RADIO BUTTONS -->
-    <form>
-        <div>
+    <div class="contact-section">
+      <p class="contact-text-small">CONTÁCTANOS</p>
+      <p class="contact-title">Solicitar una demo de Cubo</p>
+      <form>
+        <div class="container-radio-buttons">
           <ul class="radio-container">
             <li class="radio-buttons">
                 <input class="hidden-radio" name="sessions" type="radio" id="radio1" value="Directivo" checked />
@@ -261,25 +274,24 @@
           </ul>
         </div>
           <div class="col">
-            <input type="text" id="name" class="form-control" placeholder="Nombre">
+            <input type="text" id="name" class="form-control" placeholder="Nombre y Apellido">
           </div>
           <div class="col">
-            <input type="text" id="establishment" class="form-control" placeholder="Establecimiento">
+            <input type="text" id="establishment" class="form-control" placeholder="Nombre del establecimiento">
           </div>
           <div class="col">
-            <input type="email" id="email" class="form-control" placeholder="email">
+            <input type="email" id="email" class="form-control" placeholder="Email">
           </div>
           <div class="col">
-            <input type="text" id="phone" class="form-control" placeholder="Telefono">
+            <input type="text" id="phone" class="form-control" placeholder="Teléfono">
           </div>
           <div class="col">
-            <input type="text" id="comment" class="form-control" placeholder="Comentario">
+            <input type="text" id="comment" class="form-control" placeholder="Dejanos tu comentario">
           </div>
         </div>
       </form>
-      <button onclick="sendEmail();">Enviar</button>
+      <button class="btn-send-email" onclick="sendEmail();">Enviar</button>
+    </div>
       <script src="./scripts/sendEmailData.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 </html>
