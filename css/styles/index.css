@@ -26,22 +26,9 @@ a, label, strong {
 }
 
 body {
-    padding-top: 70px;
+    background: radial-gradient(ellipse at top, #24303d 0%, #090a0f 100%);
+    text-align: center;
 }
-
-.list-links {
-    position: fixed;
-    top: 0;
-}
-
-.apply-demo {
-    display: inline-block;
-    border-radius: 50px;
-    border: none;
-    padding: 10px;
-    line-height: 0.7;
-    
-} 
 
 /* ------------------- For smartphones ------------------- */
 @media (max-width: 480px){
@@ -67,6 +54,10 @@ body {
     }
 
     .apply-demo {
+        display: none;
+    }
+
+    .apply-demo2 {
         font-family: 'SF Pro Display Semibold';
         display: inline-block;
         border-radius: 50px;
@@ -107,7 +98,7 @@ body {
     .first-title > .text-learning{
         font-size: 45px;
         margin-top: 14px;
-        color: #fff;
+    color: #fff;
     }
 
     .first-title {
@@ -240,6 +231,11 @@ body {
     .section-learn {
         margin-top: 30px;
         padding: 0px;
+        width: 100%;
+    }
+
+    .section-learn > .card {
+        display: block;
     }
 
     .section-learn > .small-text {
@@ -420,6 +416,409 @@ body {
         line-height: 0.8;
         margin-bottom: 20px;
     }
+}
 
+@media (min-width: 1024px) { 
+    body {
+        padding-top: 70px;
+    }
+
+    .list-links {
+        position: fixed;
+        top: 0;
+    }
     
+    .small-text {
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 15px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .section-learn > .small-text {
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 11px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .nav-wraper > .brand-logo{
+        margin-top: 12px;
+        display: flex;
+        margin-left: 120px;
+    }
+    
+    .apply-demo {
+        letter-spacing: 1px;
+        font-family: 'SF Pro Display Semibold';
+        display: inline-block;
+        border-radius: 50px;
+        border: none;
+        margin-top: 7px;
+        margin-bottom: 5px;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+        color: #fff;
+        font-size: 12px;
+        line-height: 0.8;
+        cursor: pointer;
+    }
+    
+    .apply-demo2 {
+        display: none;
+    }
+    
+    .nav-wraper > .list-inline > .lt000 > .a-lt000{
+        padding: 3px;
+        margin-left: 40px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-size: 14px;
+        color: rgb(12, 46, 80);
+        font-family: 'SF Pro Display Regular';
+        font-weight: 600;
+    }
+    
+    .nav-wraper > .list-inline > .lt000 {
+        padding: 0px;
+    }
+    
+    .list-inline {
+        margin-left: 180px;
+    }
+    
+    .list-links {
+        background-color:#fff;
+        z-index: 2;
+    }
+    
+    .first-title > .text-learning{
+        letter-spacing: 1px;
+        font-size: 55px;
+        margin-left: 380px;
+        margin-right: 200px;
+        margin-top: 40px;
+        color: #fff;
+        width: 45%;
+    }
+    
+    .first-title {
+        margin-top: 40px;
+    }
+    
+    .discover {
+        letter-spacing: 1px;
+        font-family: 'SF Pro Display Semibold';
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 50px;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        color: #fff;
+        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+        cursor: pointer;
+    }
+    
+    .session-card {
+        margin-top: 20px;
+        height: auto;
+        color: #fff;
+    }
+    
+    .sess-span {
+        font-family: 'SF Pro Display Semibold';
+        font-size: 10px;
+        margin: 0px;
+    }
+    
+    .sess-type {
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .sess-text-card {
+        margin-top: 20px;
+        margin: 10px;
+        font-size: 13px;
+        color: #f2f2f2;
+    }
+    
+    .section-welcome_cubo > .section-title {
+        font-size: 35px;
+        margin-top: 0px;
+        color: #fff;
+    }
+    
+    .text-discover {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        margin-top: 50px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .info-card {
+        border-radius: 20px;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        color: #fff;
+    }
+    
+    .info-title {
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    
+    .text-info-card {
+        margin-top: 20px;
+        margin: 20px;
+        font-size: 12.2px;
+        color: #f2f2f2;
+    }
+    
+    .subjects-section {
+        margin-top: 30px;
+        color: #fff;
+    }
+    
+    .subjects-btn {
+        font-weight: 700;
+        border-radius: 20px;
+        padding: 8px;
+        background-color: transparent !important;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        width: 80%;
+        color: #fff;
+    }
+    
+    .subjects-btn > small {
+        color: #f2f2f2;
+    }
+    
+    .subjects-btn:disabled {
+        border: none;
+        background-color: transparent !important;
+    }
+    
+    .subjects-btn:hover {
+        background-color: transparent !important;
+    }
+    
+    .carousel .carousel-item {
+        visibility: visible;
+    }
+    
+    .carousel {
+        margin-top: 20px;
+    }
+    
+    .subjects-btn small {
+        font-size: 9px;
+        font-weight: 700;
+    }
+    
+    .section-learn {
+        margin-top: 30px;
+        padding: 0px;
+    }
+    
+    .section-learn > .small-text {
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 11px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .learn-title {
+        font-size: 37px;
+        margin-top: 0px;
+    }
+    
+    .radio-container {
+        display: flex;
+    }
+    
+    .radio-buttons {
+        padding: 1em;
+        margin: 0px auto;
+    }
+    
+    input[type="radio"] {
+        opacity: 0;
+        position: fixed;
+        width: 0;
+    }
+    
+    input[type="radio"]:checked + label{
+        color:  rgb(0, 174, 255)
+    }
+    
+    .card {
+        width: 30%;
+        box-shadow: none;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: transparent;
+    }
+    
+    .card:hover {
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    }
+    
+    .card-stacked > p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-right: 184px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .card-stacked .card-content {
+        width: 90%;
+        text-align: left;
+        color: #f2f2f2;
+    }
+    
+    .card-image {
+        margin-top: 12px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    
+    .collapsible {
+        color: #000;
+    }
+    
+    .about {
+        background-color: #fff;
+        margin-top: 25px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .title-about {
+        margin: 0px;
+        color: #24303d;
+        font-size: 55px;
+        padding: 0px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .about-text {
+        color: #24303d;
+        width: 30%;
+        margin-left: 471px;
+        font-size: 13px;
+    }
+    
+    .seemore-btn {
+        font-family: 'SF Pro Display Semibold';
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 50px;
+        border: none;
+        padding:10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 0.8;
+        cursor: pointer;
+    }
+    
+    .contact-text-small {
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 15px;
+        font-family: 'SF Pro Display';
+        margin-top: 70px;
+    }
+    
+    .contact-title {
+        margin: 0px;
+        font-size: 30px;
+        padding: 0px;
+        font-family: 'SF Pro Display';
+    }
+    
+    .radio-container > .radio-buttons{
+        background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
+        border-radius: 20px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #fff;
+    }
+    
+    .radio-container > .radio-buttons:hover {
+        box-shadow: 2px 1px  1px rgb(0, 174, 255);
+        transition: 0.3s;
+        transform: scale(0.9);
+    }
+    
+    .radio-container {
+        margin-top: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .radio-container > .radio-buttons > label {
+        color: #fff;
+        font-family: 'SF Pro Display Semibold';
+    }
+    
+    form > .col > .form-control {
+        font-family: 'SF Pro Display Regular';
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        width: 65%;
+    }
+    
+    form > .container-radio-buttons {
+        margin-bottom: 25px;
+    }
+    
+    .btn-send-email {
+        font-family: 'SF Pro Display Semibold';
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 50px;
+        border: none;
+        padding:10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 0.8;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
 }
