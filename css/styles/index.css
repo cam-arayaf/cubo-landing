@@ -33,6 +33,7 @@ body {
 /* ------------------- For smartphones ------------------- */
 @media (max-width: 480px){
     body {
+        padding-top: 70px;
         text-align: center;
         font-size: 12px;
         background: radial-gradient(ellipse at top, #24303d 0%, #090a0f 100%);
@@ -93,6 +94,8 @@ body {
     .list-links {
         background-color:#fff;
         z-index: 2;
+        top: 0px;
+        position: fixed;
     }
 
     .first-title > .text-learning{
@@ -232,10 +235,6 @@ body {
         margin-top: 30px;
         padding: 0px;
         width: 100%;
-    }
-
-    .section-learn > .card {
-        display: block;
     }
 
     .section-learn > .small-text {
