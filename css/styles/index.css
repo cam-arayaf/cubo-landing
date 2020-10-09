@@ -298,7 +298,8 @@ body {
         font-family: 'SF Pro Display';
     }
 
-    .card-stacked .card-content {
+    .card-stacked > .card-content {
+        word-break: break-all;
         padding: 0px;
         margin: 20px;
         text-align: left;
@@ -306,7 +307,7 @@ body {
     }
 
     .card-image {
-        margin-top: 95px;
+        margin-top: 65px;
         margin-left: 15px;
     }
 
@@ -406,28 +407,29 @@ body {
         margin-bottom: 25px;
     }
 
-    /* .collapsible-header {
+    .collapsible-header {
         background: transparent;
         height: 70px;
-        border-radius: 20px;
-    } */
+        border: 1px solid #ddd;
+        color: #fff;
+        background: transparent;
+        border-radius: 10px;
+        margin-top: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    } 
 
     .collapsible {
         margin-top: 40px;
-        border-radius: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border: none;
     }
 
-    .collapsible > .collapsible-container {
-        border-radius: 20px;
-    }
-
-    .benefits-ulist, .collapsible-header {
-        color: #fff;
-        background: transparent;
-        border-radius: 20px;
-        margin-top: 0px;
+    .benefits-ulist > li{
+        color: #cccc;
+        margin-top: 10px;
+        width: 100%;
     }
 
     .collapsible-header > img {
@@ -436,7 +438,31 @@ body {
     }
 
     .collapsible-body {
-        border-radius: 20px;
+        border: 1px solid #ddd;
+        border-top: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .collapsible-header > p {
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    .collapsible-header > .small {
+        font-family: 'SF Pro Display Regular';
+        font-weight: 100;
+        font-size: 9px;
+        color: #cccc;
+    }
+
+    .collapsible-header > .title {
+        font-family: 'SF Pro Display';
+    }
+
+    .collapsible-header > .grade {
+        font-family: 'SF Pro Display Semibold';
+        margin-top: 5px;
     }
 
     .btn-send-email {
@@ -582,7 +608,7 @@ body {
         border: none;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 15px;
+        font-size: 13px;
         color: #fff;
         background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
         cursor: pointer;
@@ -592,6 +618,13 @@ body {
         margin-top: 20px;
         height: auto;
         color: #fff;
+        width: 20%;
+        margin-left: 50px;
+    }
+
+    .container-sessions {
+        display: inline-flex;
+        margin-top: 50px;
     }
     
     .sess-span {
@@ -656,31 +689,40 @@ body {
     }
     
     .subjects-section {
-        margin-top: 30px;
+        margin-top: 100px;
         color: #fff;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .subjects-section > h1 {
+        font-size: 30px;
     }
     
     .subjects-btn {
         font-weight: 700;
-        border-radius: 20px;
         padding: 8px;
-        background-color: transparent !important;
+        background-color: transparent;
         border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        width: 80%;
+        width: 20%;
         color: #fff;
+        margin-top: 60px;
+        cursor: pointer;
     }
     
     .subjects-btn > small {
-        color: #f2f2f2;
+        font-size: 9px;
+        font-weight: 700;
+        color: #cccc;
     }
     
     .subjects-btn:disabled {
         border: none;
         background-color: transparent !important;
     }
-    
-    .subjects-btn:hover {
-        background-color: transparent !important;
+
+    .subjects-btn:focus {
+        background-color: rgba(218, 218, 218, 0.027);
     }
     
     .carousel .carousel-item {
@@ -691,14 +733,10 @@ body {
         margin-top: 20px;
     }
     
-    .subjects-btn small {
-        font-size: 9px;
-        font-weight: 700;
-    }
-    
     .section-learn {
-        margin-top: 30px;
+        margin-top: 130px;
         padding: 0px;
+        display: inline-block;
     }
     
     .section-learn > .small-text {
@@ -712,6 +750,8 @@ body {
     .learn-title {
         font-size: 37px;
         margin-top: 0px;
+        width: 35%;
+        margin-left: 29.5rem;
     }
     
     .radio-container {
@@ -738,48 +778,57 @@ body {
     }
     
     .card {
-        width: 30%;
         box-shadow: none;
-        margin-top: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
+        padding: 15px;
         background-color: transparent;
+        margin-left: 60px;
+    }
+
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        width: 80%;
+        margin-left: 20px;
     }
     
     .card:hover {
         border: 2px solid transparent;
         border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        padding-bottom: 0px;
     }
     
     .card-stacked > p {
         font-size: 15px;
-        margin-top: 10px;
+        text-align: left;
         margin-bottom: 0px;
-        margin-right: 184px;
+        margin-left: 24px;
         font-family: 'SF Pro Display';
     }
     
-    .card-stacked .card-content {
-        width: 90%;
-        text-align: left;
+    .card-stacked > .card-content {
+        word-break: break-all;
         color: #f2f2f2;
+        padding-top: 0px;
+    }
+
+    .card-content > p {
+        text-align: justify;
+        word-wrap: break-word;
     }
     
     .card-image {
-        margin-top: 12px;
+        margin-top: 20px;
         margin-left: 5px;
         margin-right: 10px;
     }
     
-    .collapsible {
-        color: #000;
-    }
-    
     .about {
         background-color: #fff;
-        margin-top: 25px;
+        margin-top: 70px;
         padding-top: 80px;
         padding-bottom: 80px;
+        width: 100%;
     }
     
     .title-about {
@@ -788,6 +837,11 @@ body {
         font-size: 55px;
         padding: 0px;
         font-family: 'SF Pro Display';
+    }
+
+    .about > img {
+        display: block;
+        margin-left: 90px;
     }
     
     .about-text {
@@ -819,7 +873,17 @@ body {
         font-weight: 500;
         line-height: 0.8;
         color: rgba(30, 143, 255, 0.74);
-        font-size: 15px;
+        font-size: 11px;
+        font-family: 'SF Pro Display';
+        margin-top: 70px;
+    }
+
+    .benefits-text-small {
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 11px;
         font-family: 'SF Pro Display';
         margin-top: 70px;
     }
@@ -888,6 +952,80 @@ body {
         line-height: 0.8;
         margin-bottom: 20px;
         cursor: pointer;
+    }
+
+    .collapsible > li {
+        list-style-type: none;
+    }
+
+    .collapsible-header {
+        background: transparent;
+        height: 70px;
+        border: 1px solid #ddd;
+        color: #fff;
+        background: transparent;
+        border-radius: 10px;
+        margin-top: 20px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .collapsible-header:focus {
+        background-color: transparent !important;
+    }
+
+
+    .collapsible {
+        color: transparent;
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border: none;
+        border-color: transparent;
+    }
+
+    .benefits-ulist > li{
+        color: #cccc;
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .collapsible-header > img {
+        height: 40px;
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    .collapsible-body {
+        border: 1px solid #ddd;
+        border-top: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .collapsible-header > p {
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    .collapsible-header > .small {
+        font-family: 'SF Pro Display Regular';
+        font-weight: 100;
+        margin-top: 12px;
+        font-size: 9px;
+        color: #cccc;
+    }
+
+    .collapsible-header > .title {
+        font-family: 'SF Pro Display';
+        margin-top: 7px;
+    }
+
+    .collapsible-header > .grade {
+        font-family: 'SF Pro Display Semibold';
+        margin-top: 7px;
     }
 
 

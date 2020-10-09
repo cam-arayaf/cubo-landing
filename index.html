@@ -38,8 +38,9 @@
       </div>
       <h1 class="text-learning">La forma entretenida de aprender</h1>
       <button class="discover">DESCUBRE CUBO</button>
-      <!-- TIPOS DE SESIONES -->
     </div>
+    <!-- TIPOS DE SESIONES -->
+    <div class="container-sessions">
       <div class="session-card">
         <div class="icon-svg-container">
           <img src="./assets/Images/svg/iconos/icono-estudiantes.svg">
@@ -80,6 +81,8 @@
           Obtén acceso directo a información de usuarios. Administra y supervisa de manera simple e instantánea la labor educativa
         </p>
       </div>
+    </div>
+      
       <!-- SECCIÓN DE INFORMACIÓN SOBRE CUBO-->
       <div class="section-welcome_cubo">
         <p class="text-discover">DESCUBRE CUBO</p>
@@ -123,6 +126,7 @@
       </div>
       <!-- SELECCIÓN DE ASIGNATURAS PARA MOSTRAR SLIDER -->
         <div class="subjects-section">
+          <h1>Asignaturas</h1>
           <button class="subjects-btn">Matemáticas</button>
           <button class="subjects-btn" disabled><img src="./assets/Images/svg/iconos/icono-candado.svg"> 
             <br> 
@@ -151,6 +155,7 @@
           <h1 class="learn-title">Todo lo que necesitas para Aprender, Enseñar y Administrar</h1>
           <img src="./assets/Images/png/eluney-2.png" width="120px" height="200px">
 
+          <div class="container-cards">
             <div class="card horizontal">
               <div class="card-image">
                 <img src="./assets/Images/svg/iconos/icono-calendario.svg">
@@ -158,8 +163,7 @@
               <div class="card-stacked">
                   <p>Full Responsive<p>
                 <div class="card-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus possimus quod reprehenderit exercitationem asperiores quae consectetur earum, vero accusantium eum quam libero voluptatibus ea.</p>
-                </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus.</p>                </div>
               </div>
             </div>
             <div class="card horizontal">
@@ -169,7 +173,7 @@
               <div class="card-stacked">
                   <p>Full Responsive<p>
                 <div class="card-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus possimus quod reprehenderit exercitationem asperiores quae consectetur earum, vero accusantium eum quam libero voluptatibus ea.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus.</p>
                 </div>
               </div>
             </div>
@@ -180,8 +184,7 @@
               <div class="card-stacked">
                   <p>Frequent updates<p>
                 <div class="card-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus possimus quod reprehenderit exercitationem asperiores quae consectetur earum, vero accusantium eum quam libero voluptatibus ea.</p>
-                </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus.</p>                </div>
               </div>
             </div>
             <div class="card horizontal">
@@ -191,8 +194,7 @@
               <div class="card-stacked">
                   <p>Frequent updates<p>
                 <div class="card-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus possimus quod reprehenderit exercitationem asperiores quae consectetur earum, vero accusantium eum quam libero voluptatibus ea.</p>
-                </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus.</p>                </div>
               </div>
             </div>
             <div class="card horizontal">
@@ -202,8 +204,7 @@
               <div class="card-stacked">
                   <p>Technical support<p>
                 <div class="card-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus possimus quod reprehenderit exercitationem asperiores quae consectetur earum, vero accusantium eum quam libero voluptatibus ea.</p>
-                </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus.</p>                </div>
               </div>
             </div>
             <div class="card horizontal">
@@ -213,21 +214,20 @@
               <div class="card-stacked">
                   <p>Technical support<p>
                 <div class="card-content">
-                  <p id="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus possimus quod reprehenderit exercitationem asperiores quae consectetur earum, vero accusantium eum quam libero voluptatibus ea.</p>
-                </div>
+                  <p id="test">asdlkasdjaskdaskljdaskjldaskjldaskjldaslkjdaskdkjlaskjlasdkljasldkjaslkdaskljdakjlsdjklajklasLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas dolorem illo quos fuga repellendus.</p>                </div>
               </div>
             </div>
-        </div>
+          </div>
         <!-- SECCION BENEFICIOS DE CUBO-->
-        <p class="contact-text-small" id="benefits">BENEFICIOS</p>
+        <p class="benefits-text-small" id="benefits">BENEFICIOS</p>
         <p class="contact-title">Por qué elegir Cubo</p>
         <ul class="collapsible">
-          <li class="collapsible-container">
+          <li class="collapsible-container active">
             <div class="collapsible-header">
               <img src="./assets/Images/svg/iconos/icono-estudiantes.svg">
-              <p>Estudiantes</p>
-              <p>Niveles cubo:</p>
-              <p>4to a 8vo básico - 1ro a 4to medio</p>
+              <p class="title">Estudiantes</p>
+              <p class="small">Niveles cubo:</p>
+              <p class="grade">4to a 8vo básico - 1ro a 4to medio</p>
             </div>
             <div class="collapsible-body">
               <ul class="benefits-ulist">
@@ -240,12 +240,12 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li class="collapsible-container">
             <div class="collapsible-header">
               <img src="./assets/Images/svg/iconos/icono-docentes.svg">
-              <p>Docentes</p>
-              <p>Niveles cubo:</p>
-              <p>4to a 8vo básico - 1ro a 4to medio</p>
+              <p class="title">Docentes</p>
+              <p class="small">Niveles cubo:</p>
+              <p class="grade">4to a 8vo básico - 1ro a 4to medio</p>
             </div>
             <div class="collapsible-body">
               <ul class="benefits-ulist">
@@ -259,12 +259,12 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li class="collapsible-container">
             <div class="collapsible-header">
               <img src="./assets/Images/svg/iconos/icono-apoderados.svg">
-              <p>Apoderados</p>
-              <p>Niveles cubo:</p>
-              <p>4to a 8vo básico - 1ro a 4to medio</p>
+              <p class="title">Apoderados</p>
+              <p class="small">Niveles cubo:</p>
+              <p class="grade">4to a 8vo básico - 1ro a 4to medio</p>
             </div>
             <div class="collapsible-body">
               <ul class="benefits-ulist">
@@ -278,12 +278,12 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li class="collapsible-container">
             <div class="collapsible-header">
               <img src="./assets/Images/svg/iconos/icono-directivos.svg">
-              <p>Directivos</p>
-              <p>Niveles cubo:</p>
-              <p>4to a 8vo básico - 1ro a 4to medio</p>
+              <p class="title">Directivos</p>
+              <p class="small">Niveles cubo:</p>
+              <p class="grade">4to a 8vo básico - 1ro a 4to medio</p>
             </div>
             <div class="collapsible-body">
               <ul class="benefits-ulist">
@@ -300,7 +300,7 @@
         </ul>
         <!-- SECCION TEAM CUBO-->
         <div class="about" id="about-us">
-          <img src="./assets/Images/svg/cubo-logo-azul.svg" alt="logo">
+          <img src="./assets/Images/svg/cubo-logo-transparente.svg" alt="logo">
           <p class="small-text">NOSOTROS</p>
           <p class="title-about">Team Cubo</p>
           <p class="about-text">
