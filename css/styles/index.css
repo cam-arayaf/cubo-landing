@@ -252,6 +252,8 @@ body {
     .learn-title {
         font-size: 37px;
         margin-top: 0px;
+        margin-left: 11px;
+        margin-right: 11px;
     }
 
     .radio-container {
@@ -308,10 +310,6 @@ body {
         margin-left: 15px;
     }
 
-    .collapsible {
-        color: #000;
-    }
-
     .about {
         background-color: #fff;
         margin-top: 25px;
@@ -359,8 +357,8 @@ body {
     }
 
     .contact-title {
-        margin: 0px;
-        font-size: 30px;
+        margin: 5px;
+        font-size: 25px;
         padding: 0px;
         font-family: 'SF Pro Display';
     }
@@ -374,6 +372,10 @@ body {
         color: #fff;
     }
 
+    .radio-container > li {
+        padding: 0px;
+    }
+
     .radio-container > .radio-buttons:hover {
         box-shadow: 2px 1px  1px rgb(0, 174, 255);
         transition: 0.2s;
@@ -382,7 +384,7 @@ body {
     }
 
     .radio-container {
-        margin-top: 40px;
+        margin-top: 30px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -404,12 +406,37 @@ body {
         margin-bottom: 25px;
     }
 
-    .collapsible-header {
+    /* .collapsible-header {
         background: transparent;
+        height: 70px;
+        border-radius: 20px;
+    } */
+
+    .collapsible {
+        margin-top: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .collapsible > .collapsible-container {
+        border-radius: 20px;
     }
 
     .benefits-ulist, .collapsible-header {
         color: #fff;
+        background: transparent;
+        border-radius: 20px;
+        margin-top: 0px;
+    }
+
+    .collapsible-header > img {
+        height: 40px;
+        width: 30px;
+    }
+
+    .collapsible-body {
+        border-radius: 20px;
     }
 
     .btn-send-email {
@@ -807,9 +834,6 @@ body {
     .radio-container > .radio-buttons{
         background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
         border-radius: 20px;
-        padding: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
         color: #fff;
     }
     
@@ -845,6 +869,7 @@ body {
     
     form > .container-radio-buttons {
         margin-bottom: 25px;
+        padding: 0px;
     }
     
     .btn-send-email {
@@ -864,4 +889,6 @@ body {
         margin-bottom: 20px;
         cursor: pointer;
     }
+
+
 }
