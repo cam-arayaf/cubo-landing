@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const elems = document.querySelectorAll('.collapsible');
-    const instances = M.Collapsible.init(elems, { accordion: false });
-    document.querySelector("#bottom-page").addEventListener('click', sendEmailData);
+    const collapsible = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsible, { accordion: false });
+
+    const bottomPage = document.querySelector("#bottom-page");
+    bottomPage.addEventListener('click', sendEmailData);
 });

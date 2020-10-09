@@ -1,5 +1,5 @@
 const sendEmailData = () => {
-    const role = document.querySelector('.hidden-radio:checked').value;
+    const role = document.querySelector('.role:checked').value;
     const name = document.querySelector('#name').value;
     const establishment = document.querySelector('#establishment').value;
     const email = document.querySelector('#email').value;
