@@ -1,36 +1,63 @@
 document.addEventListener('DOMContentLoaded', () => {
     const collapsible = document.querySelectorAll('.collapsible');
+    const form = document.querySelector("form");
+    const role = document.querySelectorAll('.role');
+    const name = document.querySelector('#name');
+    const establishment = document.querySelector('#establishment');
+    const email = document.querySelector('#email');
+    const phone = document.querySelector('#phone');
+    const comment = document.querySelector('#comment');
+    const bottomPage = document.querySelector('#bottom-page');
+
+    role.forEach(e => e.checked = e.value === 'Directivo');
+    name.value = '';
+    establishment.value = '';
+    email.value = '';
+    phone.value = '';
+    comment.value = '';
+    bottomPage.disabled = true;
+    bottomPage.classList.add('disabled-btn');
+
     M.Collapsible.init(collapsible, { accordion: false });
 
-    const form = document.querySelector("form");
     form.onsubmit = sendForm;
+    form.oninput = () => {
+        const wrongInput = !!document.querySelector('.wrong-input');
+        bottomPage.disabled = wrongInput;
+        wrongInput ? bottomPage.classList.add('disabled-btn') : bottomPage.classList.remove('disabled-btn');
+    }
 
     const validateField = (event, regex) => {
         const { target } = event;
         const { minLength, value } = target;
         const { length } = value.trim();
-        if (!length) return target.value = '';
+
+        if (!length) {
+            target.classList.add('wrong-input');
+            return target.value = '';
+        };
+
         if (regex) target.value = value.replace(regex, '');
-        return !(length < minLength);
+
+        const minimalLength = !(target.value.length < minLength);
+
+        !minimalLength ? target.classList.add('wrong-input') : target.classList.remove('wrong-input');
+
+        return minimalLength;
     }
 
     const trimField = event => event.target.value = event.target.value.trim();
 
-    const name = document.querySelector('#name');
     name.oninput = event => validateField(event, /[^a-zA-Z ]/);
     name.onblur = trimField;
 
-    const establishment = document.querySelector('#establishment');
     establishment.oninput = event => validateField(event, /[^a-zA-Z0-9-. ]/);
     establishment.onblur = trimField;
 
-    const email = document.querySelector('#email');
     email.oninput = validateField;
 
-    const phone = document.querySelector('#phone');
     phone.oninput = event => validateField(event, /[^0-9]/);
 
-    const comment = document.querySelector('#comment');
     comment.oninput = validateField;
     comment.onblur = trimField;
 });

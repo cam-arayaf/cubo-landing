@@ -30,6 +30,12 @@ body {
     text-align: center;
 }
 
+.wrong-input {
+    border-bottom: 1px solid #d52157 !important;
+    -webkit-box-shadow: 0 1px 0 0 #d52157 !important;
+    box-shadow: 0 1px 0 0 #d52157 !important;
+}
+
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
     html {
@@ -479,6 +485,12 @@ body {
         font-weight: 400;
         line-height: 0.8;
         margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .disabled-btn {
+        cursor: not-allowed;
+        opacity: 0.5;
     }
 }
 
