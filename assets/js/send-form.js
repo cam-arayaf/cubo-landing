@@ -1,4 +1,4 @@
-const sendEmailData = event => {
+const sendForm = event => {
     event.preventDefault();
     
     const { target } = event;
@@ -11,7 +11,7 @@ const sendEmailData = event => {
     const phone = target.querySelector('#phone').value;
     const comment = target.querySelector('#comment').value;
 
-    const fields = formValidations(role, name, establishment, email, phone, comment);
+    const fields = validateForm(role, name, establishment, email, phone, comment);
 
     if (fields.length) return console.log(fields);
 

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     M.Collapsible.init(collapsible, { accordion: false });
 
     const form = document.querySelector("form");
-    form.onsubmit = sendEmailData;
+    form.onsubmit = sendForm;
 
     const validateField = (event, regex) => {
         const { target } = event;

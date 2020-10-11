@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../../assets/fonts/SFProDisplay-Black.ttf');
+    src: url('../../assets/fonts/sf-pro-display-black.ttf');
 }
 
 @font-face {
     font-family: 'SF Pro Display Regular';
-    src: url('../../assets/fonts/SFProDisplay-Regular.ttf');
+    src: url('../../assets/fonts/sf-pro-display-regular.ttf');
 }
 
 @font-face {
     font-family: 'SF Pro Display Semibold';
-    src: url('../../assets/fonts/SFProDisplay-Semibold.ttf');
+    src: url('../../assets/fonts/sf-pro-display-semibold.ttf');
 }
 
 h1 {

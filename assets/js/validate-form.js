@@ -1,4 +1,4 @@
-const formValidations = (role, name, establishment, email, phone, comment) => {
+const validateForm = (role, name, establishment, email, phone, comment) => {
     const validRole = ['Directivo', 'Profesor', 'Estudiante', 'Apoderado'];
     const validName = /^[a-zA-Z ]{3,100}$/;
     const validEstablishment = /^[a-zA-Z0-9-. ]{3,100}$/;
