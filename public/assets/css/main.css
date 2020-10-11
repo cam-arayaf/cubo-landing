@@ -205,6 +205,10 @@ body {
         color: #fff;
     }
 
+    .subjects-section > h1 {
+        font-size: 40px;
+    }
+
     .subjects-btn {
         font-weight: 700;
         border-radius: 20px;
@@ -228,14 +232,6 @@ body {
         background-color: transparent !important;
     }
 
-    .carousel .carousel-item {
-        visibility: visible;
-    }
-
-    .carousel {
-        margin-top: 20px;
-    }
-
     .subjects-btn small {
         font-size: 9px;
         font-weight: 700;
@@ -256,6 +252,7 @@ body {
     }
 
     .learn-title {
+        color: #fff;
         font-size: 37px;
         margin-top: 0px;
         margin-left: 11px;
@@ -296,6 +293,7 @@ body {
     }
 
     .card-stacked > p {
+        color: #fff;
         font-size: 15px;
         margin-top: 10px;
         margin-bottom: 0px;
@@ -363,8 +361,9 @@ body {
     }
 
     .contact-title {
-        margin: 5px;
-        font-size: 25px;
+        color: #fff;
+        margin: 6px;
+        font-size: 38px;
         padding: 0px;
         font-family: 'SF Pro Display';
     }
@@ -463,6 +462,16 @@ body {
 
     .collapsible-header > .title {
         font-family: 'SF Pro Display';
+    }
+
+    .benefits-text-small {
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 0.8;
+        color: rgba(30, 143, 255, 0.74);
+        font-size: 11px;
+        font-family: 'SF Pro Display';
+        margin-top: 40px;
     }
 
     .collapsible-header > .grade {
@@ -674,13 +683,11 @@ body {
     }
     
     .info-card {
-        border-radius: 20px;
+        
         border: 2px solid transparent;
         border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        padding: 0px;
-        margin: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 30%;
+        margin-left: 31em;
         margin-top: 20px;
         color: #fff;
     }
@@ -736,12 +743,8 @@ body {
         background-color: rgba(218, 218, 218, 0.027);
     }
     
-    .carousel .carousel-item {
-        visibility: visible;
-    }
-    
     .carousel {
-        margin-top: 20px;
+        margin-top: 100px;
     }
     
     .section-learn {
@@ -759,6 +762,7 @@ body {
     }
     
     .learn-title {
+        color: #fff;
         font-size: 37px;
         margin-top: 0px;
         width: 35%;
@@ -770,7 +774,10 @@ body {
     }
     
     .radio-buttons {
-        padding: 1em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin: 0px auto;
     }
 
@@ -810,6 +817,7 @@ body {
     
     .card-stacked > p {
         font-size: 15px;
+        color: #fff;
         text-align: left;
         margin-bottom: 0px;
         margin-left: 24px;
@@ -828,9 +836,7 @@ body {
     }
     
     .card-image {
-        margin-top: 20px;
-        margin-left: 5px;
-        margin-right: 10px;
+        
     }
     
     .about {
@@ -899,8 +905,9 @@ body {
     }
     
     .contact-title {
+        color: #fff;
         margin: 0px;
-        font-size: 30px;
+        font-size: 40px;
         padding: 0px;
         font-family: 'SF Pro Display';
     }
@@ -909,6 +916,7 @@ body {
         background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
         border-radius: 20px;
         color: #fff;
+        margin: 20px;
     }
     
     .radio-container > .radio-buttons:hover {
@@ -924,8 +932,7 @@ body {
     
     .radio-container {
         margin-top: 40px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 28em;
     }
     
     .radio-container > .radio-buttons > label {
@@ -1036,5 +1043,9 @@ body {
     .collapsible-header > .grade {
         font-family: 'SF Pro Display Semibold';
         margin-top: 7px;
+    }
+
+    .container-img {
+        float: center;
     }
 }

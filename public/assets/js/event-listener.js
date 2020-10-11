@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
         bottomPage.disabled = wrongInput;
         wrongInput ? bottomPage.classList.add('disabled-btn') : bottomPage.classList.remove('disabled-btn');
     }
+    const carousel = document.querySelectorAll('.carousel');
+    var instance = M.Carousel.init(carousel, {
+            indicators: true,
+            fullWidth: true
+      });
+
+    const form = document.querySelector("form");
+    form.onsubmit = sendEmailData;
 
     const validateField = (event, regex) => {
         const { target } = event;
