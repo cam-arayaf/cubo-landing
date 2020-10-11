@@ -22,9 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.onsubmit = sendForm;
     form.oninput = () => {
-        const wrongInput = !!document.querySelector('.wrong-input');
-        bottomPage.disabled = wrongInput;
-        wrongInput ? bottomPage.classList.add('disabled-btn') : bottomPage.classList.remove('disabled-btn');
+        const wrongInput = !!form.querySelector('.wrong-input');
+        const emptyInput = !!Object.values(form.querySelectorAll('input, textarea')).find(e => !e.value);
+        const disabledBtn = wrongInput || emptyInput;
+        bottomPage.disabled = disabledBtn;
+        disabledBtn ? bottomPage.classList.add('disabled-btn') : bottomPage.classList.remove('disabled-btn');
     }
     const carousel = document.querySelectorAll('.carousel');
     var instance = M.Carousel.init(carousel, {
