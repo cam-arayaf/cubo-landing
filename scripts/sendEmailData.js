@@ -1,24 +1,27 @@
-const sendEmailData = () => {
-    const role = document.querySelector('.role:checked').value;
-    const name = document.querySelector('#name').value;
-    const establishment = document.querySelector('#establishment').value;
-    const email = document.querySelector('#email').value;
-    const phone = document.querySelector('#phone').value;
-    const comment = document.querySelector('#comment').value;
+const sendEmailData = event => {
+    event.preventDefault();
+    
+    const { target } = event;
+    const { action, method } = target;
+
+    const role = target.querySelector('.role:checked').value;
+    const name = target.querySelector('#name').value;
+    const establishment = target.querySelector('#establishment').value;
+    const email = target.querySelector('#email').value;
+    const phone = target.querySelector('#phone').value;
+    const comment = target.querySelector('#comment').value;
 
     const fields = formValidations(role, name, establishment, email, phone, comment);
 
     if (fields.length) return console.log(fields);
 
-    const url = 'https://cubo-api-ciaf.herokuapp.com/send-email';
-
     const options = { 
-        method: 'POST',
+        method,
         body: JSON.stringify(fields),
-        headers:{ 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' }
     };
 
-    fetch(url, options)
+    fetch(action, options)
         .then(response => response.json())
         .then(data => console.log(data))
         .catch(error => console.log(error));
