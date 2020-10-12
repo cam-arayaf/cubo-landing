@@ -23,7 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //INITIALIZE COLLAPSIBLE AND CAROUSEL
     M.Collapsible.init(collapsible, { accordion: false });
-    M.Carousel.init(carousel, { indicators: true, fullWidth: true });
+    M.Carousel.init(carousel, { fullWidth: true });
+    // AUTOPLAY SLIDER
+    setInterval(() => {
+        M.Carousel.getInstance(carousel[0]).next();
+    }, 4500);
 
     //CUSTOM FUNCTIONS
     const setClassField = (target, minLength, type, regex) => {
