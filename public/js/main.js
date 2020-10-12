@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setClassField = (target, minLength, type, regex) => {
         const evaluateWay = type === 'email' ? regex.test(target.value.trim()) : !(target.value.length < minLength);
         const className = type === 'textarea' ? 'wrong-textarea' : 'wrong-input';
+
         !evaluateWay ? target.classList.add(className) : target.classList.remove(className);
     }
 
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const wrongInput = !!form.querySelector('.wrong-input, .wrong-textarea');
         const emptyInput = !!Object.values(form.querySelectorAll('input, textarea')).find(e => !e.value);
         const disabledButton = wrongInput || emptyInput;
+
         bottomPage.disabled = disabledButton;
         disabledButton ? bottomPage.classList.add('disabled-button') : bottomPage.classList.remove('disabled-button');
     }
@@ -46,8 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkField = (event, regex) => {
         const { target } = event;
         const { minLength, type, value } = target;
+
         if (regex && type !== 'email') target.value = value.replace(regex, '');
         if (!target.value.trim().length) return target.value = '';
+
         setClassField(target, minLength, type, regex);
         validateButton();
     }
@@ -55,9 +59,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const trimField = (event, regex) => {
         const { target } = event;
         const { minLength, type, value } = target;
+
         target.value = value.trim();
         setClassField(target, minLength, type, regex);
         validateButton();
+    }
+
+    const sendForm = event => {
+        event.preventDefault();
+
+        const { action, method } = event.target;
+        const upperCaseFirstLetterFirstWord = value => value.charAt(0).toUpperCase() + value.slice(1);
+        const upperCaseFirstLetterAllWords = value => value.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+        
+        const fields = {
+            role: Object.values(role).find(e => e.checked).value,
+            name: upperCaseFirstLetterAllWords(name.value),
+            establishment: upperCaseFirstLetterAllWords(establishment.value),
+            email: email.value,
+            phone: phone.value,
+            comment: upperCaseFirstLetterFirstWord(comment.value)
+        };
+
+        const options = { 
+            method,
+            body: JSON.stringify(fields),
+            headers: { 'Content-Type': 'application/json' }
+        };
+
+        fetch(action, options)
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
     }
 
     //EVENTS
