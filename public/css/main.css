@@ -1158,10 +1158,19 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin-bottom: 40px;
     }
 
-    .footer-page > p {
+    .footer-page > p  {
         font-family: 'SF Pro Display Semibold';
         margin-left: 10em;
         font-size: 13px;
+    }
+
+    .container-icons-rrss {
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    .container-icons-rrss > a {
+        margin-left: 20px;
     }
 
     .btn-send-email {
