@@ -113,6 +113,10 @@ textarea:not(.browser-default):focus:not([readonly]) {
         color: rgb(0, 67, 134);
     }
 
+    textarea.materialize-textarea{
+        color: #fff;
+    }
+
     .nav-wraper > .list-inline > .lt000 {
         margin-left: 16px;
         padding: 0px;
@@ -545,6 +549,20 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .im-eluney {
+        display: none;
+    }
+
+    .container-inputs {
+        width: 70%;
+        margin-left: 50px;
+        color: #fff;
+    }
+
+    .container-inputs input.form-control {
+        color: #fff;
+    }
+
+    .footer-content {
         display: none;
     }
 }
@@ -1143,13 +1161,22 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin-left: 380px;
         margin-bottom: 20px;
         margin-top: 30px;
+        color: #fff;
     }
 
     .container-inputs > div {
         margin-left: 50px;
     }
 
-    .footer-page {
+    .container-inputs input.form-control {
+        color: #fff;
+    }
+
+    textarea.materialize-textarea{
+        color: #fff;
+    }
+
+    .footer-content {
         display: flex;
         color: #fff;
         font-family: 'SF Pro Display Semibold';
@@ -1158,7 +1185,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin-bottom: 40px;
     }
 
-    .footer-page > p  {
+    .footer-content > p  {
         font-family: 'SF Pro Display Semibold';
         margin-left: 10em;
         font-size: 13px;
