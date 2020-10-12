@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     M.Carousel.init(carousel, { indicators: true, fullWidth: true });
 
     //CUSTOM FUNCTIONS
-    const setClassField = (target, minLength, type) => {
-        const minimalLength = !(target.value.length < minLength);
+    const setClassField = (target, minLength, type, regex) => {
+        const evaluateWay = type === 'email' ? regex.test(target.value.trim()) : !(target.value.length < minLength);
         const className = type === 'textarea' ? 'wrong-textarea' : 'wrong-input';
-        !minimalLength ? target.classList.add(className) : target.classList.remove(className);
+        !evaluateWay ? target.classList.add(className) : target.classList.remove(className);
     }
 
     const validateButton = () => {
@@ -40,38 +40,38 @@ document.addEventListener('DOMContentLoaded', () => {
         disabledButton ? bottomPage.classList.add('disabled-button') : bottomPage.classList.remove('disabled-button');
     }
 
-    const replaceField = (event, regex) => {
+    const checkField = (event, regex) => {
         const { target } = event;
         const { minLength, type, value } = target;
-        if (regex) target.value = value.replace(regex, '');
+        if (regex && type !== 'email') target.value = value.replace(regex, '');
         if (!target.value.trim().length) return target.value = '';
-        setClassField(target, minLength, type);
+        setClassField(target, minLength, type, regex);
         validateButton();
     }
 
-    const trimField = event => {
+    const trimField = (event, regex) => {
         const { target } = event;
         const { minLength, type, value } = target;
         target.value = value.trim();
-        setClassField(target, minLength, type);
+        setClassField(target, minLength, type, regex);
         validateButton();
     }
 
     //EVENTS
     form.onsubmit = sendForm;
 
-    name.oninput = event => replaceField(event, /[^a-zA-Z ]/);
+    name.oninput = event => checkField(event, /[^a-zA-Z ]/);
     name.onblur = trimField;
 
-    establishment.oninput = event => replaceField(event, /[^a-zA-Z0-9-. ]/);
+    establishment.oninput = event => checkField(event, /[^a-zA-Z0-9-. ]/);
     establishment.onblur = trimField;
 
-    email.oninput = replaceField;
-    email.onblur = trimField;
+    email.oninput = event => checkField(event, /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+    email.onblur = event => trimField(event, /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
 
-    phone.oninput = event => replaceField(event, /[^0-9]/);
+    phone.oninput = event => checkField(event, /[^0-9]/);
     phone.onblur = trimField;
 
-    comment.oninput = replaceField;
+    comment.oninput = checkField;
     comment.onblur = trimField;
 });

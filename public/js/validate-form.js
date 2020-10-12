@@ -4,7 +4,7 @@ const validateForm = (role, name, establishment, email, phone, comment) => {
     const validEstablishment = /^[a-zA-Z0-9-. ]{3,100}$/;
     const validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const validPhone = /^[0-9]{8,15}$/;
-    const validComment = /^.{6,250}$/;
+    const validComment = /^[\s\S]{6,250}$/;
 
     const errorRole = `El 'Rol' debe ser Directivo, Profesor, Estudiante o Apoderado`;
     const errorName = `El 'Nombre' solo debe poseer letras entre A y Z y tener entre 3 y 100 caracteres`;
