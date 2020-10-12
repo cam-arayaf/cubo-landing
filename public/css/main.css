@@ -1140,8 +1140,9 @@ textarea:not(.browser-default):focus:not([readonly]) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 45%;
-        margin-left: 360px;
+        margin-left: 380px;
         margin-bottom: 20px;
+        margin-top: 30px;
     }
 
     .container-inputs > div {
@@ -1151,18 +1152,23 @@ textarea:not(.browser-default):focus:not([readonly]) {
     .footer-page {
         display: flex;
         color: #fff;
-        font-family: 'SF Pro Display Semibold';
         margin-top: 80px;
         margin-left: 150px;
         margin-bottom: 40px;
     }
 
     .footer-page > p {
+        font-family: 'SF Pro Display Semibold';
         margin-left: 10em;
+        font-size: 13px;
     }
 
     .btn-send-email {
-        margin-right: 37em;
+        margin-right: 34em;
+    }
+
+    .col > textarea {
+        width: 100%;
     }
 
 }
