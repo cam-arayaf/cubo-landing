@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../../assets/fonts/sf-pro-display-black.ttf');
+    src: url('../assets/fonts/sf-pro-display-black.ttf');
 }
 
 @font-face {
     font-family: 'SF Pro Display Regular';
-    src: url('../../assets/fonts/sf-pro-display-regular.ttf');
+    src: url('../assets/fonts/sf-pro-display-regular.ttf');
 }
 
 @font-face {
     font-family: 'SF Pro Display Semibold';
-    src: url('../../assets/fonts/sf-pro-display-semibold.ttf');
+    src: url('../assets/fonts/sf-pro-display-semibold.ttf');
 }
 
 h1 {
@@ -30,10 +30,31 @@ body {
     text-align: center;
 }
 
+textarea {
+    outline: none;
+}
+
+textarea:not(.browser-default):focus:not([readonly]) {
+    border: 1px solid #26a69a;
+    -webkit-box-shadow: 0 1px 0 0 #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+
 .wrong-input {
     border-bottom: 1px solid #d52157 !important;
     -webkit-box-shadow: 0 1px 0 0 #d52157 !important;
     box-shadow: 0 1px 0 0 #d52157 !important;
+}
+
+.wrong-textarea {
+    border: 1px solid #d52157 !important;
+    -webkit-box-shadow: 0 1px 0 0 #d52157 !important;
+    box-shadow: 0 1px 0 0 #d52157 !important;
+}
+
+.disabled-button {
+    cursor: not-allowed !important;
+    opacity: 0.5;
 }
 
 /* ------------------- Smartphones ------------------- */
@@ -495,11 +516,6 @@ body {
         line-height: 0.8;
         margin-bottom: 20px;
         cursor: pointer;
-    }
-
-    .disabled-btn {
-        cursor: not-allowed;
-        opacity: 0.5;
     }
 }
 
