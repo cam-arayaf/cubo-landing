@@ -1152,6 +1152,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     .footer-page {
         display: flex;
         color: #fff;
+        font-family: 'SF Pro Display Semibold';
         margin-top: 80px;
         margin-left: 150px;
         margin-bottom: 40px;
