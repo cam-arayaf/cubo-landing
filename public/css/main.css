@@ -1,20 +1,35 @@
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../assets/fonts/sf-pro-display-black.ttf');
+    src: url('../assets/fonts/sf-pro-display/black.ttf');
 }
 
 @font-face {
     font-family: 'SF Pro Display Regular';
-    src: url('../assets/fonts/sf-pro-display-regular.ttf');
+    src: url('../assets/fonts/sf-pro-display/regular.ttf');
 }
 
 @font-face {
-    font-family: 'SF Pro Display Semibold';
-    src: url('../assets/fonts/sf-pro-display-semibold.ttf');
+    font-family: 'SF Pro Display Semi-Bold';
+    src: url('../assets/fonts/sf-pro-display/semi-bold.ttf');
 }
 
-h1 {
-    font-family: 'SF Pro Display';
+@font-face {
+    font-family: 'Spartan';
+    src: url('../assets/fonts/spartan/black.ttf');
+}
+
+@font-face {
+    font-family: 'Spartan Regular';
+    src: url('../assets/fonts/spartan/regular.ttf');
+}
+
+@font-face {
+    font-family: 'Spartan Semi-Bold';
+    src: url('../assets/fonts/spartan/semi-bold.ttf');
+}
+
+h1, button {
+    font-family: 'Spartan Semi-Bold';
 }
 
 p, span, small {
@@ -55,6 +70,10 @@ textarea:not(.browser-default):focus:not([readonly]) {
 .disabled-button {
     cursor: not-allowed !important;
     opacity: 0.5;
+}
+
+.icon-svg-container img {
+    width: 100px;
 }
 
 /* ------------------- Smartphones ------------------- */
@@ -351,7 +370,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         color: #24303d;
         font-size: 30px;
         padding: 0px;
-        font-family: 'SF Pro Display';
     }
 
     .about-text {
@@ -390,7 +408,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin: 6px;
         font-size: 38px;
         padding: 0px;
-        font-family: 'SF Pro Display';
     }
 
     .radio-container > .radio-buttons{
@@ -922,7 +939,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         color: #24303d;
         font-size: 55px;
         padding: 0px;
-        font-family: 'SF Pro Display';
     }
 
     .about > img {
@@ -979,7 +995,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin: 0px;
         font-size: 55px;
         padding: 0px;
-        font-family: 'SF Pro Display';
     }
     
     .radio-container > .radio-buttons{

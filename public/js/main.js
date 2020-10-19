@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const comment = document.querySelector('#comment');
     const bottomPage = document.querySelector('#bottom-page');
 
+    //REGEX
+    const regexName = /[^a-zA-Z ]/;
+    const regexEstablishment = /[^a-zA-Z0-9-. ]/;
+    const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const regexPhone = /[^0-9]/;
+
     //RESET VALUES
     role.forEach(e => e.checked = e.value === 'Directivo');
     name.value = '';
@@ -22,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bottomPage.classList.add('disabled-button');
 
     //INITIALIZE COLLAPSIBLE AND CAROUSEL
-    M.Collapsible.init(collapsible, { accordion: false });
+    M.Collapsible.init(collapsible, { accordion: true });
     M.Carousel.init(carousel, { fullWidth: true });
 
     // AUTOPLAY SLIDER
@@ -96,16 +102,16 @@ document.addEventListener('DOMContentLoaded', () => {
     //EVENTS
     form.onsubmit = sendForm;
 
-    name.oninput = event => checkField(event, /[^a-zA-Z ]/);
+    name.oninput = event => checkField(event, regexName);
     name.onblur = trimField;
 
-    establishment.oninput = event => checkField(event, /[^a-zA-Z0-9-. ]/);
+    establishment.oninput = event => checkField(event, regexEstablishment);
     establishment.onblur = trimField;
 
-    email.oninput = event => checkField(event, /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
-    email.onblur = event => trimField(event, /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+    email.oninput = event => checkField(event, regexEmail);
+    email.onblur = event => trimField(event, regexEmail);
 
-    phone.oninput = event => checkField(event, /[^0-9]/);
+    phone.oninput = event => checkField(event, regexPhone);
     phone.onblur = trimField;
 
     comment.oninput = checkField;
