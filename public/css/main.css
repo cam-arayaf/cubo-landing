@@ -924,6 +924,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
         word-break: break-all;
         color: #f2f2f2;
         padding-top: 0px;
+        margin-top: 20px;
     }
 
     .card-content > p {
