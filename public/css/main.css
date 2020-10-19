@@ -98,10 +98,9 @@ textarea:not(.browser-default):focus:not([readonly]) {
         font-family: 'SF Pro Display';
     }
 
-    .nav-wraper > .brand-logo > img{
-        width: 23px;
-        height: 23px;
-        margin-top: 13px;
+    .nav-wraper > .brand-logo > img {
+        width: 112px;
+        height: 56px;
     }
 
     .apply-demo {
@@ -633,9 +632,9 @@ textarea:not(.browser-default):focus:not([readonly]) {
         font-family: 'SF Pro Display';
     }
     
-    .nav-wraper > .brand-logo{
-        margin-top: 12px;
-        display: flex;
+    .nav-wraper > .brand-logo > img {
+        width: 128px;
+        height: 64px;
         margin-left: 120px;
     }
     
