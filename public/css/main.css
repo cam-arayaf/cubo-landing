@@ -37,7 +37,7 @@ p, span, small {
 }
 
 a, label, strong {
-    font-family: 'SF Pro Display Semibold';
+    font-family: 'SF Pro Display Semi-Bold';
 }
 
 body {
@@ -108,7 +108,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .apply-demo2 {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         display: inline-block;
         border-radius: 50px;
         border: none;
@@ -162,7 +162,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .discover {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         padding: 10px;
         padding-left: 15px;
         padding-right: 15px;
@@ -183,7 +183,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .sess-span {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         font-size: 10px;
         margin: 0px;
     }
@@ -378,7 +378,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
     
     .seemore-btn {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-top: 10px;
         display: inline-block;
         border-radius: 50px;
@@ -437,7 +437,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
 
     .radio-container > .radio-buttons > label {
         color: #fff;
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
     }
 
     form > .col > .form-control {
@@ -516,12 +516,12 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .collapsible-header > .grade {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-top: 5px;
     }
 
     .btn-send-email {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-top: 10px;
         display: inline-block;
         border-radius: 50px;
@@ -640,7 +640,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     
     .apply-demo {
         letter-spacing: 1px;
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         display: inline-block;
         border-radius: 50px;
         border: none;
@@ -700,7 +700,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     
     .discover {
         letter-spacing: 1px;
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
@@ -728,7 +728,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
     
     .sess-span {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         font-size: 10px;
         margin: 0px;
     }
@@ -953,7 +953,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
     
     .seemore-btn {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-top: 10px;
         display: inline-block;
         border-radius: 50px;
@@ -1021,7 +1021,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     
     .radio-container > .radio-buttons > label {
         color: #fff;
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
     }
     
     form > .col > .form-control {
@@ -1038,7 +1038,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
     
     .btn-send-email {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-top: 10px;
         display: inline-block;
         border-radius: 50px;
@@ -1125,7 +1125,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .collapsible-header > .grade {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-top: 7px;
     }
 
@@ -1143,7 +1143,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .text-carousel {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         text-align: left;
         font-size: 16px;
         float: right;
@@ -1154,7 +1154,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
 
     .im-eluney {
         display: inline-block;
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         border-bottom-right-radius: 20px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -1193,14 +1193,14 @@ textarea:not(.browser-default):focus:not([readonly]) {
     .footer-content {
         display: flex;
         color: #fff;
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-top: 80px;
         margin-left: 150px;
         margin-bottom: 40px;
     }
 
     .footer-content > p  {
-        font-family: 'SF Pro Display Semibold';
+        font-family: 'SF Pro Display Semi-Bold';
         margin-left: 10em;
         font-size: 13px;
     }
