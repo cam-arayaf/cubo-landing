@@ -472,7 +472,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .benefits-ulist > li{
-        color: #cccc;
         margin-top: 10px;
         width: 100%;
     }
@@ -498,7 +497,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
         font-family: 'SF Pro Display Regular';
         font-weight: 100;
         font-size: 9px;
-        color: #cccc;
+        color: rgba(30, 143, 255, 0.74);
     }
 
     .collapsible-header > .title {
@@ -1093,7 +1092,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .benefits-ulist > li{
-        color: #cccc;
         margin-top: 10px;
         width: 100%;
         text-align: left;
@@ -1123,7 +1121,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
         font-weight: 100;
         margin-top: 12px;
         font-size: 9px;
-        color: #cccc;
+        color: rgba(30, 143, 255, 0.74);
     }
 
     .collapsible-header > .title {
