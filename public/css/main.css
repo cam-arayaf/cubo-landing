@@ -182,12 +182,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         color: #fff;
     }
 
-    .sess-span {
-        font-family: 'SF Pro Display Semi-Bold';
-        font-size: 10px;
-        margin: 0px;
-    }
-
     .sess-type {
         font-weight: 700;
         font-size: 15px;
@@ -730,12 +724,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
     .container-sessions {
         display: inline-flex;
         margin-top: 50px;
-    }
-    
-    .sess-span {
-        font-family: 'SF Pro Display Semi-Bold';
-        font-size: 10px;
-        margin: 0px;
     }
     
     .sess-type {
