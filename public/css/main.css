@@ -256,6 +256,11 @@ textarea:not(.browser-default):focus:not([readonly]) {
         color: #fff;
     }
 
+    .subjects-btn img {
+        width: 25px;
+        margin-bottom: 10px;
+    }
+
     .subjects-btn > small {
         color: #cccc;
     }
@@ -471,8 +476,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .collapsible-header > img {
-        height: 40px;
-        width: 30px;
+        width: 38px;
     }
 
     .collapsible-body {
@@ -800,6 +804,15 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin-top: 60px;
         cursor: pointer;
     }
+
+    .subjects-btn:first-child {
+        margin-top: 83px;
+    }
+
+    .subjects-btn img {
+        width: 25px;
+        margin-bottom: 10px;
+    }
     
     .subjects-btn > small {
         font-size: 9px;
@@ -1087,8 +1100,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .collapsible-header > img {
-        height: 40px;
-        width: 30px;
+        width: 38px;
         margin-left: 20px;
     }
 
