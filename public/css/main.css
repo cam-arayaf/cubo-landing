@@ -98,26 +98,73 @@ textarea:not(.browser-default):focus:not([readonly]) {
     text-align: right;
 }
 
+footer {
+    color: #fff;
+    font-family: 'SF Pro Display Semi-Bold';
+    margin-top: 80px;
+}
+
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 /* GLOBAL STYLES */
 .card:hover {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .small-text {
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-weight: 500;
-    line-height: 0.8;
     color: rgba(30, 143, 255, 0.74);
-    font-size: 11px;
+    font-size: 13px;
     font-family: 'SF Pro Display';
 }
 
+.learn-title {
+    color: #fff;
+    font-size: 55px;
+    margin-top: 0px;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-section {
+    margin-top: 50px;
+}
+
+.section-title {
+    margin: auto;
+    font-size: 55px;
+    margin-top: 30px;
+    color: #fff;
+    width: 55%;
+    margin-bottom: 50px;
+}
+
+.container-sessions {
+    display: inline-flex;
+    margin-top: 50px;
+    margin-bottom:150px;
+}
+
+.carousel {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.footer-content > p  {
+    font-family: 'SF Pro Display Semi-Bold';
+    font-size: 13px;
+}
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
@@ -125,11 +172,12 @@ textarea:not(.browser-default):focus:not([readonly]) {
         scroll-behavior: smooth;
     }
 
-    body {
-        padding-top: 70px;
-        text-align: center;
-        font-size: 12px;
-        background: radial-gradient(ellipse at top, #24303d 0%, #090a0f 100%);
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    .logo-container {
+        margin-top: 50px;
     }
 
     .nav-wraper > .brand-logo > img {
@@ -185,12 +233,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         position: fixed;
     }
 
-    .first-title > .text-learning{
-        font-size: 45px;
-        margin-top: 14px;
-        color: #fff;
-    }
-
     .first-title {
         margin-top: 20px;
     }
@@ -209,11 +251,22 @@ textarea:not(.browser-default):focus:not([readonly]) {
         background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
     }
 
+    .container-sessions {
+        margin-bottom: 100px;
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .session-card {
         display: inline-block;
         margin-top: 20px;
         height: auto;
         color: #fff;
+    }
+
+    .container-cards {
+        margin-bottom: 0px;
     }
 
     .sess-type {
@@ -225,24 +278,15 @@ textarea:not(.browser-default):focus:not([readonly]) {
 
     .sess-text-card {
         margin-top: 20px;
-        margin: 10px;
+        margin: auto;
         font-size: 13px;
         color: #f2f2f2;
     }
 
-    .section-welcome_cubo > .section-title {
-        font-size: 35px;
-        margin-top: 0px;
-        color: #fff;
-    }
-
-    .text-discover {
-        font-size: 11px;
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        margin-top: 50px;
-        font-family: 'SF Pro Display';
+    .section-title {
+        width: 100%;
+        font-size: 40px;
+        margin-top: 20px;
     }
 
     .info-card {
@@ -314,25 +358,23 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .section-learn {
-        margin-top: 30px;
+        margin-top: 50px;
+        margin-bottom: 100px;
         padding: 0px;
         width: 100%;
-    }
-
-    .section-learn > .small-text {
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        font-size: 11px;
-        font-family: 'SF Pro Display';
     }
 
     .learn-title {
         color: #fff;
         font-size: 37px;
-        margin-top: 0px;
-        margin-left: 11px;
-        margin-right: 11px;
+        text-align: center;
+        width: auto;
+    }
+
+    .first-title > .text-learning {
+        font-size: 40px;
+        width: auto;
+        margin-top: 20px;
     }
 
     .radio-container {
@@ -417,15 +459,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         font-size: 12px;
         font-weight: 400;
         line-height: 0.8;
-    }
-
-    .contact-text-small {
-        font-size: 11px;
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        margin-top: 50px;
-        font-family: 'SF Pro Display';
     }
 
     .contact-title {
@@ -567,14 +600,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         opacity: 0.5;
     }
 
-    .carousel {
-        margin-bottom: 0px;
-        margin-top: 40px;
-        width: 90%;
-        margin-left: 20px;
-        height: 190px;
-    }
-
     .text-carousel {
         display: none;
     }
@@ -645,23 +670,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         top: 0;
     }
     
-    .small-text {
-        letter-spacing: 1px;
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        font-size: 15px;
-        font-family: 'SF Pro Display';
-    }
-    
-    .section-learn > .small-text {
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        font-size: 11px;
-        font-family: 'SF Pro Display';
-    }
-    
     .nav-wraper > .brand-logo > img {
         width: 128px;
         height: 64px;
@@ -714,16 +722,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         z-index: 2;
     }
     
-    .first-title > .text-learning{
-        letter-spacing: 1px;
-        font-size: 55px;
-        margin-left: 380px;
-        margin-right: 200px;
-        margin-top: 40px;
-        color: #fff;
-        width: 45%;
-    }
-    
     .first-title {
         margin-top: 40px;
     }
@@ -751,11 +749,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         width: 20%;
         margin-left: 50px;
     }
-
-    .container-sessions {
-        display: inline-flex;
-        margin-top: 50px;
-    }
     
     .sess-type {
         font-weight: 700;
@@ -769,21 +762,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin: 10px;
         font-size: 13px;
         color: #f2f2f2;
-    }
-    
-    .section-welcome_cubo > .section-title {
-        font-size: 55px;
-        margin-top: 0px;
-        color: #fff;
-    }
-    
-    .text-discover {
-        font-size: 11px;
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        margin-top: 100px;
-        font-family: 'SF Pro Display';
     }
     
     .info-card {
@@ -856,21 +834,10 @@ textarea:not(.browser-default):focus:not([readonly]) {
         background-color: rgba(218, 218, 218, 0.027);
     }
     
-    .carousel {
-        margin-top: 100px;
-    }
-    
     .section-learn {
-        margin-top: 130px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         padding: 0px;
-    }
-    
-    .section-learn > .small-text {
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        font-size: 11px;
-        font-family: 'SF Pro Display';
     }
 
     .eluney-img {
@@ -880,14 +847,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         height: 100%;
         margin-top: 130px;
         border-radius: 100px;
-    }
-    
-    .learn-title {
-        color: #fff;
-        font-size: 55px;
-        margin-top: 0px;
-        width: 43%;
-        margin-left: 27rem;
     }
     
     .radio-container {
@@ -950,6 +909,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
         color: #f2f2f2;
         padding-top: 0px;
         margin-top: 20px;
+        font-size: 13.5px;
     }
 
     .card-content > p {
@@ -998,16 +958,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         font-weight: 400;
         line-height: 0.8;
         cursor: pointer;
-    }
-    
-    .contact-text-small {
-        letter-spacing: 1px;
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        font-size: 11px;
-        font-family: 'SF Pro Display';
-        margin-top: 70px;
     }
 
     .benefits-text-small {
@@ -1163,12 +1113,8 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
 
     .carousel > .carousel-item > img {
-        width: 60%;
-        height: 100%;
-    }
-
-    .carousel > .carousel-item {
-        height: 100%;
+        width: 80%;
+        height: 430px;
     }
 
     .text-carousel {
@@ -1217,23 +1163,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
 
     textarea.materialize-textarea{
         color: #fff;
-    }
-
-    footer {
-        color: #fff;
-        font-family: 'SF Pro Display Semi-Bold';
-        margin-top: 80px;
-    }
-
-    .footer-content {
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 40px;
-    }
-
-    .footer-content > p  {
-        font-family: 'SF Pro Display Semi-Bold';
-        font-size: 13px;
     }
 
     .container-icons-rrss {
