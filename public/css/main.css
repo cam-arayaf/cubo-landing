@@ -28,7 +28,7 @@
     src: url('../assets/fonts/spartan/semi-bold.ttf');
 }
 
-*:not(.modal):not(.modal-overlay):not(.stars):not(.list-links):not(header) {
+*:not(.modal):not(.modal-overlay):not(.stars):not(.list-links):not(header):not(.carousel-item) {
     position: relative;
     z-index: 1;
 }
