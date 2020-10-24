@@ -28,6 +28,14 @@
     src: url('../assets/fonts/spartan/semi-bold.ttf');
 }
 
+.carousel {
+    height: 559px;
+}
+
+.carousel.carousel-slider .carousel-item {
+    min-height: 559px;
+}
+
 *:not(.modal):not(.modal-overlay):not(.stars):not(.list-links):not(header):not(.carousel-item) {
     position: relative;
     z-index: 1;
@@ -784,7 +792,7 @@ footer {
     }
     
     .info-card {
-        
+        border-radius: 20px;
         border: 2px solid transparent;
         border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
         width: 30%;
@@ -1137,8 +1145,8 @@ footer {
     }
 
     .carousel > .carousel-item > img {
-        width: 60%;
-        height: 100%;
+        width: 945px;
+        height: 559px;
     }
 
     .text-carousel {

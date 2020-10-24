@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //INITIALIZE MODAL, CAROUSEL AND COLLAPSIBLE
     const modalInstance = M.Modal.init(modal, { dismissible: false });
-    M.Carousel.init(carousel, { fullWidth: true, duration: 150 });
+    M.Carousel.init(carousel, { fullWidth: true, duration: 150, indicators: true });
     M.Collapsible.init(collapsible, { accordion: true });
 
     // AUTOPLAY SLIDER
