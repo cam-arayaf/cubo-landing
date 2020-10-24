@@ -102,6 +102,22 @@ textarea:not(.browser-default):focus:not([readonly]) {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+/* GLOBAL STYLES */
+.card:hover {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    transition: 0.3s;
+}
+
+.small-text {
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 0.8;
+    color: rgba(30, 143, 255, 0.74);
+    font-size: 11px;
+    font-family: 'SF Pro Display';
+}
+
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
@@ -114,15 +130,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         text-align: center;
         font-size: 12px;
         background: radial-gradient(ellipse at top, #24303d 0%, #090a0f 100%);
-    }
-
-    .small-text {
-        letter-spacing: 1px;
-        font-weight: 500;
-        line-height: 0.8;
-        color: rgba(30, 143, 255, 0.74);
-        font-size: 11px;
-        font-family: 'SF Pro Display';
     }
 
     .nav-wraper > .brand-logo > img {
@@ -352,13 +359,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         margin-left: 20px;
         margin-right: 20px;
         background-color: transparent;
-    }
-
-    .card:hover {
-        border: 2px solid transparent;
-        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     .card-stacked > p {
@@ -917,10 +917,15 @@ textarea:not(.browser-default):focus:not([readonly]) {
     
     .card {
         box-shadow: none;
-        padding: 10px;
         background-color: transparent;
         margin-left: 30px;
         margin-top: 0px;
+    }
+
+    .card-image {
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .container-cards {
@@ -930,12 +935,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
         width: 65%;
         margin-left: 80px;
         margin-top: 110px;
-    }
-    
-    .card:hover {
-        border: 2px solid transparent;
-        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        padding-bottom: 0px;
     }
     
     .card-stacked > p {
@@ -948,7 +947,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
     }
     
     .card-stacked > .card-content {
-        word-break: break-all;
         color: #f2f2f2;
         padding-top: 0px;
         margin-top: 20px;
@@ -956,7 +954,6 @@ textarea:not(.browser-default):focus:not([readonly]) {
 
     .card-content > p {
         text-align: justify;
-        word-wrap: break-word;
     }
     
     .about {
