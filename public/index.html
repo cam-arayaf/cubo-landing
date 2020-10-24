@@ -12,6 +12,19 @@
         <title>Cubo</title>
     </head>
     <body>
+        <!--MODAL-->
+        <div class="modal">
+            <div class="modal-content">
+                <h4 class="modal-title d-none"></h4>
+                <p class="modal-first-paragraph d-none"></p>
+                <p class="modal-last-paragraph d-none"></p>
+                <img class="modal-image" alt="cubo-logo-azul" src="./assets/images/svg/cubo-logo-azul.svg">
+                <div class="modal-buttons d-none">
+                    <a class="modal-close discover">CERRAR</a>
+                </div>
+            </div>
+        </div>
+        <!--STARS-->
         <div class="stars stars1 t-0"></div>
         <div class="stars stars2 t-0"></div>
         <div class="stars stars3 t-0"></div>
@@ -331,7 +344,7 @@
             <div class="contact-section">
                 <p class="contact-text-small">CONTÁCTANOS</p>
                 <p class="contact-title">Solicitar una demo de Cubo</p>
-                <form action="https://cubo-api-ciaf.herokuapp.com/send-email" method="POST" target="_blank">
+                <form action="https://cubo-api-ciaf.herokuapp.com/send-email" method="POST" target="_blank" autocomplete="off">
                     <div class="container-radio-buttons">
                         <ul class="radio-container">
                             <li class="radio-buttons">
@@ -369,7 +382,7 @@
                             <textarea rows="10" cols="20" id="comment" class="form-control materialize-textarea" placeholder="Déjanos tu comentario" minlength="6" maxlength="250"></textarea>
                         </div>
                     </div>
-                    <button type="submit" id="bottom-page" class="btn-send-email">Enviar</button>
+                    <button type="submit" id="bottom-page" class="btn-send-email disabled-button" disabled>Enviar</button>
                 </form>
             </div>
         </div>

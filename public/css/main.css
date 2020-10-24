@@ -28,6 +28,11 @@
     src: url('../assets/fonts/spartan/semi-bold.ttf');
 }
 
+*:not(.modal):not(.modal-overlay):not(.stars):not(.list-links):not(header) {
+    position: relative;
+    z-index: 1;
+}
+
 h1, button {
     font-family: 'Spartan Semi-Bold';
 }
@@ -74,6 +79,28 @@ textarea:not(.browser-default):focus:not([readonly]) {
 
 .icon-svg-container img {
     width: 100px;
+}
+
+.d-none {
+    display: none;
+}
+
+.modal {
+    color: rgb(12, 46, 80);
+}
+
+.modal-content img {
+    animation: spin infinite 2s linear;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    text-align: right;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* ------------------- Smartphones ------------------- */

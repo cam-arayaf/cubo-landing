@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     //SELECTORS
+    const modal = document.querySelector('.modal');
+    const modalTitle = document.querySelector('.modal-title');
+    const modalFirstParagraph = document.querySelector('.modal-first-paragraph');
+    const modalLastParagraph = document.querySelector('.modal-last-paragraph');
+    const modalImage = document.querySelector('.modal-image');
+    const modalButtons = document.querySelector('.modal-buttons');
     const collapsible = document.querySelectorAll('.collapsible');
     const carousel = document.querySelectorAll('.carousel');
     const form = document.querySelector("form");
@@ -17,19 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const regexPhone = /[^0-9]/;
 
-    //RESET VALUES
-    role.forEach(e => e.checked = e.value === 'Directivo');
-    name.value = '';
-    establishment.value = '';
-    email.value = '';
-    phone.value = '';
-    comment.value = '';
-    bottomPage.disabled = true;
-    bottomPage.classList.add('disabled-button');
-
     //INITIALIZE COLLAPSIBLE AND CAROUSEL
     M.Collapsible.init(collapsible, { accordion: true });
     M.Carousel.init(carousel, { fullWidth: true });
+    const modalInstance = M.Modal.init(modal, { dismissible: false });
 
     // AUTOPLAY SLIDER
     setInterval(() => M.Carousel.getInstance(carousel[0]).next(), 4500);
@@ -71,8 +68,30 @@ document.addEventListener('DOMContentLoaded', () => {
         validateButton();
     }
 
+    const setModalElements = (newValues, title, firstParagraph, lastParagraph) => {
+        modalTitle.textContent = title;
+        modalFirstParagraph.textContent = firstParagraph;
+        modalLastParagraph.textContent = lastParagraph;
+        newValues ? modalTitle.classList.remove('d-none') : modalTitle.classList.add('d-none');
+        newValues ? modalFirstParagraph.classList.remove('d-none') : modalFirstParagraph.classList.add('d-none');
+        newValues ? modalLastParagraph.classList.remove('d-none') : modalLastParagraph.classList.add('d-none');
+        newValues ? modalImage.classList.add('d-none') : modalImage.classList.remove('d-none');
+        newValues ? modalButtons.classList.remove('d-none') : modalButtons.classList.add('d-none');
+    }
+
+    const resetValues = () => {
+        role.forEach(e => e.checked = e.value === 'Directivo');
+        name.value = '';
+        establishment.value = '';
+        email.value = '';
+        phone.value = '';
+        comment.value = '';
+    }
+
     const sendForm = event => {
         event.preventDefault();
+        setModalElements(false, '', '', '');
+        modalInstance.open();
 
         const { action, method } = event.target;
         const upperCaseFirstLetterFirstWord = value => value.charAt(0).toUpperCase() + value.slice(1);
@@ -95,9 +114,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         fetch(action, options)
             .then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => console.log(error));
+            .then(() => {
+                const title = 'Enhorabuena!!';
+                const firstParagraph = 'Tu solicitud ha sido enviada correctamente.';
+                const lastParagraph = 'Muchas gracias por preferir nuestros servicios.';
+                setModalElements(true, title, firstParagraph, lastParagraph);
+                resetValues();
+                validateButton();
+            })
+            .catch(() => {
+                const title = 'Ups!!';
+                const firstParagraph = 'Parece que tenemos problemas en nuestros servidores.';
+                const lastParagraph = 'Podrías intentarlo nuevamente.';
+                setModalElements(true, title, firstParagraph, lastParagraph);
+            });
     }
+
+    //CALL CUSTOM FUNCTIONS
+    resetValues();
 
     //EVENTS
     form.onsubmit = sendForm;
