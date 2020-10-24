@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalLastParagraph = document.querySelector('.modal-last-paragraph');
     const modalImage = document.querySelector('.modal-image');
     const modalButtons = document.querySelector('.modal-buttons');
-    const collapsible = document.querySelectorAll('.collapsible');
     const carousel = document.querySelectorAll('.carousel');
+    const collapsible = document.querySelectorAll('.collapsible');
     const form = document.querySelector("form");
     const role = document.querySelectorAll('.role');
     const name = document.querySelector('#name');
@@ -23,15 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const regexPhone = /[^0-9]/;
 
-    //INITIALIZE COLLAPSIBLE AND CAROUSEL
-    M.Collapsible.init(collapsible, { accordion: true });
-    M.Carousel.init(carousel, { fullWidth: true, duration: 150 });
+    //INITIALIZE MODAL, CAROUSEL AND COLLAPSIBLE
     const modalInstance = M.Modal.init(modal, { dismissible: false });
+    M.Carousel.init(carousel, { fullWidth: true, duration: 150 });
+    M.Collapsible.init(collapsible, { accordion: true });
 
     // AUTOPLAY SLIDER
     setInterval(() => M.Carousel.getInstance(carousel[0]).next(), 4500);
 
     //CUSTOM FUNCTIONS
+    const resetValues = () => {
+        role.forEach(e => e.checked = e.value === 'Directivo');
+        name.value = '';
+        establishment.value = '';
+        email.value = '';
+        phone.value = '';
+        comment.value = '';
+    }
+
     const setClassField = (target, minLength, type, regex) => {
         const evaluateWay = type === 'email' ? regex.test(target.value.trim()) : !(target.value.length < minLength);
         const className = type === 'textarea' ? 'wrong-textarea' : 'wrong-input';
@@ -68,35 +77,35 @@ document.addEventListener('DOMContentLoaded', () => {
         validateButton();
     }
 
-    const setModalElements = (newValues, title, firstParagraph, lastParagraph) => {
-        modalTitle.textContent = title;
-        modalFirstParagraph.textContent = firstParagraph;
-        modalLastParagraph.textContent = lastParagraph;
-        newValues ? modalTitle.classList.remove('d-none') : modalTitle.classList.add('d-none');
-        newValues ? modalFirstParagraph.classList.remove('d-none') : modalFirstParagraph.classList.add('d-none');
-        newValues ? modalLastParagraph.classList.remove('d-none') : modalLastParagraph.classList.add('d-none');
-        newValues ? modalImage.classList.add('d-none') : modalImage.classList.remove('d-none');
-        newValues ? modalButtons.classList.remove('d-none') : modalButtons.classList.add('d-none');
-    }
-
-    const resetValues = () => {
-        role.forEach(e => e.checked = e.value === 'Directivo');
-        name.value = '';
-        establishment.value = '';
-        email.value = '';
-        phone.value = '';
-        comment.value = '';
-    }
-
     const sendForm = event => {
         event.preventDefault();
+
+        const upperCaseFirstLetterFirstWord = value => value.charAt(0).toUpperCase() + value.slice(1);
+        const upperCaseFirstLetterAllWords = value => value.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+
+        const setModalElements = (newValues, title, firstParagraph, lastParagraph) => {
+            modalTitle.textContent = title;
+            modalFirstParagraph.textContent = firstParagraph;
+            modalLastParagraph.textContent = lastParagraph;
+            newValues ? modalTitle.classList.remove('d-none') : modalTitle.classList.add('d-none');
+            newValues ? modalFirstParagraph.classList.remove('d-none') : modalFirstParagraph.classList.add('d-none');
+            newValues ? modalLastParagraph.classList.remove('d-none') : modalLastParagraph.classList.add('d-none');
+            newValues ? modalImage.classList.add('d-none') : modalImage.classList.remove('d-none');
+            newValues ? modalButtons.classList.remove('d-none') : modalButtons.classList.add('d-none');
+        }
+
+        const responseActions = (responseOk, newValues) => {
+            const title = responseOk ? 'Enhorabuena!!' : 'Ups!!';
+            const firstParagraph = responseOk ? 'Tu solicitud ha sido enviada correctamente.' : 'Parece que tenemos problemas en nuestros servidores.';
+            const lastParagraph = responseOk ? 'Muchas gracias por preferir nuestros servicios.' : 'Podrías intentarlo nuevamente.';
+            setModalElements(newValues, title, firstParagraph, lastParagraph);
+            responseOk && resetValues();
+            responseOk && validateButton();
+        }
+
         setModalElements(false, '', '', '');
         modalInstance.open();
 
-        const { action, method } = event.target;
-        const upperCaseFirstLetterFirstWord = value => value.charAt(0).toUpperCase() + value.slice(1);
-        const upperCaseFirstLetterAllWords = value => value.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
-        
         const fields = {
             role: Object.values(role).find(e => e.checked).value,
             name: upperCaseFirstLetterAllWords(name.value),
@@ -106,6 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
             comment: upperCaseFirstLetterFirstWord(comment.value)
         };
 
+        const { action, method } = event.target;
+
         const options = { 
             method,
             body: JSON.stringify(fields),
@@ -114,20 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         fetch(action, options)
             .then(response => response.json())
-            .then(() => {
-                const title = 'Enhorabuena!!';
-                const firstParagraph = 'Tu solicitud ha sido enviada correctamente.';
-                const lastParagraph = 'Muchas gracias por preferir nuestros servicios.';
-                setModalElements(true, title, firstParagraph, lastParagraph);
-                resetValues();
-                validateButton();
-            })
-            .catch(() => {
-                const title = 'Ups!!';
-                const firstParagraph = 'Parece que tenemos problemas en nuestros servidores.';
-                const lastParagraph = 'Podrías intentarlo nuevamente.';
-                setModalElements(true, title, firstParagraph, lastParagraph);
-            });
+            .then(data => responseActions(data.emailSent, true))
+            .catch(() => responseActions(false, true));
     }
 
     //CALL CUSTOM FUNCTIONS
