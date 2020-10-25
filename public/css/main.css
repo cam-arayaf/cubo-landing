@@ -132,11 +132,6 @@ footer {
     cursor: pointer;
 }
 
-.card:hover {
-    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-    transition: 0.2s;
-}
-
 .small-text {
     letter-spacing: 3px;
     font-weight: 500;
@@ -169,10 +164,11 @@ footer {
 .container-sessions {
     display: inline-flex;
     margin-top: 50px;
-    margin-bottom:150px;
+    margin-bottom:100px;
 }
 
 .carousel {
+    height: 200px;
     margin-bottom: 100px;
     margin-top: 50px;
 }
@@ -194,12 +190,6 @@ footer {
     border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
     color: #fff;
     margin: auto;
-}
-
-.container-card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-gap: 10px;
 }
 
 .info-card {
@@ -226,7 +216,7 @@ footer {
     padding:10px;
     padding-left: 25px;
     padding-right: 25px;
-    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    background: linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
     color: #fff;
     font-size: 15px;
     font-weight: 400;
@@ -236,12 +226,32 @@ footer {
 
 .card-content > p {
     text-align: left;
+    color: #f2f2f2;
+}
+
+.card:hover {
+    border: 2px solid;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    transition: 0.3s;
+}
+
+.collapsible-header:focus {
+    background-color: transparent !important;
 }
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
     html {
         scroll-behavior: smooth;
+    }
+
+    .carousel.carousel-slider .carousel-item {
+        margin-top: 11px;
+    }
+
+    .small-text {
+        font-size: 10px;
+        letter-spacing: 1px;
     }
 
     .section-title {
@@ -382,7 +392,7 @@ footer {
     }
 
     .subjects-section {
-        margin-top: 30px;
+        margin-top: 80px;
         color: #fff;
     }
 
@@ -424,8 +434,8 @@ footer {
     }
 
     .section-learn {
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-top: 0px;
+        margin-bottom: 70px;
         padding: 0px;
         width: 100%;
     }
@@ -464,9 +474,20 @@ footer {
     .card {
         box-shadow: none;
         margin-top: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100%;
         background-color: transparent;
+    }
+
+    .card-container {
+        display: block;
+    }
+
+    .info-card-end {
+        width: 100%;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        color: #fff;
+        width: 80%;
     }
 
     .card-stacked > p {
@@ -479,11 +500,9 @@ footer {
     }
 
     .card-stacked > .card-content {
-        word-break: break-all;
-        padding: 0px;
-        margin: 20px;
-        text-align: left;
-        color: #f2f2f2;
+        padding-top: 0px;
+        margin-top: 20px;
+        font-size: 13px;
     }
 
     .card-image {
@@ -507,8 +526,8 @@ footer {
 
     .about-text {
         color: #24303d;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .contact-title {
@@ -557,10 +576,6 @@ footer {
         width: 65%;
     }
 
-    form > .container-radio-buttons {
-        margin-bottom: 25px;
-    }
-
     .collapsible-header {
         background: transparent;
         height: 70px;
@@ -581,7 +596,9 @@ footer {
     }
 
     .benefits-ulist > li{
-        margin-top: 10px;
+        font-size: 13px;
+        margin-top: auto;
+        color: #fff;
         width: 100%;
     }
 
@@ -617,6 +634,7 @@ footer {
 
     .collapsible-header > .grade {
         font-family: 'SF Pro Display Semi-Bold';
+        font-size: 12px;
         margin-top: 5px;
     }
 
@@ -897,7 +915,7 @@ footer {
     }
     
     .radio-container {
-        display: flex;
+        display: inline-flex;
     }
     
     .radio-buttons {
@@ -952,10 +970,15 @@ footer {
     }
     
     .card-stacked > .card-content {
-        color: #f2f2f2;
         padding-top: 0px;
         margin-top: 20px;
         font-size: 13px;
+    }
+
+    .container-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 10px;
     }
     
     .about {
@@ -981,7 +1004,8 @@ footer {
     .about-text {
         color: #24303d;
         width: 30%;
-        margin-left: 471px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 13px;
     }
 
@@ -1018,7 +1042,8 @@ footer {
     
     .radio-container {
         margin-top: 40px;
-        margin-left: 31em;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .radio-container > .radio-buttons > label {
@@ -1032,11 +1057,6 @@ footer {
         color: #fff;
         font-size: 14px;
         width: 65%;
-    }
-    
-    form > .container-radio-buttons {
-        margin-bottom: 25px;
-        padding: 0px;
     }
     
     .btn-send-email {
@@ -1068,11 +1088,6 @@ footer {
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 0px;
     }
-    
-    .collapsible-header:focus {
-        background-color: transparent !important;
-    }
-
 
     .collapsible {
         color: transparent;
@@ -1158,7 +1173,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 45%;
-        margin-left: 380px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 20px;
         margin-top: 30px;
         color: #fff;
