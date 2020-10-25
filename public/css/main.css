@@ -907,13 +907,8 @@ footer {
         height: 100%;
         margin-top: 130px;
         border-radius: 100px;
-        transition: linear 0.2s;
     }
-    
-    .eluney-img:hover {
-        transform: scale(1.3);
-    }
-    
+
     .radio-container {
         display: inline-flex;
     }
