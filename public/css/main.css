@@ -121,6 +121,17 @@ footer {
     border: 1px solid transparent;
 }
 
+.collapsible-body {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.radio-buttons > .radio-label:hover {
+    cursor: pointer;
+}
+
 .card:hover {
     border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
     transition: 0.2s;
@@ -175,6 +186,56 @@ footer {
 .footer-content > p  {
     font-family: 'SF Pro Display Semi-Bold';
     font-size: 13px;
+}
+
+.info-card-end {
+    width: 25%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    color: #fff;
+    margin: auto;
+}
+
+.container-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 10px;
+}
+
+.info-card {
+    display: block;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    color: #fff;
+    margin: 10%;
+    height: auto;
+}
+
+.text-info-card {
+    margin: 6%;
+    font-size: 12.2px;
+    color: #f2f2f2;
+}
+
+.seemore-btn {
+    font-family: 'SF Pro Display Semi-Bold';
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 0.8;
+    cursor: pointer;
+}
+
+.card-content > p {
+    text-align: left;
 }
 
 /* ------------------- Smartphones ------------------- */
@@ -301,14 +362,8 @@ footer {
     }
 
     .info-card {
-        border-radius: 20px;
         border: 2px solid transparent;
         border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        padding: 0px;
-        margin: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
         color: #fff;
     }
 
@@ -456,22 +511,6 @@ footer {
         margin-right: 25px;
     }
     
-    .seemore-btn {
-        font-family: 'SF Pro Display Semi-Bold';
-        margin-top: 10px;
-        display: inline-block;
-        border-radius: 50px;
-        border: none;
-        padding:10px;
-        padding-left: 25px;
-        padding-right: 25px;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-        color: #fff;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 0.8;
-    }
-
     .contact-title {
         color: #fff;
         margin: 6px;
@@ -548,13 +587,6 @@ footer {
 
     .collapsible-header > img {
         width: 38px;
-    }
-
-    .collapsible-body {
-        border: 1px solid #ddd;
-        border-top: none;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 
     .collapsible-header > p {
@@ -808,13 +840,6 @@ footer {
         margin-top: 20px;
     }
     
-    .text-info-card {
-        margin-top: 20px;
-        margin: 20px;
-        font-size: 12.2px;
-        color: #f2f2f2;
-    }
-    
     .subjects-section {
         margin-top: 100px;
         color: #fff;
@@ -922,7 +947,6 @@ footer {
     .container-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
         width: 65%;
         margin-left: 80px;
         margin-top: 110px;
@@ -941,11 +965,7 @@ footer {
         color: #f2f2f2;
         padding-top: 0px;
         margin-top: 20px;
-        font-size: 13.5px;
-    }
-
-    .card-content > p {
-        text-align: justify;
+        font-size: 13px;
     }
     
     .about {
@@ -973,23 +993,6 @@ footer {
         width: 30%;
         margin-left: 471px;
         font-size: 13px;
-    }
-    
-    .seemore-btn {
-        font-family: 'SF Pro Display Semi-Bold';
-        margin-top: 10px;
-        display: inline-block;
-        border-radius: 50px;
-        border: none;
-        padding:10px;
-        padding-left: 25px;
-        padding-right: 25px;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-        color: #fff;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 0.8;
-        cursor: pointer;
     }
 
     .benefits-text-small {
@@ -1020,10 +1023,6 @@ footer {
         box-shadow: 2px 1px  1px rgb(0, 174, 255);
         transition: 0.2s;
         transform: scale(0.9);
-        cursor: pointer;
-    }
-
-    .radio-buttons > .radio-label:hover {
         cursor: pointer;
     }
     
@@ -1068,10 +1067,6 @@ footer {
         cursor: pointer;
     }
 
-    .collapsible > li {
-        list-style-type: none;
-    }
-
     .collapsible-header {
         background: transparent;
         height: 70px;
@@ -1108,13 +1103,6 @@ footer {
     .collapsible-header > img {
         width: 38px;
         margin-left: 20px;
-    }
-
-    .collapsible-body {
-        border: 1px solid #ddd;
-        border-top: none;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 
     .collapsible-header > p {
@@ -1154,9 +1142,10 @@ footer {
         text-align: left;
         font-size: 16px;
         float: right;
-        width: 7%;
         margin-right: 200px;
         margin-top: 125px;
+        width: 60%;
+        height: 100%;
     }
 
     .im-eluney {
