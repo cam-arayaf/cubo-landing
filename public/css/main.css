@@ -154,10 +154,10 @@ footer {
 
 .section-title {
     margin: auto;
-    font-size: 55px;
+    font-size: 50px;
     margin-top: 30px;
     color: #fff;
-    width: 55%;
+    width: 57%;
     margin-bottom: 50px;
 }
 
@@ -165,12 +165,6 @@ footer {
     display: inline-flex;
     margin-top: 50px;
     margin-bottom:100px;
-}
-
-.carousel {
-    height: 200px;
-    margin-bottom: 100px;
-    margin-top: 50px;
 }
 
 .footer-content {
@@ -230,9 +224,9 @@ footer {
 }
 
 .card:hover {
-    border: 2px solid;
-    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-    transition: 0.3s;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 2;
+    transition: 10s;
 }
 
 .collapsible-header:focus {
@@ -247,6 +241,12 @@ footer {
 
     .carousel.carousel-slider .carousel-item {
         margin-top: 11px;
+    }
+
+    .carousel {
+        height: 200px;
+        margin-bottom: 60px;
+        margin-top: 60px;
     }
 
     .small-text {
@@ -913,15 +913,7 @@ footer {
     .eluney-img:hover {
         transform: scale(1.3);
     }
-
-    .eluney-second-image {
-        transition: linear 0.2s;
-    }
-
-    .eluney-second-image:hover {
-        transform: scale(1.1);
-    }
-
+    
     .radio-container {
         display: inline-flex;
     }
@@ -1145,6 +1137,10 @@ footer {
         float: center;
     }
 
+    .carousel {
+        margin-top: 50px;
+    }
+
     .carousel > .carousel-item > img {
         width: 945px;
         height: 559px;
@@ -1164,30 +1160,17 @@ footer {
     .im-eluney {
         display: inline-block;
         font-family: 'SF Pro Display Semi-Bold';
-        border-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         color: #fff;
         padding: 10px;
         padding-right: 20px;
         padding-left: 20px;
         margin-top: 30px;
+        margin-left: 60px;
         margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        background: linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-    }
-
-    .im-eluney:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border: 11px solid transparent;
-        border-top-color: #16b6ff;
-        border-bottom: 0;
-        margin-left: -11px;
-        margin-bottom: -11px;
+        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
     }
 
     .container-inputs{
