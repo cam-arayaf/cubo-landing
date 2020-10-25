@@ -913,7 +913,15 @@ footer {
     .eluney-img:hover {
         transform: scale(1.3);
     }
-    
+
+    .eluney-second-image {
+        transition: linear 0.2s;
+    }
+
+    .eluney-second-image:hover {
+        transform: scale(1.1);
+    }
+
     .radio-container {
         display: inline-flex;
     }
@@ -1156,17 +1164,30 @@ footer {
     .im-eluney {
         display: inline-block;
         font-family: 'SF Pro Display Semi-Bold';
-        border-bottom-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-radius: 20px;
         color: #fff;
         padding: 10px;
         padding-right: 20px;
         padding-left: 20px;
         margin-top: 30px;
-        margin-left: 60px;
         margin-bottom: 30px;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    }
+
+    .im-eluney:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-top-color: #16b6ff;
+        border-bottom: 0;
+        margin-left: -11px;
+        margin-bottom: -11px;
     }
 
     .container-inputs{
