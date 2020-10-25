@@ -823,16 +823,6 @@ footer {
         color: #f2f2f2;
     }
     
-    .info-card {
-        border-radius: 20px;
-        border: 2px solid transparent;
-        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        width: 30%;
-        margin-left: 31em;
-        margin-top: 20px;
-        color: #fff;
-    }
-    
     .info-title {
         font-weight: 700;
         font-size: 15px;
