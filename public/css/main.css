@@ -701,6 +701,10 @@ footer {
         align-items: center;
     }
 
+    a.a-lt000.hvr-float.hvr-underline-from-center:hover {
+        background: transparent;
+    }
+
     html {
         scroll-behavior: smooth;
     }
