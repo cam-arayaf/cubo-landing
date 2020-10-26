@@ -72,6 +72,10 @@
     height: 559px;
 }
 
+.carousel .indicators {
+    position: absolute !important;
+}
+
 .carousel.carousel-slider .carousel-item {
     min-height: 559px;
 }
