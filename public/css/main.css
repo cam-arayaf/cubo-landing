@@ -132,6 +132,17 @@ footer {
     cursor: pointer;
 }
 
+.nav-wraper > .list-inline > .lt000 > .a-lt000{
+    padding: 3px;
+    margin-left: 40px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 14px;
+    color: rgb(12, 46, 80);
+    font-family: 'SF Pro Display Regular';
+    font-weight: 600;
+}
+
 .small-text {
     letter-spacing: 3px;
     font-weight: 500;
@@ -165,6 +176,8 @@ footer {
     display: inline-flex;
     margin-top: 50px;
     margin-bottom:100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-content {
@@ -231,6 +244,96 @@ footer {
 
 .collapsible-header:focus {
     background-color: transparent !important;
+}
+
+.apply-demo {
+    letter-spacing: 1px;
+    font-family: 'SF Pro Display Semi-Bold';
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    color: #fff;
+    font-size: 12px;
+    line-height: 0.8;
+    cursor: pointer;
+    transition: linear 0.2s;
+    display: inline-block;
+}
+
+.list-links {
+    background-color:#fff;
+    z-index: 2;
+}
+
+.discover {
+    font-family: 'SF Pro Display Semi-Bold';
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 0.8;
+    color: #fff;
+    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+}
+
+.discover-button {
+    display: inline-block;
+    transition: linear 0.2s;
+}
+
+.discover-button:hover {
+    transform: scale(1.2);
+}
+
+.sess-type {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0px;
+    font-family: 'SF Pro Display';
+}
+
+.sess-text-card {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #f2f2f2;
+}
+
+.im-eluney {
+    display: inline-block;
+    font-family: 'SF Pro Display Semi-Bold';
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+}
+
+.im-eluney:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: #16b6ff;
+    border-bottom: 0;
+    margin-left: -11px;
+    margin-bottom: -11px;
 }
 
 /* ------------------- Smartphones ------------------- */
@@ -319,20 +422,6 @@ footer {
         margin-top: 20px;
     }
 
-    .discover {
-        font-family: 'SF Pro Display Semi-Bold';
-        padding: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-radius: 50px;
-        border: none;
-        margin-bottom: 20px;
-        font-size: 12px;
-        line-height: 0.8;
-        color: #fff;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-    }
-
     .container-sessions {
         margin-bottom: 100px;
         display: block;
@@ -349,20 +438,6 @@ footer {
 
     .container-cards {
         margin-bottom: 0px;
-    }
-
-    .sess-type {
-        font-weight: 700;
-        font-size: 15px;
-        margin: 0px;
-        font-family: 'SF Pro Display';
-    }
-
-    .sess-text-card {
-        margin-top: 20px;
-        margin: auto;
-        font-size: 13px;
-        color: #f2f2f2;
     }
 
     .section-title {
@@ -656,6 +731,10 @@ footer {
         cursor: pointer;
     }
 
+    .nav-wraper > .list-inline > .lt000 {
+        padding: 0px;
+    }
+
     .disabled-btn {
         cursor: not-allowed;
         opacity: 0.5;
@@ -695,6 +774,7 @@ footer {
 
 /* ------------------- Desktop ------------------- */
 @media (min-width: 1024px) {
+
     .subjects-content {
         display: flex;
         justify-content: center;
@@ -740,26 +820,6 @@ footer {
         height: 64px;
         margin-left: 120px;
     }
-    
-    .apply-demo {
-        letter-spacing: 1px;
-        font-family: 'SF Pro Display Semi-Bold';
-        display: inline-block;
-        border-radius: 50px;
-        border: none;
-        margin-top: 7px;
-        margin-bottom: 5px;
-        padding: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-        color: #fff;
-        font-size: 12px;
-        line-height: 0.8;
-        cursor: pointer;
-        transition: linear 0.2s;
-        display: inline-block;
-    }
 
     .apply-demo:hover {
         transform: scale(1.2);
@@ -769,58 +829,12 @@ footer {
         display: none;
     }
     
-    .nav-wraper > .list-inline > .lt000 > .a-lt000{
-        padding: 3px;
-        margin-left: 40px;
-        padding-bottom: 0px;
-        padding-top: 0px;
-        font-size: 14px;
-        color: rgb(12, 46, 80);
-        font-family: 'SF Pro Display Regular';
-        font-weight: 600;
-    }
-    
-    .nav-wraper > .list-inline > .lt000 {
-        padding: 0px;
-    }
-    
     .list-inline {
         margin-left: 180px;
     }
     
-    .list-links {
-        background-color:#fff;
-        z-index: 2;
-    }
-    
     .first-title {
         margin-top: 40px;
-    }
-    
-    .discover {
-        letter-spacing: 1px;
-        font-family: 'SF Pro Display Semi-Bold';
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 50px;
-        border: none;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 13px;
-        color: #fff;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-        cursor: pointer;
-        transition: linear 0.2s;
-    }
-
-    .discover-button {
-        display: inline-block;
-        transition: linear 0.2s;
-    }
-
-    .discover-button:hover {
-        transform: scale(1.2);
     }
     
     .session-card {
@@ -829,20 +843,6 @@ footer {
         color: #fff;
         width: 20%;
         margin-left: 50px;
-    }
-    
-    .sess-type {
-        font-weight: 700;
-        font-size: 15px;
-        margin: 0px;
-        font-family: 'SF Pro Display';
-    }
-    
-    .sess-text-card {
-        margin-top: 20px;
-        margin: 10px;
-        font-size: 13px;
-        color: #f2f2f2;
     }
     
     .info-title {
@@ -1156,35 +1156,6 @@ footer {
         height: 100%;
     }
 
-    .im-eluney {
-        display: inline-block;
-        font-family: 'SF Pro Display Semi-Bold';
-        border-radius: 20px;
-        color: #fff;
-        padding: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        background: linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-    }
-
-    .im-eluney:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border: 11px solid transparent;
-        border-top-color: #16b6ff;
-        border-bottom: 0;
-        margin-left: -11px;
-        margin-bottom: -11px;
-    }
-
     .container-inputs{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1222,6 +1193,68 @@ footer {
 
     .col > textarea {
         width: 100%;
+    }
+
+}
+
+/* ------------------- Tablets ------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .apply-demo2 {
+        display: none;
+    }
+
+    .logo-container > img {
+        
+    }
+
+    .nav-wraper > .brand-logo > img {
+        width: 90px;
+        height: 64px;
+        margin-left: 10px;
+    }
+
+    .container-sessions {
+        width: 95%;
+        margin-bottom: 60px;
+        margin-top: 50px;
+        color: #fff;
+    }
+
+    .icon-svg-container > img {
+        width: 50%;
+    }
+
+    .session-card {
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .container-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 10px;
+    }
+
+    .info-card {
+        display: block;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        color: #fff;
+        margin: 10%;
+        height: auto;
+    }
+
+    .text-info-card {
+        font-size: 11px;
+    }
+
+    .info-card-end {
+        width: 25%;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        color: #fff;
+        margin: auto;
     }
 
 }
