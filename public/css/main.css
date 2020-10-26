@@ -121,13 +121,6 @@ footer {
     border: 1px solid transparent;
 }
 
-.collapsible-body {
-    border: 1px solid #ddd;
-    border-top: none;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
 .radio-buttons > .radio-label:hover {
     cursor: pointer;
 }
@@ -336,6 +329,171 @@ footer {
     margin-bottom: -11px;
 }
 
+.collapsible-header {
+    background: transparent;
+    height: 80px;
+    border: 1px solid #ddd;
+    color: #fff;
+    background: transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+} 
+
+.collapsible-body {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.collapsible-header > .small {
+    font-family: 'SF Pro Display Regular';
+    font-weight: 100;
+    font-size: 9px;
+    color: rgba(30, 143, 255, 0.74);
+}
+
+.collapsible-header > .title {
+    font-family: 'SF Pro Display';
+}
+
+.subjects-btn {
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: transparent !important;
+    border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+    width: 80%;
+    color: #fff;
+}
+
+.subjects-btn img {
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+.subjects-btn > small {
+    color: #cccc;
+}
+
+.subjects-btn:disabled {
+    border: none;
+    background-color: transparent !important;
+}
+
+.subjects-btn:hover {
+    background-color: transparent !important;
+}
+
+.subjects-btn small {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.subjects-section {
+    margin-top: 80px;
+    color: #fff;
+}
+
+.about-text {
+    color: #24303d;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form > .col > .form-control {
+    font-family: 'SF Pro Display Regular';
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 65%;
+}
+
+.container-inputs input.form-control {
+    color: #fff;
+}
+
+.container-radio-buttons .radio-buttons, .list-inline .lt000 {
+    list-style-type: none !important;
+}
+
+.radio-container > .radio-buttons{
+    background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+.radio-container > li {
+    padding: 0px;
+}
+
+.radio-container > .radio-buttons:hover {
+    box-shadow: 2px 1px  1px rgb(0, 174, 255);
+    transition: 0.2s;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.radio-container > .radio-buttons > label {
+    color: #fff;
+    font-family: 'SF Pro Display Semi-Bold';
+}
+
+.radio-container > .radio-buttons{
+    background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
+    border-radius: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+.radio-container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+textarea {
+    height: 5rem !important;
+}
+
+textarea.materialize-textarea{
+    color: #fff;
+}
+
+.btn-send-email {
+    font-family: 'SF Pro Display Semi-Bold';
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0.8;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
 
@@ -349,6 +507,18 @@ footer {
 
     .carousel.carousel-slider .carousel-item {
         margin-top: 11px;
+    }
+
+    .radio-container > .radio-buttons{
+        margin: 5px;
+    }
+
+    .info-card-end {
+        width: 80%;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
+        color: #fff;
+        margin: auto;
     }
 
     .carousel {
@@ -403,10 +573,6 @@ footer {
         color: rgb(0, 67, 134);
     }
 
-    textarea.materialize-textarea{
-        color: #fff;
-    }
-
     .nav-wraper > .list-inline > .lt000 {
         margin-left: 16px;
         padding: 0px;
@@ -451,19 +617,6 @@ footer {
         margin-top: 20px;
     }
 
-    .info-card {
-        border: 2px solid transparent;
-        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        color: #fff;
-    }
-
-    .info-title {
-        font-weight: 700;
-        font-size: 15px;
-        margin: 0px;
-        margin-top: 20px;
-    }
-
     .text-info-card {
         margin-top: 20px;
         margin: 20px;
@@ -471,46 +624,8 @@ footer {
         color: #f2f2f2;
     }
 
-    .subjects-section {
-        margin-top: 80px;
-        color: #fff;
-    }
-
     .subjects-section > h1 {
         font-size: 40px;
-    }
-
-    .subjects-btn {
-        font-weight: 700;
-        border-radius: 20px;
-        padding: 8px;
-        background-color: transparent !important;
-        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        width: 80%;
-        color: #fff;
-    }
-
-    .subjects-btn img {
-        width: 25px;
-        margin-bottom: 10px;
-    }
-
-    .subjects-btn > small {
-        color: #cccc;
-    }
-
-    .subjects-btn:disabled {
-        border: none;
-        background-color: transparent !important;
-    }
-
-    .subjects-btn:hover {
-        background-color: transparent !important;
-    }
-
-    .subjects-btn small {
-        font-size: 9px;
-        font-weight: 700;
     }
 
     .section-learn {
@@ -551,6 +666,10 @@ footer {
         color:  rgb(0, 174, 255)
     }
 
+    .container-inputs > div {
+        margin-left: 20px;
+    }
+
     .card {
         box-shadow: none;
         margin-top: 30px;
@@ -560,14 +679,6 @@ footer {
 
     .card-container {
         display: block;
-    }
-
-    .info-card-end {
-        width: 100%;
-        border: 2px solid transparent;
-        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
-        color: #fff;
-        width: 80%;
     }
 
     .card-stacked > p {
@@ -580,8 +691,6 @@ footer {
     }
 
     .card-stacked > .card-content {
-        padding-top: 0px;
-        margin-top: 20px;
         font-size: 13px;
     }
 
@@ -617,56 +726,11 @@ footer {
         padding: 0px;
     }
 
-    .radio-container > .radio-buttons{
-        background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
-        border-radius: 20px;
-        padding: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: #fff;
-    }
-
-    .radio-container > li {
-        padding: 0px;
-    }
-
-    .radio-container > .radio-buttons:hover {
-        box-shadow: 2px 1px  1px rgb(0, 174, 255);
-        transition: 0.2s;
-        transform: scale(0.9);
-        cursor: pointer;
-    }
-
     .radio-container {
         margin-top: 30px;
         margin-left: 15px;
         margin-right: 15px;
     }
-
-    .radio-container > .radio-buttons > label {
-        color: #fff;
-        font-family: 'SF Pro Display Semi-Bold';
-    }
-
-    form > .col > .form-control {
-        font-family: 'SF Pro Display Regular';
-        text-align: center;
-        color: #fff;
-        font-size: 14px;
-        width: 65%;
-    }
-
-    .collapsible-header {
-        background: transparent;
-        height: 70px;
-        border: 1px solid #ddd;
-        color: #fff;
-        background: transparent;
-        border-radius: 10px;
-        margin-top: 10px;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-    } 
 
     .collapsible {
         margin-top: 40px;
@@ -683,23 +747,13 @@ footer {
     }
 
     .collapsible-header > img {
-        width: 38px;
+        width: 40px;
+        height: 42px;
     }
 
     .collapsible-header > p {
-        margin-left: 15px;
+        margin-left: 13px;
         text-align: left;
-    }
-
-    .collapsible-header > .small {
-        font-family: 'SF Pro Display Regular';
-        font-weight: 100;
-        font-size: 9px;
-        color: rgba(30, 143, 255, 0.74);
-    }
-
-    .collapsible-header > .title {
-        font-family: 'SF Pro Display';
     }
 
     .benefits-text-small {
@@ -716,24 +770,6 @@ footer {
         font-family: 'SF Pro Display Semi-Bold';
         font-size: 12px;
         margin-top: 5px;
-    }
-
-    .btn-send-email {
-        font-family: 'SF Pro Display Semi-Bold';
-        margin-top: 10px;
-        display: inline-block;
-        border-radius: 50px;
-        border: none;
-        padding:10px;
-        padding-left: 25px;
-        padding-right: 25px;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-        color: #fff;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 0.8;
-        margin-bottom: 20px;
-        cursor: pointer;
     }
 
     .nav-wraper > .list-inline > .lt000 {
@@ -763,12 +799,10 @@ footer {
     }
 
     .container-inputs {
-        width: 70%;
-        margin-left: 50px;
-        color: #fff;
-    }
-
-    .container-inputs input.form-control {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
         color: #fff;
     }
 
@@ -896,25 +930,13 @@ footer {
         margin: 0px;
         margin-top: 20px;
     }
-    
-    .subjects-section {
-        margin-top: 100px;
-        color: #fff;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 
     .subjects-section > h1 {
         font-size: 55px;
     }
     
     .subjects-btn {
-        font-weight: 700;
-        padding: 8px;
-        background-color: transparent;
-        border-image: linear-gradient(to right, #0068FF 0%, #2AFFFF 100%) 1;
         width: 20%;
-        color: #fff;
         margin-top: 60px;
         cursor: pointer;
     }
@@ -926,17 +948,6 @@ footer {
     .subjects-btn img {
         width: 25px;
         margin-bottom: 10px;
-    }
-    
-    .subjects-btn > small {
-        font-size: 9px;
-        font-weight: 700;
-        color: #cccc;
-    }
-    
-    .subjects-btn:disabled {
-        border: none;
-        background-color: transparent !important;
     }
 
     .subjects-btn:focus {
@@ -968,10 +979,6 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         margin: 0px auto;
-    }
-
-    .container-radio-buttons .radio-buttons, .list-inline .lt000 {
-        list-style-type: none !important;
     }
     
     input[type="radio"] {
@@ -1070,55 +1077,12 @@ footer {
         padding: 0px;
     }
     
-    .radio-container > .radio-buttons{
-        background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
-        border-radius: 20px;
-        color: #fff;
-        margin: 10px;
-    }
-    
-    .radio-container > .radio-buttons:hover {
-        box-shadow: 2px 1px  1px rgb(0, 174, 255);
-        transition: 0.2s;
-        transform: scale(0.9);
-        cursor: pointer;
-    }
-    
-    .radio-container {
-        margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .radio-container > .radio-buttons > label {
-        color: #fff;
-        font-family: 'SF Pro Display Semi-Bold';
-    }
-    
     form > .col > .form-control {
         font-family: 'SF Pro Display Regular';
         text-align: center;
         color: #fff;
         font-size: 14px;
         width: 65%;
-    }
-    
-    .btn-send-email {
-        font-family: 'SF Pro Display Semi-Bold';
-        margin-top: 10px;
-        display: inline-block;
-        border-radius: 50px;
-        border: none;
-        padding:10px;
-        padding-left: 25px;
-        padding-right: 25px;
-        background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-        color: #fff;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 0.8;
-        margin-bottom: 20px;
-        cursor: pointer;
     }
 
     .collapsible-header {
@@ -1150,7 +1114,8 @@ footer {
     }
 
     .collapsible-header > img {
-        width: 38px;
+        width: 40px;
+        height: 40px;
         margin-left: 20px;
     }
 
@@ -1302,4 +1267,117 @@ footer {
         margin: auto;
     }
 
+    .collapsible {
+        color: #fff;
+        width: 95%;
+        border: none;
+        border-color: transparent;
+        margin: auto;
+        text-align: left;
+    }
+
+    .collapsible-header > img {
+        width: 50px;
+    }
+
+    .collapsible-header > p {
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    .collapsible-header > .small {
+        margin-top: 18px;
+    }
+
+    .subjects-btn {
+        width: 20%;
+        margin-bottom: 50px;
+    }
+
+    .subjects-section {
+        margin-top: 80px;
+    }
+
+    .card {
+        box-shadow: none;
+        margin-top: 60px;
+        width: 90%;
+        background-color: transparent;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    .card-stacked > p {
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-left: 23px;
+        text-align: left;
+        font-family: 'SF Pro Display';
+    }
+
+    .card-stacked > .card-content {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .card-image {
+        margin-top: 21px;
+        margin-right: 20px;
+    }
+
+    .section-learn > .eluney-img {
+        width: 20%;
+        margin-bottom: 25px;
+    }
+
+    .title-about {
+        margin: 0px;
+        color: #24303d;
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    .about {
+        background-color: #fff;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+    
+    .contact-title {
+        color: #fff;
+        margin: 6px;
+        font-size: 38px;
+        padding: 0px;
+    }
+
+    .about > img {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .radio-container > .radio-buttons {
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+    .radio-container {
+        margin-top: 0px;
+    }
+
+    .container-inputs > div {
+        margin-left: 20px;
+    }
+    
 }
