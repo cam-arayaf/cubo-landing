@@ -774,6 +774,46 @@ footer {
 
 /* ------------------- Desktop ------------------- */
 @media (min-width: 1024px) {
+    
+    /* Images */
+    .nave-form {
+        left: 10%;
+        width: 10%;
+        bottom: 0;
+    }
+
+    .nave-slider {
+        left: 3%;
+        bottom: -8%;
+        width: 8%;
+    }
+
+    .planeta-cubo {
+        top: -10%;
+        right: -1%;
+        bottom: 0;
+    }
+
+    .nave-uno-cubo {
+        left: 3%;
+        width: 5%;
+        bottom: 0;
+    }
+
+    .nave-header {
+        right: 0;
+    }
+
+    .nave-header-izquierda {
+        left: 0;
+        width: 4%;
+        margin-left: 10%;
+    }
+
+    .nave-uno-cubo, .planeta-cubo, .nave-slider, .nave-form, .nave-header, .nave-header-izquierda {
+        position: absolute !important;
+        opacity: 0.85;
+    }
 
     .subjects-content {
         display: flex;
