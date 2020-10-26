@@ -537,6 +537,10 @@ textarea.materialize-textarea{
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
 
+    .nav-wraper > .list-inline > .lt000 > .a-lt000 {
+        margin-left: 0px;
+    }
+
     .nave-uno-cubo, .planeta-cubo, .nave-slider, .nave-form, .nave-header, .nave-header-izquierda {
         display: none;
     }
@@ -581,8 +585,7 @@ textarea.materialize-textarea{
     }
 
     .nav-wraper > .brand-logo > img {
-        width: 112px;
-        height: 56px;
+        display: none;
     }
 
     .apply-demo {
@@ -614,12 +617,11 @@ textarea.materialize-textarea{
     }
 
     .nav-wraper > .list-inline > .lt000 {
-        margin-left: 16px;
-        padding: 0px;
+        margin-left: 8px;
     }
 
     .list-inline {
-        margin-left: 25px;
+        margin-left: 19px;
     }
 
     .list-links {
@@ -1208,14 +1210,14 @@ textarea.materialize-textarea{
 }
 
 /* ------------------- Tablets ------------------- */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 479px) and (max-width: 1024px) {
     
     .apply-demo2 {
         display: none;
     }
 
-    .logo-container > img {
-        
+    .section-title {
+        width: 70%;
     }
 
     .nav-wraper > .brand-logo > img {
@@ -1379,5 +1381,12 @@ textarea.materialize-textarea{
     .container-inputs > div {
         margin-left: 20px;
     }
-    
+
+    .logo-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 1em;
+    }
 }
