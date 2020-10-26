@@ -338,6 +338,11 @@ footer {
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
+
+    .nave-uno-cubo, .planeta-cubo, .nave-slider, .nave-form, .nave-header, .nave-header-izquierda {
+        display: none;
+    }
+
     html {
         scroll-behavior: smooth;
     }
