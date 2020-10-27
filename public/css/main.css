@@ -512,6 +512,13 @@ form > .col > .form-control {
     color: #fff;
 }
 
+.container-submit {
+    text-align: left;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 textarea {
     height: 5rem !important;
 }
@@ -712,7 +719,7 @@ textarea.materialize-textarea{
         color:  rgb(0, 174, 255)
     }
 
-    .container-inputs > div {
+    .container-inputs > div, .container-submit > button {
         margin-left: 20px;
     }
 
@@ -850,6 +857,11 @@ textarea.materialize-textarea{
         margin: auto;
         margin-top: 30px;
         color: #fff;
+    }
+
+    .container-submit {
+        
+        width: 80%;
     }
 
     footer {
@@ -1183,7 +1195,7 @@ textarea.materialize-textarea{
         color: #fff;
     }
 
-    .container-inputs > div {
+    .container-inputs > div, .container-submit > button {
         margin-left: 50px;
     }
 
@@ -1382,7 +1394,7 @@ textarea.materialize-textarea{
         margin-top: 0px;
     }
 
-    .container-inputs > div {
+    .container-inputs > div, .container-submit > button {
         margin-left: 20px;
     }
 

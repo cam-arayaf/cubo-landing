@@ -86,14 +86,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const upperCaseFirstLetterAllWords = value => value.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 
         const setModalElements = (newValues, title, firstParagraph, lastParagraph) => {
+            const dNone = 'd-none';
             modalTitle.textContent = title;
             modalFirstParagraph.textContent = firstParagraph;
             modalLastParagraph.textContent = lastParagraph;
-            newValues ? modalTitle.classList.remove('d-none') : modalTitle.classList.add('d-none');
-            newValues ? modalFirstParagraph.classList.remove('d-none') : modalFirstParagraph.classList.add('d-none');
-            newValues ? modalLastParagraph.classList.remove('d-none') : modalLastParagraph.classList.add('d-none');
-            newValues ? modalImage.classList.add('d-none') : modalImage.classList.remove('d-none');
-            newValues ? modalButtons.classList.remove('d-none') : modalButtons.classList.add('d-none');
+            newValues ? modalTitle.classList.remove(dNone) : modalTitle.classList.add(dNone);
+            newValues ? modalFirstParagraph.classList.remove(dNone) : modalFirstParagraph.classList.add(dNone);
+            newValues ? modalLastParagraph.classList.remove(dNone) : modalLastParagraph.classList.add(dNone);
+            newValues ? modalImage.classList.add(dNone) : modalImage.classList.remove(dNone);
+            newValues ? modalButtons.classList.remove(dNone) : modalButtons.classList.add(dNone);
         }
 
         const responseActions = (responseOk, newValues) => {
