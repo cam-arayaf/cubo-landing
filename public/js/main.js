@@ -52,9 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const wrongInput = !!form.querySelector('.wrong-input, .wrong-textarea');
         const emptyInput = !!Object.values(form.querySelectorAll('input, textarea')).find(e => !e.value);
         const disabledButton = wrongInput || emptyInput;
+        const classes = ['disabled-button', 'hvr-shrink'];
 
         bottomPage.disabled = disabledButton;
-        disabledButton ? bottomPage.classList.add('disabled-button') : bottomPage.classList.remove('disabled-button');
+        disabledButton ? bottomPage.classList.add(classes[0]) : bottomPage.classList.remove(classes[0]);
+        disabledButton ? bottomPage.classList.remove(classes[1]) : bottomPage.classList.add(classes[1]);
     }
 
     const checkField = (event, regex) => {
