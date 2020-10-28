@@ -43,7 +43,7 @@
 
     .planeta-cubo {
         top: -16%;
-        right: -1%;
+        right: 0.1%;
         bottom: 0;
     }
 
@@ -463,12 +463,14 @@ form > .col > .form-control {
     list-style-type: none !important;
 }
 
-.radio-container > .radio-buttons{
+.radio-container > .radio-buttons > .radio-label {
+    font-family: 'SF Pro Display Semi-Bold';
     background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
     border-radius: 20px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
 }
 
@@ -476,23 +478,10 @@ form > .col > .form-control {
     padding: 0px;
 }
 
-.radio-container > .radio-buttons:hover {
+.radio-container > .radio-buttons > .radio-label:hover {
     box-shadow: 2px 1px  1px rgb(0, 174, 255);
     transition: 0.2s;
-    transform: scale(0.9);
     cursor: pointer;
-}
-
-.radio-container > .radio-buttons > label {
-    color: #fff;
-    font-family: 'SF Pro Display Semi-Bold';
-}
-
-.radio-container > .radio-buttons{
-    background:linear-gradient(90deg, rgba(6, 38, 48, 0.829) 0%, rgb(42, 72, 116, 0.829) 100%);
-    border-radius: 20px;
-    color: #fff;
-    margin: 10px;
 }
 
 .radio-container {
@@ -545,11 +534,23 @@ textarea.materialize-textarea{
     cursor: pointer;
 }
 
+input[type="radio"]:checked + .radio-label{
+    color: steelblue;
+}
+
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
 
     .nav-wraper > .list-inline > .lt000 > .a-lt000 {
         margin-left: 0px;
+    }
+
+    .radio-container > .radio-buttons > .radio-label {
+        margin: 0px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #fff;
     }
 
     .nave-uno-cubo, .planeta-cubo, .nave-slider, .nave-form, .nave-header, .nave-header-izquierda {
@@ -708,15 +709,6 @@ textarea.materialize-textarea{
     .radio-buttons {
         padding: 1em;
         margin: 0px auto;
-    }
-
-    input[type="radio"] {
-        opacity: 0;
-        width: 0;
-    }
-
-    input[type="radio"]:checked + label{
-        color:  rgb(0, 174, 255)
     }
 
     .container-inputs > div, .container-submit > button {
@@ -999,15 +991,6 @@ textarea.materialize-textarea{
         margin: 0px auto;
     }
     
-    input[type="radio"] {
-        opacity: 0;
-        width: 0;
-    }
-    
-    input[type="radio"]:checked + label{
-        color:  rgb(0, 174, 255)
-    }
-    
     .card {
         box-shadow: none;
         background-color: transparent;
@@ -1225,8 +1208,9 @@ textarea.materialize-textarea{
 
 }
 
+
 /* ------------------- Tablets ------------------- */
-@media (min-width: 479px) and (max-width: 1024px) {
+@media (min-width : 483px) and (max-width : 1024px) {
     
     .apply-demo2 {
         display: none;
