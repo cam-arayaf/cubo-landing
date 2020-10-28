@@ -72,6 +72,10 @@
     height: 559px;
 }
 
+.container-cards .card.horizontal.hvr-wobble-vertical .card-image img {
+    width: 45px;
+}
+
 .carousel .indicators {
     position: absolute !important;
 }
