@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     //SELECTORS
-    const modal = document.querySelector('.modal');
+    const modalResponse = document.querySelector('.modal.modal-response');
+    const modalLoading = document.querySelector('.modal-loading');
     const modalTitle = document.querySelector('.modal-title');
     const modalFirstParagraph = document.querySelector('.modal-first-paragraph');
-    const modalLastParagraph = document.querySelector('.modal-last-paragraph');
-    const modalImage = document.querySelector('.modal-image');
-    const modalButtons = document.querySelector('.modal-buttons');
+    const modalsecondParagraph = document.querySelector('.modal-second-paragraph');
+    const modalButtons = document.querySelector('.modal.modal-response .modal-buttons');
+    const modalInfo = document.querySelector('.modal.modal-info');
     const carousel = document.querySelectorAll('.carousel');
     const collapsible = document.querySelectorAll('.collapsible');
+    const seeMoreBtn = document.querySelector('.seemore-btn');
     const form = document.querySelector("form");
     const role = document.querySelectorAll('.role');
     const name = document.querySelector('#name');
@@ -24,11 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const regexPhone = /[^0-9]/;
 
     //INITIALIZE MODAL, CAROUSEL AND COLLAPSIBLE
-    const modalInstance = M.Modal.init(modal, { dismissible: false });
+    const modalResponseInstance = M.Modal.init(modalResponse, { dismissible: false });
+    const modalInfoInstance = M.Modal.init(modalInfo, { dismissible: false });
     M.Carousel.init(carousel, { fullWidth: true, duration: 150, indicators: true });
     M.Collapsible.init(collapsible, { accordion: true });
 
-    // AUTOPLAY SLIDER
+    //AUTOPLAY SLIDER
     setInterval(() => M.Carousel.getInstance(carousel[0]).next(), 4500);
 
     //CUSTOM FUNCTIONS
@@ -85,29 +88,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const upperCaseFirstLetterFirstWord = value => value.charAt(0).toUpperCase() + value.slice(1);
         const upperCaseFirstLetterAllWords = value => value.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 
-        const setModalElements = (newValues, title, firstParagraph, lastParagraph) => {
+        const setModalElements = (newValues, title, firstParagraph, secondParagraph) => {
             const dNone = 'd-none';
             modalTitle.textContent = title;
             modalFirstParagraph.textContent = firstParagraph;
-            modalLastParagraph.textContent = lastParagraph;
+            modalsecondParagraph.textContent = secondParagraph;
+            newValues ? modalLoading.classList.add(dNone) : modalLoading.classList.remove(dNone);
             newValues ? modalTitle.classList.remove(dNone) : modalTitle.classList.add(dNone);
             newValues ? modalFirstParagraph.classList.remove(dNone) : modalFirstParagraph.classList.add(dNone);
-            newValues ? modalLastParagraph.classList.remove(dNone) : modalLastParagraph.classList.add(dNone);
-            newValues ? modalImage.classList.add(dNone) : modalImage.classList.remove(dNone);
+            newValues ? modalsecondParagraph.classList.remove(dNone) : modalsecondParagraph.classList.add(dNone);
             newValues ? modalButtons.classList.remove(dNone) : modalButtons.classList.add(dNone);
         }
 
         const responseActions = (responseOk, newValues) => {
             const title = responseOk ? 'Enhorabuena!!' : 'Ups!!';
             const firstParagraph = responseOk ? 'Tu solicitud ha sido enviada correctamente.' : 'Parece que tenemos problemas en nuestros servidores.';
-            const lastParagraph = responseOk ? 'Muchas gracias por preferir nuestros servicios.' : 'Podrías intentarlo nuevamente.';
-            setModalElements(newValues, title, firstParagraph, lastParagraph);
+            const secondParagraph = responseOk ? 'Muchas gracias por preferir nuestros servicios.' : 'Podrías intentarlo nuevamente.';
+            setModalElements(newValues, title, firstParagraph, secondParagraph);
             responseOk && resetValues();
             responseOk && validateButton();
         }
 
         setModalElements(false, '', '', '');
-        modalInstance.open();
+        modalResponseInstance.open();
 
         const fields = {
             role: Object.values(role).find(e => e.checked).value,
@@ -136,6 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
     resetValues();
 
     //EVENTS
+    seeMoreBtn.onclick = () => modalInfoInstance.open();
+
     form.onsubmit = sendForm;
 
     name.oninput = event => checkField(event, regexName);
