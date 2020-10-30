@@ -47,6 +47,32 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.logo-absolute-izquierda, .logo-absolute-derecha {
+    top: 2em;
+}
+
+.logo-absolute-derecha2, .logo-absolute-izquierda2 {
+    bottom: 2em;
+}
+
+.logo-absolute-derecha, .logo-absolute-derecha2 {
+    right: 23%;
+}
+
+.logo-absolute-izquierda2, .logo-absolute-izquierda{
+    left: 23%;
+}
+
+.logo-absolute-derecha2, .logo-absolute-izquierda2, .logo-absolute-derecha, .logo-absolute-izquierda {
+    position: absolute !important;
+    width: 1.6em;
+    margin: 0px !important;
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -71,6 +97,10 @@
 
 .modal .modal-content {
     padding: 30px;
+}
+
+.radio-label, #bottom-page, .seemore-btn, .im-eluney, .discover-button {
+    font-family: 'Spartan Semi-Bold' !important;
 }
 
 .modal-info p {
@@ -114,7 +144,6 @@
 
     .nave-uno-cubo, .planeta-cubo, .nave-slider, .nave-form, .nave-header, .nave-header-izquierda {
         position: absolute !important;
-        opacity: 0.85;
     }
 
 .carousel {
@@ -187,7 +216,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 .modal {
@@ -205,6 +234,7 @@ textarea:not(.browser-default):focus:not([readonly]) {
 .modal-buttons {
     margin-top: 20px;
     text-align: right;
+    margin: 0;
 }
 
 footer {
@@ -375,15 +405,6 @@ footer {
     line-height: 0.8;
     color: #fff;
     background:linear-gradient(90deg, rgb(0, 104, 255) 0%, rgb(42, 255, 255) 100%);
-}
-
-.discover-button {
-    display: inline-block;
-    transition: linear 0.2s;
-}
-
-.discover-button:hover {
-    transform: scale(1.2);
 }
 
 .sess-type {
@@ -597,6 +618,10 @@ input[type="radio"]:checked + .radio-label{
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
+
+    .logo-absolute-derecha2, .logo-absolute-izquierda2, .logo-absolute-derecha, .logo-absolute-izquierda {
+        display: none;
+    }
 
     .nav-wraper > .list-inline > .lt000 > .a-lt000 {
         margin-left: 0px;
@@ -909,6 +934,16 @@ input[type="radio"]:checked + .radio-label{
 
 /* ------------------- Desktop ------------------- */
 @media (min-width: 1024px) {
+    .discover-button {
+        height: 35px;
+        width: 110px;
+    }
+
+    #bottom-page {
+        height: 35px;
+        width: 110px;
+        font-size: 15px;
+    }
 
     .subjects-content {
         display: flex;
