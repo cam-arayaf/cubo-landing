@@ -618,7 +618,6 @@ input[type="radio"]:checked + .radio-label{
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
-
     .logo-absolute-derecha2, .logo-absolute-izquierda2, .logo-absolute-derecha, .logo-absolute-izquierda {
         display: none;
     }
@@ -651,6 +650,17 @@ input[type="radio"]:checked + .radio-label{
         margin: 5px;
     }
 
+    .apply-demo2 {
+        font-family: 'Spartan Semi-Bold' !important;
+        box-shadow: 2px 2px 4px 1px #0c0f14;
+        color: white !important;
+    }
+
+    #mobile-demo {
+        padding: 20px;
+        border-radius: 0 0 10px 0;
+    }
+
     .info-card-end {
         width: 80%;
         border: 2px solid transparent;
@@ -675,7 +685,7 @@ input[type="radio"]:checked + .radio-label{
     }
 
     .logo-container {
-        margin-top: 50px;
+        margin-top: 20%;
     }
 
     .apply-demo {
