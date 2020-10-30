@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalsecondParagraph = document.querySelector('.modal-second-paragraph');
     const modalButtons = document.querySelector('.modal.modal-response .modal-buttons');
     const modalInfo = document.querySelector('.modal.modal-info');
+    const sideNav = document.querySelector(".sidenav");
     const carousel = document.querySelectorAll('.carousel');
     const collapsible = document.querySelectorAll('.collapsible');
     const seeMoreBtn = document.querySelector('.seemore-btn');
@@ -25,9 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const regexPhone = /[^0-9]/;
 
-    //INITIALIZE MODAL, CAROUSEL AND COLLAPSIBLE
+    //INITIALIZE MODAL, HAMBURGER MENU, CAROUSEL AND COLLAPSIBLE
     const modalResponseInstance = M.Modal.init(modalResponse, { dismissible: false });
     const modalInfoInstance = M.Modal.init(modalInfo, { dismissible: false });
+    M.Sidenav.init(sideNav, {});
     M.Carousel.init(carousel, { fullWidth: true, duration: 150, indicators: true });
     M.Collapsible.init(collapsible, { accordion: true });
 
