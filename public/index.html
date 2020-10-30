@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" itemscope>
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Somos un sistema de gestión de aprendizaje vía servicio web, donde nuestro objetivo principal es hacer más sencilla la gestión de las actividades y contenidos educativos.">
@@ -26,9 +26,9 @@
         <div class="modal modal-response">
             <div class="modal-content">
                 <img class="modal-loading" alt="cubo-logo-azul" src="./assets/images/svg/cubo-logo-azul.svg">
-                <h4 class="modal-title d-none"></h4>
-                <p class="modal-first-paragraph d-none"></p>
-                <p class="modal-second-paragraph d-none"></p>
+                <h4 class="modal-title d-none">...</h4>
+                <p class="modal-first-paragraph d-none">...</p>
+                <p class="modal-second-paragraph d-none">...</p>
                 <div class="modal-buttons d-none hvr-pulse-shrink">
                     <a class="modal-close discover">CERRAR</a>
                 </div>
@@ -202,16 +202,16 @@
             <div class="subjects-content">
                 <button class="subjects-btn hvr-grow-rotate">Matemáticas</button>
                 <button class="subjects-btn hvr-grow-rotate" disabled><img alt="candado" src="./assets/images/svg/candado.svg"> 
-                    <br/>Lenguaje y Comunicación<br/>
-                    <small>PRÓXIMAMENTE</small>
+                <br/>Lenguaje y Comunicación<br/>
+                <small>PRÓXIMAMENTE</small>
                 </button>
                 <button class="subjects-btn hvr-grow-rotate" disabled><img alt="candado" src="./assets/images/svg/candado.svg">
-                    <br/>Ciencias<br/>
-                    <small>PRÓXIMAMENTE</small>
+                <br/>Ciencias<br/>
+                <small>PRÓXIMAMENTE</small>
                 </button>
                 <button class="subjects-btn hvr-grow-rotate" disabled id="english-next"><img alt="candado" src="./assets/images/svg/candado.svg">
-                    <br/>Inglés<br/>
-                    <small>PRÓXIMAMENTE</small>
+                <br/>Inglés<br/>
+                <small>PRÓXIMAMENTE</small>
                 </button>
             </div>
             <!-- CAROUSEL -->
@@ -296,151 +296,203 @@
                 </div>
             </div>
         </div>
-            <!--SECCIÓN BENEFICIOS DE CUBO-->
-            <p class="small-text" id="benefits">BENEFICIOS</p>
-            <h1 class="section-title">Por qué elegir Cubo</h1>
-            <ul class="collapsible">
-                <li class="collapsible-container active">
-                    <div class="collapsible-header">
-                        <img alt="directivos" src="./assets/images/png/directivos.png">
-                        <p class="title">Directivos</p>
-                        <p class="small">Niveles cubo:</p>
-                        <p class="grade">Enseñanza Básica - Enseñanza Media</p>
+        <!--SECCIÓN BENEFICIOS DE CUBO-->
+        <p class="small-text" id="benefits">BENEFICIOS</p>
+        <h1 class="section-title">Por qué elegir Cubo</h1>
+        <ul class="collapsible">
+            <li class="collapsible-container active">
+                <div class="collapsible-header">
+                    <img alt="directivos" src="./assets/images/png/directivos.png">
+                    <p class="title">Directivos</p>
+                    <p class="small">Niveles cubo:</p>
+                    <p class="grade">Enseñanza Básica/Media</p>
+                </div>
+                <div class="collapsible-body">
+                    <ul class="benefits-ulist">
+                        <li>
+                            <p>Administra y supervisa de manera simple e instantánea la labor educativa.</p>
+                        </li>
+                        <li>
+                            <p>Obtén acceso directo a información de usuarios.</p>
+                        </li>
+                        <li>
+                            <p>Obtén el avance en tiempo real de estudiantes, cursos o niveles.</p>
+                        </li>
+                        <li>
+                            <p>Revisa el avance SIMCE de tu establecimiento educativo.</p>
+                        </li>
+                        <li>
+                            <p>Observa y planifica el currículum de tu establecimiento escolar.</p>
+                        </li>
+                        <li>
+                            <p>Cubo a travez del análisis y entrega de datos genera valor a los procesos educativos.</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="collapsible-container">
+                <div class="collapsible-header">
+                    <img alt="docentes" src="./assets/images/png/docentes.png">
+                    <p class="title">Docentes</p>
+                    <p class="small">Niveles cubo:</p>
+                    <p class="grade">Enseñanza Básica/Media</p>
+                </div>
+                <div class="collapsible-body">
+                    <ul class="benefits-ulist">
+                        <li>
+                            <p>Sigue el proceso de aprendizaje de tus alumnos, sin tener que moverte de tu puesto de trabajo.</p>
+                        </li>
+                        <li>
+                            <p>Asigna actividades diferentes para cada estudiante.</p>
+                        </li>
+                        <li>
+                            <p>Crea diferentes tipos de evaluaciones a un par de clicks.</p>
+                        </li>
+                        <li>
+                            <p>Revisa resultados al instante, de manera individual o como grupo curso.</p>
+                        </li>
+                        <li>
+                            <p>Trabaja en modalidad SIMCE para obtener mejores resultados.</p>
+                        </li>
+                        <li>
+                            <p>Obtén calificaciones a corto o largo plazo, según tu decisión pedagógica.</p>
+                        </li>
+                        <li>
+                            <p>Genera informes de manera individual o como grupo curso.</p>
+                        </li>
+                        <li>
+                            <p>Cubo aborda todo el currículum nacional MINEDUC.</p>
+                        </li>
+                        <li>
+                            <p>Mejora tu metodología de enseñanza de manera entretenida.</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="collapsible-container">
+                <div class="collapsible-header">
+                    <img alt="estudiantes" src="./assets/images/png/estudiantes.png">
+                    <p class="title">Estudiantes</p>
+                    <p class="small">Niveles cubo:</p>
+                    <p class="grade">Enseñanza Básica/Media</p>
+                </div>
+                <div class="collapsible-body">
+                    <ul class="benefits-ulist">
+                        <li>
+                            <p>El proceso de enseñanza y aprendizaje es personalizado y supervisado en tiempo real.</p>
+                        </li>
+                        <li>
+                            <p>Solo te enfrentarás a actividades sujetas a tus capacidades, por lo que podrás ir avanzando a tu propio ritmo de estudio.</p>
+                        </li>
+                        <li>
+                            <p>Obtén retroalimentación inmediata al momento de culminar cada actividad.</p>
+                        </li>
+                        <li>
+                            <p>Si tienes dudas en una actividad, te explicamos de manera instantánea, para que puedas continuar con tu proceso de aprendizaje.</p>
+                        </li>
+                        <li>
+                            <p>Cubo te enseña de manera entretenida a través de juegos y actividades.</p>
+                        </li>
+                        <li>
+                            <p>Te motivamos mediante puntos que llamamos Cubos, los cuales te permiten personalizar a E-luney en el juego.</p>
+                        </li>
+                        <li>
+                            <p>Podrás acceder a nuestro Top 25 mientras mas Cubos obtengas.</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="collapsible-container">
+                <div class="collapsible-header">
+                    <img alt="apoderados" src="./assets/images/png/apoderados.png">
+                    <p class="title">Apoderados</p>
+                    <p class="small">Niveles cubo:</p>
+                    <p class="grade">Enseñanza Básica/Media</p>
+                </div>
+                <div class="collapsible-body">
+                    <ul class="benefits-ulist">
+                        <li>
+                            <p>Obtén un seguimiento real de los contenidos vistos por el alumno.</p>
+                        </li>
+                        <li>
+                            <p>Revisa las unidades que debe reforzar el estudiante.</p>
+                        </li>
+                        <li>
+                            <p>Acceso a todas las calificaciones, asignadas por el profesor.</p>
+                        </li>
+                        <li>
+                            <p>Obtén indicadores de desempeño del alumno, respecto del grupo curso.</p>
+                        </li>
+                        <li>
+                            <p>Verifica el tiempo real que dedica el alumno a estudiar en la plataforma Cubo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!--SECCIÓN TEAM CUBO-->
+        <div class="about" id="about-us">
+            <img alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg">
+            <p class="small-text">
+                <img class="logo-absolute-izquierda" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
+                <img class="logo-absolute-derecha" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
+                NOSOTROS
+            </p>
+            <h1 class="title-about">Team Cubo</h1>
+            <p class="about-text">
+                Somos un sistema de gestión de aprendizaje vía servicio web, donde nuestro objetivo principal es hacer más sencilla la gestión de las actividades y contenidos educativos.
+            </p>
+            <button class="hvr-pulse seemore-btn">Ver más</button>
+            <img class="logo-absolute-izquierda2" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
+            <img class="logo-absolute-derecha2" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
+        </div>
+        <!--FORM CON RADIO BUTTONS-->
+        <div class="contact-section">
+            <p class="small-text">CONTÁCTANOS</p>
+            <h1 class="section-title">Solicitar una demo de Cubo</h1>
+            <form action="https://cubo-api-ciaf.herokuapp.com/send-email" method="POST" target="_blank" autocomplete="off">
+                <div class="container-radio-buttons">
+                    <ul class="radio-container">
+                        <li class="radio-buttons">
+                            <input class="hidden-radio role" name="role" type="radio" id="role1" value="Directivo"/>
+                            <label class="radio-label hvr-shrink" for="role1">Directivo</label>
+                        </li>
+                        <li class="radio-buttons">
+                            <input class="hidden-radio role" name="role" type="radio" id="role2" value="Docente"/>
+                            <label class="radio-label hvr-shrink" for="role2">Docente</label>
+                        </li>
+                        <li class="radio-buttons">
+                            <input class="hidden-radio role" name="role" type="radio" id="role3" value="Estudiante"/>
+                            <label class="radio-label hvr-shrink" for="role3">Estudiante</label>
+                        </li>
+                        <li class="radio-buttons">
+                            <input class="hidden-radio role" name="role" type="radio" id="role4" value="Apoderado"/>
+                            <label class="radio-label hvr-shrink" for="role4">Apoderado</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-inputs">
+                    <div class="col">
+                        <input type="text" id="name" class="form-control" placeholder="Nombre y Apellido" minlength="3" maxlength="100">
                     </div>
-                    <div class="collapsible-body">
-                        <ul class="benefits-ulist">
-                            <li><p>Administra y supervisa de manera simple e instantánea la labor educativa.</p></li>
-                            <li><p>Obtén acceso directo a información de usuarios.</p></li>
-                            <li><p>Obtén el avance en tiempo real de estudiantes, cursos o niveles.</p></li>
-                            <li><p>Revisa el avance SIMCE de tu establecimiento educativo.</p></li>
-                            <li><p>Observa y planifica el currículum de tu establecimiento escolar.</p></li>
-                            <li><p>Cubo a travez del análisis y entrega de datos genera valor a los procesos educativos.</p></li>
-                        </ul>
+                    <div class="col">
+                        <input type="text" id="establishment" class="form-control" placeholder="Nombre del Directivo" minlength="3" maxlength="100">
                     </div>
-                </li>
-                <li class="collapsible-container">
-                    <div class="collapsible-header">
-                        <img alt="docentes" src="./assets/images/png/docentes.png">
-                        <p class="title">Docentes</p>
-                        <p class="small">Niveles cubo:</p>
-                        <p class="grade">Enseñanza Básica - Enseñanza Media</p>
+                    <div class="col">
+                        <input type="email" id="email" class="form-control" placeholder="Email">
                     </div>
-                    <div class="collapsible-body">
-                        <ul class="benefits-ulist">
-                            <li><p>Sigue el proceso de aprendizaje de tus alumnos, sin tener que moverte de tu puesto de trabajo.</p></li>
-                            <li><p>Asigna actividades diferentes para cada estudiante.</p></li>
-                            <li><p>Crea diferentes tipos de evaluaciones a un par de clicks.</p></li>
-                            <li><p>Revisa resultados al instante, de manera individual o como grupo curso.</p></li>
-                            <li><p>Trabaja en modalidad SIMCE para obtener mejores resultados.</p></li>
-                            <li><p>Obtén calificaciones a corto o largo plazo, según tu decisión pedagógica.</p></li>
-                            <li><p>Genera informes de manera individual o como grupo curso.</p></li>
-                            <li><p>Cubo aborda todo el currículum nacional MINEDUC.</p></li>
-                            <li><p>Mejora tu metodología de enseñanza de manera entretenida.</p></li>
-                        </ul>
+                    <div class="col">
+                        <input type="text" id="phone" class="form-control" placeholder="Teléfono" minlength="8" maxlength="15">
                     </div>
-                </li>
-                <li class="collapsible-container">
-                    <div class="collapsible-header">
-                        <img alt="estudiantes" src="./assets/images/png/estudiantes.png">
-                        <p class="title">Estudiantes</p>
-                        <p class="small">Niveles cubo:</p>
-                        <p class="grade">Enseñanza Básica - Enseñanza Media</p>
+                    <div class="col">
+                        <textarea rows="10" cols="20" id="comment" class="form-control materialize-textarea" placeholder="Déjanos tu comentario" minlength="6" maxlength="250"></textarea>
                     </div>
-                    <div class="collapsible-body">
-                        <ul class="benefits-ulist">
-                            <li><p>El proceso de enseñanza y aprendizaje es personalizado y supervisado en tiempo real.</p></li>
-                            <li><p>Solo te enfrentarás a actividades sujetas a tus capacidades, por lo que podrás ir avanzando a tu propio ritmo de estudio.</p></li>
-                            <li><p>Obtén retroalimentación inmediata al momento de culminar cada actividad.</p></li>
-                            <li><p>Si tienes dudas en una actividad, te explicamos de manera instantánea, para que puedas continuar con tu proceso de aprendizaje.</p></li>
-                            <li><p>Cubo te enseña de manera entretenida a través de juegos y actividades.</p></li>
-                            <li><p>Te motivamos mediante puntos que llamamos Cubos, los cuales te permiten personalizar a E-luney en el juego.</p></li>
-                            <li><p>Podrás acceder a nuestro Top 25 mientras mas Cubos obtengas.</p></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="collapsible-container">
-                    <div class="collapsible-header">
-                        <img alt="apoderados" src="./assets/images/png/apoderados.png">
-                        <p class="title">Apoderados</p>
-                        <p class="small">Niveles cubo:</p>
-                        <p class="grade">Enseñanza Básica - Enseñanza Media</p>
-                    </div>
-                    <div class="collapsible-body">
-                        <ul class="benefits-ulist">
-                            <li><p>Obtén un seguimiento real de los contenidos vistos por el alumno.</p></li>
-                            <li><p>Revisa las unidades que debe reforzar el estudiante.</p></li>
-                            <li><p>Acceso a todas las calificaciones, asignadas por el profesor.</p></li>
-                            <li><p>Obtén indicadores de desempeño del alumno, respecto del grupo curso.</p></li>
-                            <li><p>Verifica el tiempo real que dedica el alumno a estudiar en la plataforma Cubo.</p></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <!--SECCIÓN TEAM CUBO-->
-            <div class="about" id="about-us">
-                <img alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg">
-                    <p class="small-text">
-                        <img class="logo-absolute-izquierda" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
-                        <img class="logo-absolute-derecha" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
-                        NOSOTROS
-                        
-                    </p>
-                <h1 class="title-about">Team Cubo</h1>
-                <p class="about-text">
-                    Somos un sistema de gestión de aprendizaje vía servicio web, donde nuestro objetivo principal es hacer más sencilla la gestión de las actividades y contenidos educativos.
-                </p>
-                <button class="hvr-pulse seemore-btn">Ver más</button>
-                <img class="logo-absolute-izquierda2" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
-                <img class="logo-absolute-derecha2" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
-            </div>
-            <!--FORM CON RADIO BUTTONS-->
-            <div class="contact-section">
-                <p class="small-text">CONTÁCTANOS</p>
-                <h1 class="section-title">Solicitar una demo de Cubo</h1>
-                <form action="https://cubo-api-ciaf.herokuapp.com/send-email" method="POST" target="_blank" autocomplete="off">
-                    <div class="container-radio-buttons">
-                        <ul class="radio-container">
-                            <li class="radio-buttons">
-                                <input class="hidden-radio role" name="role" type="radio" id="role1" value="Directivo"/>
-                                <label class="radio-label hvr-shrink" for="role1">Directivo</label>
-                            </li>
-                            <li class="radio-buttons">
-                                <input class="hidden-radio role" name="role" type="radio" id="role2" value="Docente"/>
-                                <label class="radio-label hvr-shrink" for="role2">Docente</label>
-                            </li>
-                            <li class="radio-buttons">
-                                <input class="hidden-radio role" name="role" type="radio" id="role3" value="Estudiante"/>
-                                <label class="radio-label hvr-shrink" for="role3">Estudiante</label>
-                            </li>
-                            <li class="radio-buttons">
-                                <input class="hidden-radio role" name="role" type="radio" id="role4" value="Apoderado"/>
-                                <label class="radio-label hvr-shrink" for="role4">Apoderado</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="container-inputs">
-                        <div class="col">
-                            <input type="text" id="name" class="form-control" placeholder="Nombre y Apellido" minlength="3" maxlength="100">
-                        </div>
-                        <div class="col">
-                            <input type="text" id="establishment" class="form-control" placeholder="Nombre del Directivo" minlength="3" maxlength="100">
-                        </div>
-                        <div class="col">
-                            <input type="email" id="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col">
-                            <input type="text" id="phone" class="form-control" placeholder="Teléfono" minlength="8" maxlength="15">
-                        </div>
-                        <div class="col">
-                            <textarea rows="10" cols="20" id="comment" class="form-control materialize-textarea" placeholder="Déjanos tu comentario" minlength="6" maxlength="250"></textarea>
-                        </div>
-                    </div>
-                    <div class="container-submit">
-                        <button type="submit" id="bottom-page" class="btn-send-email disabled-button" disabled>Enviar</button>
-                    </div>
-                    <img class="nave-form" src="./assets/images/png/nave-cubo-1.png" alt="nave-form-cubo" />
-                </form>
-            </div>
+                </div>
+                <div class="container-submit">
+                    <button type="submit" id="bottom-page" class="btn-send-email disabled-button" disabled>Enviar</button>
+                </div>
+                <img class="nave-form" src="./assets/images/png/nave-cubo-1.png" alt="nave-form-cubo" />
+            </form>
         </div>
         <!--FOOTER-->
         <footer>

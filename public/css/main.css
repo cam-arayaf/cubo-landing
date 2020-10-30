@@ -47,8 +47,21 @@
     }
 }
 
+@media (max-width: 335px) {
+    .collapsible-container .collapsible-header > p {
+        margin-left: 4px;
+        text-align: inherit;
+    }
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+input {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .logo-absolute-izquierda, .logo-absolute-derecha {
@@ -450,6 +463,8 @@ footer {
 }
 
 .collapsible-header {
+    display: flex;
+    place-items: center;
     background: transparent;
     height: 80px;
     border: 1px solid #ddd;
@@ -472,7 +487,7 @@ footer {
     font-family: 'SF Pro Display Regular';
     font-weight: 100;
     font-size: 9px;
-    color: rgba(30, 143, 255, 0.74);
+    color: #78bbe6;
 }
 
 .collapsible-header > .title {
@@ -571,7 +586,7 @@ form > .col > .form-control {
 .container-inputs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 45%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -581,7 +596,7 @@ form > .col > .form-control {
 
 .container-submit {
     text-align: left;
-    width: 45%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -646,8 +661,9 @@ input[type="radio"]:checked + .radio-label{
         margin-top: 11px;
     }
 
-    .radio-container > .radio-buttons{
+    .radio-container > .radio-buttons {
         margin: 5px;
+        width: 40%;
     }
 
     .apply-demo2 {
@@ -785,6 +801,7 @@ input[type="radio"]:checked + .radio-label{
     .radio-container {
         display: flex;
         place-content: center;
+        flex-wrap: wrap;
     }
 
     .radio-buttons {
@@ -878,7 +895,7 @@ input[type="radio"]:checked + .radio-label{
     }
 
     .collapsible-header > p {
-        margin-left: 13px;
+        margin-left: 15px;
         text-align: left;
     }
 
@@ -895,7 +912,6 @@ input[type="radio"]:checked + .radio-label{
     .collapsible-header > .grade {
         font-family: 'SF Pro Display Semi-Bold';
         font-size: 12px;
-        margin-top: 5px;
     }
 
     .nav-wraper > .list-inline > .lt000 {
@@ -1058,7 +1074,6 @@ input[type="radio"]:checked + .radio-label{
         width: 180px;
         height: 100%;
         margin-top: 130px;
-        border-radius: 100px;
     }
 
     .radio-container {
@@ -1210,19 +1225,16 @@ input[type="radio"]:checked + .radio-label{
     .collapsible-header > .small {
         font-family: 'SF Pro Display Regular';
         font-weight: 100;
-        margin-top: 12px;
         font-size: 9px;
-        color: rgba(30, 143, 255, 0.74);
+        color: #78bbe6;
     }
 
     .collapsible-header > .title {
         font-family: 'SF Pro Display';
-        margin-top: 7px;
     }
 
     .collapsible-header > .grade {
         font-family: 'SF Pro Display Semi-Bold';
-        margin-top: 7px;
     }
 
     .container-img {
@@ -1252,7 +1264,7 @@ input[type="radio"]:checked + .radio-label{
     .container-inputs{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 45%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -1292,7 +1304,7 @@ input[type="radio"]:checked + .radio-label{
 
 
 /* ------------------- Tablets ------------------- */
-@media (min-width : 483px) and (max-width : 1024px) {
+@media (min-width : 481px) and (max-width : 1024px) {
     
     .apply-demo2 {
         display: none;
@@ -1366,10 +1378,6 @@ input[type="radio"]:checked + .radio-label{
     .collapsible-header > p {
         margin-left: 15px;
         text-align: left;
-    }
-
-    .collapsible-header > .small {
-        margin-top: 18px;
     }
 
     .subjects-btn {
