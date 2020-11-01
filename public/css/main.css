@@ -47,6 +47,13 @@
     }
 }
 
+@media (min-width: 483px) and (max-width: 616px) {
+    .radio-container {
+        display: flex;
+    }
+
+}
+
 @media (max-width: 335px) {
     .collapsible-container .collapsible-header > p {
         margin-left: 4px;
@@ -635,6 +642,15 @@ input[type="radio"]:checked + .radio-label{
 
 /* ------------------- Smartphones ------------------- */
 @media (max-width: 480px){
+    body {
+        padding-top: 70px;
+    }
+
+    nav .brand-logo {
+        position: fixed;
+        width: 30%;
+    }
+
     .logo-absolute-derecha2, .logo-absolute-izquierda2, .logo-absolute-derecha, .logo-absolute-izquierda {
         display: none;
     }
@@ -695,10 +711,6 @@ input[type="radio"]:checked + .radio-label{
     .small-text {
         font-size: 10px;
         letter-spacing: 1px;
-    }
-
-    .logo-container {
-        margin-top: 20%;
     }
 
     .apply-demo {
@@ -949,12 +961,18 @@ input[type="radio"]:checked + .radio-label{
     }
 
     .container-submit {
-        
         width: 80%;
     }
 
     footer {
-        display: none;
+        display:inline-block;
+        border-top: 1px rgba(255, 255, 255, 0.13) solid;
+    }
+
+    .footer-content {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 15px;
     }
 }
 
@@ -1022,6 +1040,7 @@ input[type="radio"]:checked + .radio-label{
     
     .apply-demo2 {
         display: none;
+        
     }
     
     .first-title {
