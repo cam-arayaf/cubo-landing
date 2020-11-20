@@ -67,14 +67,14 @@
         <header class="header-module">
             <nav class="list-links">
                 <div class="nav-wraper">
-                    <a href="/" class="brand-logo"><img alt="logo-cubo" class="hvr-pulse-shrink" src="./assets/images/svg/logo-cubo.svg"></a>
+                    <a href="/" class="brand-logo"><img alt="logo-cubo" src="./assets/images/svg/logo-cubo.svg"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="list-inline hide-on-med-and-down">
                         <li class="lt000">
                             <a class="scroll-smooth a-lt000 hvr-float hvr-underline-from-center" data-target="#sesion-directivos">Descubre</a>
                         </li>
                         <li class="lt000">
-                            <a class="scroll-smooth a-lt000 hvr-float hvr-underline-from-center" data-target="#english-next">Características</a>
+                            <a class="scroll-smooth a-lt000 hvr-float hvr-underline-from-center" data-target="#caract">Características</a>
                         </li>
                         <li class="lt000">
                             <a class="scroll-smooth a-lt000 hvr-float hvr-underline-from-center" data-target="#benefits">Beneficios</a>
@@ -83,7 +83,7 @@
                             <a class="scroll-smooth a-lt000 hvr-float hvr-underline-from-center" data-target="#about-us">Nosotros</a>
                         </li>
                     </ul>
-                    <a href="https://cuboapp.cl/" class="apply-demo hide-on-med-and-down" target="blank">CUBO App</a>
+                    <a href="https://cuboapp.cl/" class="apply-demo hide-on-med-and-down">CUBO App</a>
                 </div>
             </nav>
             <ul class="sidenav" id="mobile-demo">
@@ -159,9 +159,9 @@
                         <p class="info-title">Asignaturas</p>
                         <p class="text-info-card">
                             Nuestra propuesta académica es variada. Actualmente se encuentra disponible y en línea el curso de Matemáticas, tanto para educación básica como para media. Proximamente dispondremos de los siguentes cursos:
-                            <br/>- <strong>Lenguaje y Comunicación</strong>
-                            <br/>- <strong>Ciencias</strong>
-                            <br/>- <strong>Inglés</strong>
+                            <br><strong>Lenguaje</strong>
+                            - <strong>Ciencias</strong>
+                            - <strong>Inglés</strong>
                         </p>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
             <img class="planeta-cubo" alt="planeta-cubo" src="./assets/images/svg/planeta.svg" />
             <h1 class="section-title">Asignaturas</h1>
             <div class="subjects-content">
-                <button class="subjects-btn hvr-grow">Matemáticas</button>
+                <button class="subjects-btn hvr-grow"><a href="https://cuboapp.cl/">Matemáticas</a></button>
                 <button class="subjects-btn hvr-grow" disabled><img alt="candado" src="./assets/images/svg/candado.svg"> 
                 <br/>Lenguaje<br/>
                 <small>PRÓXIMAMENTE</small>
@@ -215,11 +215,11 @@
             </div>
             <!-- CAROUSEL -->
             <div class="carousel carousel-slider">
-                <a class="carousel-item"><img class="hvr-push" alt="slider-cubo-1" src="./assets/images/png/slider-cubo-1.png"></a>
-                <a class="carousel-item"><img class="hvr-push" alt="slider-cubo-2" src="./assets/images/png/slider-cubo-2.png"></a>
-                <a class="carousel-item"><img class="hvr-push" alt="slider-cubo-3" src="./assets/images/png/slider-cubo-3.png"></a>
+                <a class="carousel-item"><img alt="slider-cubo-1" src="./assets/images/png/slider-cubo-1.png"></a>
+                <a class="carousel-item"><img alt="slider-cubo-2" src="./assets/images/png/slider-cubo-2.png"></a>
+                <a class="carousel-item"><img alt="slider-cubo-3" src="./assets/images/png/slider-cubo-3.png"></a>
             </div>
-            <img class="nave-slider" alt="nave-slider-cubo" src="./assets/images/png/nave-cubo-1.png" />
+            <img id="caract" class="nave-slider" alt="nave-slider-cubo" src="./assets/images/png/nave-cubo-1.png" />
         </div>
         <!--CARACTERÍSTICAS DE CUBO-->
         <div class="section-learn">
@@ -228,8 +228,8 @@
             <img class="eluney-img hvr-wobble-to-bottom-right" alt="e-luney-2" src="./assets/images/png/eluney-2.png">
             <div class="container-cards">
                 <div class="card horizontal hvr-wobble-vertical">
-                    <div class="card-image">
-                        <img alt="full-responsive" src="./assets/images/png/full-responsive.png">
+                    <div class="card-image full-res">
+                        <img class="full-responsive" alt="full-responsive" src="./assets/images/png/full-responsive.png">
                     </div>
                     <div class="card-stacked">
                         <p>FULL RESPONSIVE</p>
@@ -291,12 +291,13 @@
                         <div class="card-content">
                             <p id="test">Nuestra web app cuenta con altos niveles de seguridad informática, encriptación de datos, firewall; que aseguran el servicio y la información de usuarios. Todo esto alojado en la nube para garantizar un backup solido, instantáneo y seguro.</p>
                         </div>
+                        <div id="benefits"></div>
                     </div>
                 </div>
             </div>
         </div>
         <!--SECCIÓN BENEFICIOS DE CUBO-->
-        <p class="small-text" id="benefits">BENEFICIOS</p>
+        <p class="small-text">BENEFICIOS</p>
         <h1 class="section-title">Por qué elegir Cubo</h1>
         <ul class="collapsible">
             <li class="collapsible-container active">
@@ -305,6 +306,7 @@
                     <p class="title">Directivos</p>
                     <p class="small">Niveles cubo:</p>
                     <p class="grade">Enseñanza Básica/Media</p>
+                    <i class="large material-icons">expand_more</i>
                 </div>
                 <div class="collapsible-body">
                     <ul class="benefits-ulist">
@@ -335,6 +337,7 @@
                     <p class="title">Docentes</p>
                     <p class="small">Niveles cubo:</p>
                     <p class="grade">Enseñanza Básica/Media</p>
+                    <i class="large material-icons">expand_more</i>
                 </div>
                 <div class="collapsible-body">
                     <ul class="benefits-ulist">
@@ -374,6 +377,7 @@
                     <p class="title">Estudiantes</p>
                     <p class="small">Niveles cubo:</p>
                     <p class="grade">Enseñanza Básica/Media</p>
+                    <i class="large material-icons">expand_more</i>
                 </div>
                 <div class="collapsible-body">
                     <ul class="benefits-ulist">
@@ -401,12 +405,13 @@
                     </ul>
                 </div>
             </li>
-            <li class="collapsible-container">
-                <div class="collapsible-header">
+            <li class="collapsible-container" >
+                <div class="collapsible-header" id="about-us">
                     <img alt="apoderados" src="./assets/images/png/apoderados.png">
                     <p class="title">Apoderados</p>
                     <p class="small">Niveles cubo:</p>
                     <p class="grade">Enseñanza Básica/Media</p>
+                    <i class="large material-icons ">expand_more</i>
                 </div>
                 <div class="collapsible-body">
                     <ul class="benefits-ulist">
@@ -423,7 +428,7 @@
                             <p>Obtén indicadores de desempeño del alumno, respecto del grupo curso.</p>
                         </li>
                         <li class="benefits-li">
-                            <p>Verifica el tiempo real que dedica el alumno a estudiar en la plataforma Cubo.</p>
+                            <p >Verifica el tiempo real que dedica el alumno a estudiar en la plataforma Cubo.</p>
                         </li>
                     </ul>
                 </div>
@@ -431,10 +436,7 @@
         </ul>
         <!--SECCIÓN TEAM CUBO-->
         <div class="about" id="about-us">
-            <img class="cubo-logo-transparente" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg">
             <p class="small-text">
-                <img class="logo-absolute-izquierda" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
-                <img class="logo-absolute-derecha" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
                 NOSOTROS
             </p>
             <h1 class="title-about">Team Cubo</h1>
@@ -442,8 +444,6 @@
                 Somos un sistema de gestión de aprendizaje vía servicio web, donde nuestro objetivo principal es hacer más sencilla la gestión de las actividades y contenidos educativos.
             </p>
             <button class="hvr-pulse seemore-btn">Ver más</button>
-            <img class="logo-absolute-izquierda2" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
-            <img class="logo-absolute-derecha2" alt="cubo-logo-transparente" src="./assets/images/svg/cubo-logo-transparente.svg" />
         </div>
         <!--FORM CON RADIO BUTTONS-->
         <div class="contact-section">
@@ -475,7 +475,7 @@
                         <input type="text" id="name" class="form-control" placeholder="Nombre y Apellido" minlength="3" maxlength="100">
                     </div>
                     <div class="col">
-                        <input type="text" id="establishment" class="form-control" placeholder="Nombre del Directivo" minlength="3" maxlength="100">
+                        <input type="text" id="establishment" class="form-control" placeholder="Institución Educativa" minlength="3" maxlength="100">
                     </div>
                     <div class="col">
                         <input type="email" id="email" class="form-control" placeholder="Email">
@@ -496,13 +496,13 @@
         <!--FOOTER-->
         <footer>
             <div class="footer-content">
-                <p class="email">contacto@cubo.cl</p>
-                <p class="phone">+56 9 9349 2823</p>
-                <p class="direccion">Dirección Comercial</p>
+                <p class="email">info@cubolms.cl</p>
+                <p class="phone">+56 9 9120 9892</p>
+                <p class="direccion">Términos y condiciones</p>
                 <div class="container-icons-rrss">
-                    <a class="hvr-float"><img src="./assets/images/svg/facebook.svg" alt="facebook-cubo" width="11"></a>
-                    <a class="hvr-float"><img src="./assets/images/svg/instagram.svg" alt="instagram-cubo" width="19"></a>
-                    <a class="hvr-float"><img src="./assets/images/svg/youtube.svg" alt="youtube-cubo" width="25"></a>
+                    <a href="https://www.facebook.com/cubolms/?view_public_for=100502718407246" class="hvr-float"><img src="./assets/images/svg/facebook.svg" alt="facebook-cubo" width="11"></a>
+                    <a href="https://www.instagram.com/cubolms/" class="hvr-float"><img src="./assets/images/svg/instagram.svg" alt="instagram-cubo" width="19"></a>
+                    <a href="https://www.youtube.com/channel/UCkXMh9BfZbAMUX4yX9viz3g" class="hvr-float"><img src="./assets/images/svg/youtube.svg" alt="youtube-cubo" width="25"></a>
                 </div>
             </div>
             <div class="developed-container">
