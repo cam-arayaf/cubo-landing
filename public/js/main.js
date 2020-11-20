@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const phone = document.querySelector('#phone');
     const comment = document.querySelector('#comment');
     const bottomPage = document.querySelector('#bottom-page');
+    const bottomMore = document.querySelector('#more');
+    const displayMore = document.querySelector('.collapsible-header')
 
     //REGEX
     const regexName = /[^a-zA-Z ]/;
@@ -33,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburgerMenuInstance = M.Sidenav.init(sideNav, {});
     M.Carousel.init(carousel, { fullWidth: true, duration: 150, indicators: true });
     M.Collapsible.init(collapsible, { accordion: true });
+
+    displayMore.addEventListener('click', (e) => {
+        
+    })
 
     //AUTOPLAY SLIDER
     setInterval(() => M.Carousel.getInstance(carousel[0]).next(), 4500);

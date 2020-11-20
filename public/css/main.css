@@ -1,7 +1,12 @@
-.collapsible-header > i {
+.collapsible-header > .large {
     color: #fff;
-    display: block;
-    float: right;
+    display: flex;
+    margin-left: auto;
+}
+
+.change {
+    transform: rotate(90deg);
+    transition-duration: 0.8s;
 }
 
 .about-text {
