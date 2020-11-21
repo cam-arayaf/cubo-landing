@@ -162,6 +162,7 @@
 
 .container-cards .card.horizontal.hvr-wobble-vertical .card-image img {
     width: 50px;
+    max-width: initial;
 }
 
 .container-icons-rrss a {
