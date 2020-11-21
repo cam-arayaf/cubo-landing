@@ -2,11 +2,11 @@
     color: #fff;
     display: flex;
     margin-left: auto;
+    transition-duration: 0.8s;
 }
 
 .change {
     transform: rotateX(180deg);
-    transition-duration: 0.8s;
 }
 
 .active {
