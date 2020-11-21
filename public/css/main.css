@@ -244,6 +244,7 @@
 .footer-content {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 40px;
 }
 
@@ -718,6 +719,14 @@ ul.sidenav li a {
     }
 }
 
+@media (max-width: 561px) {
+    .footer-content {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+}
+
 @media (max-width: 480px) {
     .collapsible-header > .large {
         display: none;
@@ -835,11 +844,6 @@ ul.sidenav li a {
         font-size: 40px;
         margin-top: 20px;
         width: auto;
-    }
-    .footer-content {
-        display: inline-block;
-        margin-bottom: 10px;
-        margin-top: 15px;
     }
     .info-card-end {
         width: 80%;
