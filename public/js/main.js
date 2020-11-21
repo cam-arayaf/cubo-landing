@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bottomMore.forEach(element => {
         const container = element.parentNode;
         container.addEventListener('click', e => {
-                e.target && element.classList.add('change');
+               e.target && element.classList.add('change');
             })
         })
 

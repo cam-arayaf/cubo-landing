@@ -9,6 +9,10 @@
     transition-duration: 0.8s;
 }
 
+.active {
+    transform: none;
+}
+
 .about-text {
     color: #f2f2f2;
     margin-left: auto;
@@ -715,6 +719,9 @@ ul.sidenav li a {
 }
 
 @media (max-width: 480px) {
+    .collapsible-header > .large {
+        display: none;
+    }
     .about {
         margin-top: 25px;
         padding-bottom: 25px;
