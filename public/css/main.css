@@ -249,9 +249,17 @@
     margin-bottom: 40px;
 }
 
-.footer-content > p {
-    font-family: 'SF Pro Display Semi-Bold';
+.footer-content > p, .footer-content > a {
     font-size: 15px;
+}
+
+.footer-content > a {
+    color: #fff;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .hiddendiv.common {
