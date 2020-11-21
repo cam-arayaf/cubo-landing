@@ -20,8 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const phone = document.querySelector('#phone');
     const comment = document.querySelector('#comment');
     const bottomPage = document.querySelector('#bottom-page');
-    const bottomMore = document.querySelector('#more');
-    const displayMore = document.querySelector('.collapsible-header')
+    const bottomMore = document.querySelectorAll('#more');
 
     //REGEX
     const regexName = /[^a-zA-Z ]/;
@@ -36,9 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
     M.Carousel.init(carousel, { fullWidth: true, duration: 150, indicators: true });
     M.Collapsible.init(collapsible, { accordion: true });
 
-    displayMore.addEventListener('click', (e) => {
-        
-    })
+    //CHANGE ARROW POSITION TO COLLAPSIBLE
+    bottomMore.forEach(element => {
+        const container = element.parentNode;
+        container.addEventListener('click', e => {
+                e.target && element.classList.add('change');
+            })
+        })
 
     //AUTOPLAY SLIDER
     setInterval(() => M.Carousel.getInstance(carousel[0]).next(), 4500);
