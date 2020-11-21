@@ -5,7 +5,7 @@
 }
 
 .change {
-    transform: rotate(90deg);
+    transform: rotateX(180deg);
     transition-duration: 0.8s;
 }
 
