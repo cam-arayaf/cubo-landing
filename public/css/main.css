@@ -729,6 +729,12 @@ ul.sidenav li a {
     }
 }
 
+@media (min-width: 481px) {
+    .card-container:first-child, .card-container:last-child {
+        display: grid;
+    }
+}
+
 @media (max-width: 335px) {
     .collapsible-container .collapsible-header > p {
         margin-left: 4px;
