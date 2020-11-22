@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         hamburgerMenuInstance.isOpen && hamburgerMenuInstance.close();
         const elementToScroll = document.querySelector(event.target.dataset.target);
-        elementToScroll.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        elementToScroll.scrollIntoView({ block: 'start', behavior: 'smooth', alignToTop: true });
     }
 
     const setHeightCarousel = () => {

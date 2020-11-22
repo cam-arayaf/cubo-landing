@@ -13,6 +13,10 @@
     transform: none;
 }
 
+* {
+    scroll-margin-top: 6em;
+}
+
 .about-text {
     color: #f2f2f2;
     margin-left: auto;
@@ -1227,6 +1231,15 @@ ul.sidenav li a {
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
+    .list-links {
+        position: fixed !important;
+        top: 0;
+    }
+
+    .header-module {
+        margin-bottom: 104px;
+    }
+
     .about {
         margin-top: 50px;
         padding: 20px;
