@@ -64,6 +64,10 @@
     list-style-type: disc!important;
 }
 
+.brand-logo img {
+    vertical-align: middle;
+}
+
 .btn-send-email {
     background: linear-gradient(90deg, rgb(0, 104, 255) 0, #2affff 100%);
     border: none;
@@ -299,7 +303,6 @@
     border-radius: 10px;
     color: #fff;
     display: block;
-    height: 230px;
     margin: 10%;
 }
 
@@ -309,6 +312,10 @@
     color: #fff;
     margin: auto;
     width: 25%;
+}
+
+.info-title {
+    font-size: 16px;
 }
 
 .learn-title {
@@ -1230,6 +1237,7 @@ ul.sidenav li a {
         box-shadow: none;
         margin-left: auto;
         margin-right: auto;
+        height: min-content;
         padding: 10px;
         width: 95%;
     }
@@ -1332,9 +1340,6 @@ ul.sidenav li a {
     }
     .subjects-section {
         margin-top: 80px;
-    }
-    .text-info-card {
-        font-size: 11px;
     }
     .title-about {
         color: #f2f2f2;
